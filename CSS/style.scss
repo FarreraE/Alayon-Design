@@ -150,7 +150,7 @@ body {
                 }
             }
             p {
-                @include fontp();
+                @include fontText();
                 width: 70%;
                 padding-top: 5%;
             }
@@ -224,7 +224,7 @@ body {
             .aboSec {
                 padding-top: 5%;
                 h1 {
-                    @include fonth5();
+                    @include fonth4();
                     font-size: 1.1rem;
                     span {
                         @include fonth3();
@@ -232,22 +232,38 @@ body {
                 }
                 .aboutGroup {
                     border-top: var(--color30) solid 0.1rem;
+                    padding-top: 5%;
                     .aboutItem {
-                        p {
+                        h2 {
                             @include fontTextMedium();
+                            color: var(--color10);
+                            text-align: start;
+                        }
+                        p {
+                            @include fontText();
+                            font-size: 0.6rem;
+                            
+                        }
+                        a {
+                            @include fonth5();
+                            text-decoration: underline;
+                            opacity: 0.5;
+                            text-align: start;
                         }
 
                         .colA {
                             @include resetmp();
-                            text-align: start;
+                            
                         }
                         .colB {
                             @include resetmp();
                             text-align: start;
+                            padding-right: 5%
                         }
                         .colC {
                             @include resetmp();
-                            text-align: end;
+                            text-align: center;
+                            //padding-left: 5%
                         }
                     }
                 }

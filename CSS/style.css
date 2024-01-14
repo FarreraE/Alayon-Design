@@ -237,10 +237,8 @@ body .box .about .aboSec {
 
 body .box .about .aboSec h1 {
   font-family: var(--fontWork);
-  font-weight: 400;
-  letter-spacing: 0%;
-  font-size: 0.7rem;
-  text-align: justify;
+  font-weight: 500;
+  letter-spacing: -0.004rem;
   font-size: 1.1rem;
 }
 
@@ -253,37 +251,55 @@ body .box .about .aboSec h1 span {
 
 body .box .about .aboSec .aboutGroup {
   border-top: var(--color30) solid 0.1rem;
+  padding-top: 5%;
 }
 
 body .box .about .aboSec .aboutGroup .aboutItem h2 {
-  font-size: 0.8rem;
-}
-
-body .box .about .aboSec .aboutGroup .aboutItem a {
+  font-family: var(--fontWork);
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: -0.005rem;
+  line-height: 0.8rem;
   color: var(--color10);
-  text-decoration: underline;
+  text-align: start;
 }
 
 body .box .about .aboSec .aboutGroup .aboutItem p {
-  font-size: 0.5rem;
+  font-family: var(--fontWork);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: -0.005rem;
+  line-height: 0.8rem;
+  font-size: 0.6rem;
+}
+
+body .box .about .aboSec .aboutGroup .aboutItem a {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  letter-spacing: 0%;
+  font-size: 0.7rem;
+  text-align: justify;
+  text-decoration: underline;
+  opacity: 0.5;
+  text-align: start;
 }
 
 body .box .about .aboSec .aboutGroup .aboutItem .colA {
   padding: 0%;
   margin: 0%;
-  text-align: start;
 }
 
 body .box .about .aboSec .aboutGroup .aboutItem .colB {
   padding: 0%;
   margin: 0%;
   text-align: start;
+  padding-right: 5%;
 }
 
 body .box .about .aboSec .aboutGroup .aboutItem .colC {
   padding: 0%;
   margin: 0%;
-  text-align: end;
+  text-align: center;
 }
 
 body .box .about .btnGroup {
