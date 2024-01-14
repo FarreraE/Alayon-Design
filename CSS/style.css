@@ -55,6 +55,7 @@ body .box .header .headerLogo h5 {
   font-weight: 400;
   letter-spacing: 0%;
   font-size: 0.7rem;
+  text-align: justify;
 }
 
 body .box .header .headerLogo .logo {
@@ -96,6 +97,7 @@ body .box .header .headerNav a {
   font-weight: 400;
   letter-spacing: 0%;
   font-size: 0.7rem;
+  text-align: justify;
   color: var(--color30);
   text-decoration: none;
   style: none;
@@ -165,6 +167,7 @@ body .box .portfolio .porRow h5 {
   font-weight: 400;
   letter-spacing: 0%;
   font-size: 0.7rem;
+  text-align: justify;
   font-size: 1rem;
   padding-left: 4%;
 }
@@ -202,20 +205,50 @@ body .box .about {
 }
 
 body .box .about .aboutHead .profilePicture {
-  width: 20%;
+  width: 25%;
+  border-radius: 5rem;
 }
 
 body .box .about .aboutHead h1 {
+  font-family: var(--fontWork);
+  font-weight: 420;
+  letter-spacing: -0.1rem;
+  font-size: 3rem;
   padding-bottom: 4%;
   padding-top: 5%;
 }
 
 body .box .about .aboutHead h1 span {
-  background-color: red;
+  font-family: var(--fontRob);
+  font-style: italic;
+  font-weight: 0;
+  font-size: 3rem;
 }
 
 body .box .about .aboutHead p {
-  background-color: red;
+  font-family: var(--fontWork);
+  font-weight: 500;
+  letter-spacing: -0.004rem;
+}
+
+body .box .about .aboSec {
+  padding-top: 5%;
+}
+
+body .box .about .aboSec h1 {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  letter-spacing: 0%;
+  font-size: 0.7rem;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+body .box .about .aboSec h1 span {
+  font-family: var(--fontRob);
+  font-style: italic;
+  font-weight: 0;
+  font-size: 3rem;
 }
 
 body .box .about .aboSec .aboutGroup {
