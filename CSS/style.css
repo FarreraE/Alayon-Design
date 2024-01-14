@@ -133,6 +133,8 @@ body .box .home p {
 }
 
 body .box .home .btnBox {
+  padding: 0%;
+  margin: 0%;
   padding-top: 5%;
 }
 
@@ -146,5 +148,33 @@ body .box .home .btnBox .btn {
   border-radius: 0.8rem;
   font-family: var(--fontWork);
   font-weight: 500;
+  color: var(--color30);
+  text-decoration: none;
+}
+
+body .box .portfolio {
+  padding-top: 10%;
+}
+
+body .box .portfolio .porRow h5 {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  letter-spacing: 0%;
+  font-size: 0.7rem;
+  font-size: 1rem;
+  padding-left: 4%;
+}
+
+body .box .portfolio .porRow .porColCss {
+  padding: 0%;
+  margin: 0%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+body .box .portfolio .porRow .porColCss .porBox {
+  background-color: #b2b2f7;
+  height: 380px;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

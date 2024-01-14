@@ -56,6 +56,8 @@
     border-radius: 0.8rem;
     font-family: var(--fontWork);
     font-weight: 500;
+    color: var(--color30);
+    text-decoration: none;
 }
 
 body {
@@ -63,6 +65,7 @@ body {
     padding: 5%;
     .box {
         @include resetmp();
+        // Header
         .header {
             @include resetmp();
             display: flex;
@@ -131,6 +134,7 @@ body {
                 padding-top: 5%;
             }
             .btnBox {
+                @include resetmp();
                 padding-top: 5%;
                 .btn {
                    @include btn();
@@ -138,5 +142,38 @@ body {
                 }
             }
         }
+
+        .portfolio{
+            padding-top: 10%;
+            .porRow{
+                //background-color: #282b30;
+                h5{
+                 @include fonth5();
+                 font-size: 1rem;
+                 padding-left:4%; 
+                }
+                .porColCss{
+                    @include resetmp();
+                    padding-top: 5%;
+                    padding-bottom: 5%;
+                    .porBox{                        
+                        background-color: rgb(178, 178, 247);
+                        height: 380px;
+                        border-radius: 1rem;
+                    }
+                }
+              
+                .porA{
+                    //background-color: blue;
+                }
+                .porB{
+                    //background-color: green;
+                }
+                .porC{
+                    //background-color: yellow;
+                    
+                }
+            }
+        }    
     }
 }
