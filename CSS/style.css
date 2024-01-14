@@ -180,6 +180,21 @@ body .box .portfolio .porRow .porColCss .porBox {
   background-color: #b2b2f7;
   height: 380px;
   border-radius: 1rem;
+  opacity: 1;
+  background-repeat: none;
+  background-size: cover;
+}
+
+body .box .portfolio .porRow .porColCss .porBoxA {
+  background-image: url("../img/graphic_design_01.jpg");
+}
+
+body .box .portfolio .porRow .porColCss .porBoxB {
+  background-image: url("../img/web_design_01.jpg");
+}
+
+body .box .portfolio .porRow .porColCss .porBoxC {
+  background-image: url("../img/logos_02.jpg");
 }
 
 body .box .about {
@@ -200,10 +215,6 @@ body .box .about .aboutHead h1 span {
 }
 
 body .box .about .aboutHead p {
-  background-color: red;
-}
-
-body .box .about .aboSec h1 {
   background-color: red;
 }
 
@@ -245,9 +256,22 @@ body .box .about .aboSec .aboutGroup .aboutItem .colC {
 body .box .about .btnGroup {
   padding: 0%;
   margin: 0%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-body .box .about .btnGroup .btn {
+body .box .about .btnGroup .btnBox {
+  padding: 0%;
+  margin: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .box .about .btnGroup .btnBox .btn {
   padding: 2%;
   padding-left: 5%;
   padding-right: 5%;
@@ -259,5 +283,8 @@ body .box .about .btnGroup .btn {
   font-weight: 500;
   color: var(--color60);
   text-decoration: none;
+  background-color: var(--color60Aux);
+  color: var(--color30);
+  margin-left: 10%;
 }
 /*# sourceMappingURL=style.css.map */
