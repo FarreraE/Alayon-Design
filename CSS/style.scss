@@ -46,17 +46,17 @@
     line-height: 0.8rem;
 }
 
-@mixin btn{
+@mixin btn {
     padding: 2%;
     padding-left: 5%;
     padding-right: 5%;
     font-size: 0.5rem;
-    background-color: var(--color60Aux);
+    background-color: var(--color10);
     border: none;
     border-radius: 0.8rem;
     font-family: var(--fontWork);
     font-weight: 500;
-    color: var(--color30);
+    color: var(--color60);
     text-decoration: none;
 }
 
@@ -137,43 +137,102 @@ body {
                 @include resetmp();
                 padding-top: 5%;
                 .btn {
-                   @include btn();
-
+                    @include btn();
+                }.btn:hover{
+                    opacity: 100%;
                 }
             }
         }
 
-        .portfolio{
+        .portfolio {
             padding-top: 10%;
-            .porRow{
+            .porRow {
                 //background-color: #282b30;
-                h5{
-                 @include fonth5();
-                 font-size: 1rem;
-                 padding-left:4%; 
+                h5 {
+                    @include fonth5();
+                    font-size: 1rem;
+                    padding-left: 4%;
                 }
-                .porColCss{
+                .porColCss {
                     @include resetmp();
                     padding-top: 5%;
                     padding-bottom: 5%;
-                    .porBox{                        
+                    .porBox {
                         background-color: rgb(178, 178, 247);
                         height: 380px;
                         border-radius: 1rem;
                     }
                 }
-              
-                .porA{
+
+                .porA {
                     //background-color: blue;
                 }
-                .porB{
+                .porB {
                     //background-color: green;
                 }
-                .porC{
+                .porC {
                     //background-color: yellow;
+                }
+            }
+        }
+
+        .about {
+            padding-top: 20%;
+            .aboutHead {
+                .profilePicture {
+                    width: 20%;
+                }
+                h1 {
+                    padding-bottom: 4%;
+                    padding-top: 5%;
+                    span {
+                        background-color: red;
+                    }
+                }
+                p {
+                    background-color: red;
+                }
+            }
+            .aboSec {
+                h1 {
+                    background-color: red;
+                }
+                .aboutGroup {
+                    border-top: var(--color30) solid 0.1rem;
+                    .aboutItem {
+                        h2 {
+                            font-size: 0.8rem;
+                        }
+                        a {
+                            color: var(--color10);
+                            text-decoration: underline;
+                        }
+                        p {
+                            font-size: 0.5rem;
+                        }
+
+                        .colA {
+                            @include resetmp();
+                            text-align: start;
+                        }
+                        .colB {
+                            @include resetmp();
+                            text-align: start;
+                        }
+                        .colC {
+                            @include resetmp();
+                            text-align: end;
+                        }
+                    }
+                }
+            }
+            .btnGroup {
+                @include resetmp();
+                .btn {
+                    @include btn();
                     
                 }
             }
-        }    
+        }
     }
 }

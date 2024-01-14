@@ -143,13 +143,17 @@ body .box .home .btnBox .btn {
   padding-left: 5%;
   padding-right: 5%;
   font-size: 0.5rem;
-  background-color: var(--color60Aux);
+  background-color: var(--color10);
   border: none;
   border-radius: 0.8rem;
   font-family: var(--fontWork);
   font-weight: 500;
-  color: var(--color30);
+  color: var(--color60);
   text-decoration: none;
+}
+
+body .box .home .btnBox .btn:hover {
+  opacity: 100%;
 }
 
 body .box .portfolio {
@@ -176,5 +180,84 @@ body .box .portfolio .porRow .porColCss .porBox {
   background-color: #b2b2f7;
   height: 380px;
   border-radius: 1rem;
+}
+
+body .box .about {
+  padding-top: 20%;
+}
+
+body .box .about .aboutHead .profilePicture {
+  width: 20%;
+}
+
+body .box .about .aboutHead h1 {
+  padding-bottom: 4%;
+  padding-top: 5%;
+}
+
+body .box .about .aboutHead h1 span {
+  background-color: red;
+}
+
+body .box .about .aboutHead p {
+  background-color: red;
+}
+
+body .box .about .aboSec h1 {
+  background-color: red;
+}
+
+body .box .about .aboSec .aboutGroup {
+  border-top: var(--color30) solid 0.1rem;
+}
+
+body .box .about .aboSec .aboutGroup .aboutItem h2 {
+  font-size: 0.8rem;
+}
+
+body .box .about .aboSec .aboutGroup .aboutItem a {
+  color: var(--color10);
+  text-decoration: underline;
+}
+
+body .box .about .aboSec .aboutGroup .aboutItem p {
+  font-size: 0.5rem;
+}
+
+body .box .about .aboSec .aboutGroup .aboutItem .colA {
+  padding: 0%;
+  margin: 0%;
+  text-align: start;
+}
+
+body .box .about .aboSec .aboutGroup .aboutItem .colB {
+  padding: 0%;
+  margin: 0%;
+  text-align: start;
+}
+
+body .box .about .aboSec .aboutGroup .aboutItem .colC {
+  padding: 0%;
+  margin: 0%;
+  text-align: end;
+}
+
+body .box .about .btnGroup {
+  padding: 0%;
+  margin: 0%;
+}
+
+body .box .about .btnGroup .btn {
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 0.5rem;
+  background-color: var(--color10);
+  border: none;
+  border-radius: 0.8rem;
+  font-family: var(--fontWork);
+  font-weight: 500;
+  color: var(--color60);
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
