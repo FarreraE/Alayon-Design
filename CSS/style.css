@@ -3,13 +3,28 @@
   padding: 0;
 }
 
-body {
-  background-color: #121212;
-  color: white;
-  font-family: "Work Sans", sans-serif;
+:root {
+  --fontRob: "Roboto Serif", serif;
+  --fontWork: "Work Sans", sans-serif;
+  --color60: #f9f6ee;
+  --color60Aux: #ece4ce;
+  --color30: #282b30;
+  --color10: #b73c3c;
 }
 
-body .header {
+body {
+  background-color: var(--color60);
+  padding: 5%;
+}
+
+body .box {
+  padding: 0%;
+  margin: 0%;
+}
+
+body .box .header {
+  padding: 0%;
+  margin: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,88 +33,118 @@ body .header {
           justify-content: space-between;
 }
 
-body .header .headerLogo {
+body .box .header .headerLogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .header .headerLogo .logo {
-  width: 3%;
-}
-
-body .header .headerLogo p {
-  padding: 0%;
-  margin: 0%;
-  margin-left: 2%;
-  padding-top: 1%;
-}
-
-body .header .headerNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+          justify-content: flex-start;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  width: 50%;
 }
 
-body .header .headerNav .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body .box .header .headerLogo h5 {
+  padding: 0%;
+  margin: 0%;
+  font-size: 0.5rem;
+  padding-left: 5%;
+  font-family: var(--fontWork);
+  font-weight: 400;
+  letter-spacing: 0%;
+  font-size: 0.7rem;
 }
 
-body .header .headerNav .nav a {
-  color: #fff;
+body .box .header .headerLogo .logo {
+  width: 10%;
 }
 
-body .home .text {
-  padding-top: 5%;
-  padding-bottom: 5%;
+body .box .header .headerNav {
+  width: 50%;
+  padding: 0%;
+  margin: 0%;
 }
 
-body .home .btnContainer {
+body .box .header .headerNav .nav {
+  padding: 0%;
+  margin: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  list-style: none;
 }
 
-body .home .btnContainer .btn {
-  margin-bottom: 5%;
+body .box .header .headerNav .nav .nav-item {
+  padding: 0%;
+  margin: 0%;
+  padding-left: 0%;
+  padding-right: 15%;
 }
 
-body .portfolio .porA {
-  height: 400px;
-  background-color: yellow;
+body .box .header .headerNav a {
+  padding: 0%;
+  margin: 0%;
+  font-family: var(--fontWork);
+  font-weight: 400;
+  letter-spacing: 0%;
+  font-size: 0.7rem;
+  color: var(--color30);
+  text-decoration: none;
+  style: none;
+  font-size: 0.6rem;
+  font-weight: 500;
 }
 
-body .portfolio .porB {
-  height: 400px;
-  background-color: green;
+body .box .home {
+  padding: 0%;
+  margin: 0%;
+  padding-top: 15%;
 }
 
-body .portfolio .porC {
-  height: 845px;
-  background-color: blue;
+body .box .home h1 {
+  font-family: var(--fontWork);
+  font-weight: 420;
+  letter-spacing: -0.1rem;
+  font-size: 3rem;
+}
+
+body .box .home h1 span {
+  font-family: var(--fontRob);
+  font-weight: 0;
+  font-size: 3rem;
+}
+
+body .box .home p {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: -0.005rem;
+  line-height: 0.8rem;
+  width: 70%;
+  padding-top: 5%;
+}
+
+body .box .home .btnBox {
+  padding-top: 5%;
+}
+
+body .box .home .btnBox .btn {
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 0.5rem;
+  background-color: var(--color60Aux);
+  border: none;
+  border-radius: 0.8rem;
+  font-family: var(--fontWork);
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
