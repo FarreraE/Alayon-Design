@@ -36,7 +36,7 @@
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
-    font-size: 3rem;
+    font-size: 3.5rem;
     //background-color: #b73c3c;
 }
 @mixin fonth4 {
@@ -193,7 +193,7 @@ body {
         }
         // PORTFOLIO
         .portfolio {
-            padding-top: 20%;
+            padding-top: 15%;
             .porRow {
                 //background-color: #282b30;
                 h5 {
@@ -203,7 +203,7 @@ body {
                 }
                 .porColCss {
                     @include resetmp();
-                    padding-top: 5%;
+                    padding-top: 10%;
                     padding-bottom: 5%;
                     display: flex;
                     flex-direction: column;
@@ -244,7 +244,7 @@ body {
         }
         // ABOUT
         .about {
-            padding-top: 20%;
+            padding-top: 15%;
             .aboutHead {
                 .profilePicture {
                     width: 25%;
@@ -261,6 +261,7 @@ body {
                 }
                 p {
                     @include fonth4();
+                    font-size: 1.1rem;
                     //background-color: red;
                 }
             }

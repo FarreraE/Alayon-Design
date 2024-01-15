@@ -161,7 +161,7 @@ body .box .home .btnBox .btn:hover {
 }
 
 body .box .portfolio {
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 body .box .portfolio .porRow h5 {
@@ -175,7 +175,7 @@ body .box .portfolio .porRow h5 {
 body .box .portfolio .porRow .porColCss {
   padding: 0%;
   margin: 0%;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,7 +237,7 @@ body .box .portfolio .porRow .porColCss .porBoxC {
 }
 
 body .box .about {
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 body .box .about .aboutHead .profilePicture {
@@ -259,13 +259,14 @@ body .box .about .aboutHead h1 span {
   font-family: var(--fontRob);
   font-style: italic;
   font-weight: 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 body .box .about .aboutHead p {
   font-family: var(--fontWork);
   font-weight: 500;
   letter-spacing: -0.004rem;
+  font-size: 1.1rem;
 }
 
 body .box .about .aboSec {
@@ -283,7 +284,7 @@ body .box .about .aboSec h1 span {
   font-family: var(--fontRob);
   font-style: italic;
   font-weight: 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 body .box .about .aboSec .aboutGroup {
@@ -428,7 +429,7 @@ body footer .footerEmail h2 span {
   font-family: var(--fontRob);
   font-style: italic;
   font-weight: 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-size: 2.5rem;
 }
 
