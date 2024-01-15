@@ -227,7 +227,7 @@ body {
                 h1 {
                     @include fonth1();
                     padding-bottom: 4%;
-                    padding-top: 5%;
+                    padding-top: 10%;
                     span {
                         @include fonth3();
                         //background-color: red;
