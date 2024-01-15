@@ -14,12 +14,12 @@
 
 body {
   background-color: var(--color60);
-  padding: 5%;
 }
 
 body .box {
   padding: 0%;
   margin: 0%;
+  padding: 5%;
 }
 
 body .box .header {
@@ -49,13 +49,12 @@ body .box .header .headerLogo {
 body .box .header .headerLogo h5 {
   padding: 0%;
   margin: 0%;
-  font-size: 0.5rem;
-  padding-left: 5%;
   font-family: var(--fontWork);
   font-weight: 400;
   letter-spacing: 0%;
   font-size: 0.7rem;
   text-align: justify;
+  padding-left: 5%;
 }
 
 body .box .header .headerLogo .logo {
@@ -335,5 +334,133 @@ body .box .about .btnGroup .btnBox .btn {
   background-color: var(--color60Aux);
   color: var(--color30);
   margin-left: 10%;
+}
+
+body footer {
+  background-color: rgba(236, 228, 206, 0.4);
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+body footer .footerLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 100%;
+}
+
+body footer .footerLogo h5 {
+  padding: 0%;
+  margin: 0%;
+  font-family: var(--fontWork);
+  font-weight: 400;
+  letter-spacing: 0%;
+  font-size: 0.7rem;
+  text-align: justify;
+  font-size: 0.8rem;
+  padding-left: 4%;
+}
+
+body footer .footerLogo .logo {
+  width: 5%;
+}
+
+body footer .footerEmail {
+  padding-top: 5%;
+}
+
+body footer .footerEmail h2 {
+  padding: 0%;
+  margin: 0%;
+  font-family: var(--fontWork);
+  font-weight: 420;
+  letter-spacing: -0.1rem;
+  font-size: 3rem;
+}
+
+body footer .footerEmail h2 span {
+  font-family: var(--fontRob);
+  font-style: italic;
+  font-weight: 0;
+  font-size: 3rem;
+}
+
+body footer .footerEmail a {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: -0.005rem;
+  text-decoration: underline;
+  color: var(--color30);
+  font-size: 1.5rem;
+}
+
+body footer .footerLink {
+  padding-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer .footerLink h5 {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  letter-spacing: 0%;
+  font-size: 0.7rem;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+body footer .footerLink a {
+  color: var(--color30);
+  font-family: var(--fontWork);
+  font-weight: 500;
+  padding-top: 2%;
+}
+
+body footer .footerEnd {
+  padding-top: 15%;
+}
+
+body footer .footerEnd h5 {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  letter-spacing: 0%;
+  font-size: 0.7rem;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+body footer .footerEnd p {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: -0.005rem;
+  line-height: 0.8rem;
+  width: 70%;
+}
+
+body footer .footerEnd .span {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: -0.005rem;
+  line-height: 0.8rem;
+  color: var(--color30);
+  padding-top: 10%;
+  font-size: 0.6rem;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

@@ -60,12 +60,27 @@
     line-height: 0.8rem;
 }
 
+@mixin fontButton02 {
+    font-family: var(--fontWork);
+    font-weight: 500;
+}
+
+
+
 @mixin fontTextMedium {
     font-family: var(--fontWork);
     font-weight: 500;
     font-size: 0.7rem;
     letter-spacing: -0.005rem;
     line-height: 0.8rem;
+}
+
+@mixin fontTextLink {
+    font-family: var(--fontWork);
+    font-weight: 400;
+    font-size: 0.7rem;
+    letter-spacing: -0.005rem;
+    text-decoration: underline;
 }
 
 @mixin btn {
@@ -84,9 +99,9 @@
 
 body {
     background-color: var(--color60);
-    padding: 5%;
     .box {
         @include resetmp();
+        padding: 5%;
         // Header
         .header {
             @include resetmp();
@@ -101,9 +116,8 @@ body {
                 //background-color: greenyellow;
                 h5 {
                     @include resetmp();
-                    font-size: 0.5rem;
-                    padding-left: 5%;
                     @include fonth5();
+                    padding-left: 5%;
                 }
                 .logo {
                     width: 10%;
@@ -242,7 +256,6 @@ body {
                         p {
                             @include fontText();
                             font-size: 0.6rem;
-                            
                         }
                         a {
                             @include fonth5();
@@ -253,12 +266,11 @@ body {
 
                         .colA {
                             @include resetmp();
-                            
                         }
                         .colB {
                             @include resetmp();
                             text-align: start;
-                            padding-right: 5%
+                            padding-right: 5%;
                         }
                         .colC {
                             @include resetmp();
@@ -283,6 +295,79 @@ body {
                         margin-left: 10%;
                     }
                 }
+            }
+        }
+    }
+    footer {
+        background-color: rgba(236, 228, 206, 0.4);
+        padding: 5%;
+       margin-bottom: 5%;
+        .footerLogo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: end;
+            width: 100%;
+            //background-color: greenyellow;
+            h5 {
+                @include resetmp();
+                @include fonth5();
+                font-size: 0.8rem;
+                padding-left: 4%;
+            }
+            .logo {
+                width: 5%;
+            }
+        }
+        .footerEmail {
+            padding-top: 5%;
+            
+            h2 {
+                @include resetmp();
+                @include fonth1();
+                //font-size: 2.5rem;
+                span {
+                    @include fonth3();
+                }
+            }
+            a {
+                @include fontTextLink();
+                color: var(--color30);
+                font-size: 1.5rem;
+            }
+        }
+        .footerLink {
+            padding-top: 15%;
+            display: flex;
+            flex-direction: column;
+            h5 {
+                @include fonth5();
+                font-size: 0.8rem;
+            }
+            a{
+                color: var(--color30);
+                @include fontButton02();
+                padding-top: 2%;
+            }
+        }
+
+        .footerEnd{
+            padding-top: 15%;
+            h5{
+                @include fonth5();
+                font-weight: 400;
+                font-size: 0.8rem;
+                opacity: 0.5;
+            }
+            p{
+                @include fontText();
+                width: 70%
+            }
+            .span{
+                @include fontText();
+                color: var(--color30);
+                padding-top: 10%;
+                font-size: 0.6rem;
+                font-weight: 500;;
             }
         }
     }
