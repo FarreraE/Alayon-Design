@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -142,14 +143,16 @@ body .box .home .btnBox .btn {
   padding-top: 2%;
   padding-left: 5%;
   padding-right: 5%;
-  font-size: 0.7rem;
-  background-color: var(--color10);
+  background-color: var(--color60Aux);
   border: none;
   border-radius: 0.8rem;
+  text-decoration: none;
   font-family: var(--fontWork);
   font-weight: 500;
+  font-size: 1rem;
+  color: var(--color30);
+  background-color: var(--color10);
   color: var(--color60);
-  text-decoration: none;
 }
 
 body .box .home .btnBox .btn:hover {
@@ -175,6 +178,24 @@ body .box .portfolio .porRow .porColCss {
   margin: 0%;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+body .box .portfolio .porRow .porColCss p {
+  padding-top: 5%;
+}
+
+body .box .portfolio .porRow .porColCss .btn {
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: var(--color60Aux);
+  border: none;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  font-family: var(--fontWork);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color30);
 }
 
 body .box .portfolio .porRow .porColCss .porBox {
@@ -322,21 +343,20 @@ body .box .about .btnGroup .btnBox .btn {
   padding-top: 2%;
   padding-left: 5%;
   padding-right: 5%;
-  font-size: 0.7rem;
-  background-color: var(--color10);
+  background-color: var(--color60Aux);
   border: none;
   border-radius: 0.8rem;
+  text-decoration: none;
   font-family: var(--fontWork);
   font-weight: 500;
-  color: var(--color60);
-  text-decoration: none;
+  font-size: 1rem;
+  color: var(--color30);
   background-color: var(--color60Aux);
   color: var(--color30);
   margin-left: 10%;
 }
 
 body footer {
-  background-color: rgba(236, 228, 206, 0.4);
   background-color: #ece4ce66;
   padding: 15%;
   border-top-right-radius: 1.5rem;
@@ -353,7 +373,6 @@ body footer .footerLogo {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  width: 100%;
 }
 
 body footer .footerLogo h5 {
@@ -489,5 +508,12 @@ body footer .footerEnd .span {
   padding-top: 10%;
   font-size: 0.6rem;
   font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  /* Estilos específicos para pantallas extra pequeñas */
+  body {
+    background-color: red;
+  }
 }
 /*# sourceMappingURL=style.css.map */
