@@ -48,16 +48,16 @@
     font-family: var(--fontWork);
     font-weight: 400;
     letter-spacing: 0%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: justify;
 }
 
 @mixin fontText {
     font-family: var(--fontWork);
     font-weight: 400;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: -0.005rem;
-    line-height: 0.8rem;
+    line-height: 1rem;
 }
 
 @mixin fontButton02 {
@@ -82,10 +82,10 @@
 }
 
 @mixin btn {
-    padding: 2%;
+    padding-top: 2%;
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     background-color: var(--color10);
     border: none;
     border-radius: 0.8rem;
@@ -109,21 +109,23 @@ body {
             .headerLogo {
                 display: flex;
                 justify-content: flex-start;
-                align-items: end;
-                width: 50%;
+                align-items: end;                
                 //background-color: greenyellow;
                 h5 {
                     @include resetmp();
                     @include fonth5();
+                    font-weight: 500;
                     padding-left: 5%;
                 }
                 .logo {
-                    width: 10%;
+                    width: 8%;
                 }
             }
             .headerNav {
-                width: 50%;
+                
                 @include resetmp();
+                width: 100%;
+
                 .nav {
                     @include resetmp();
                     display: flex;
@@ -134,18 +136,20 @@ body {
                         @include resetmp();
                         padding-left: 0%;
                         padding-left: 15%;
+                        a {
+                            @include resetmp();
+                            @include fonth5();
+                            padding-bottom: -50%;
+                            color: var(--color30);
+                            text-decoration: none;
+                            //background-color: #b73c3c;
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            
+                        }
                     }
                 }
-                a {
-                    @include resetmp();
-                    @include fonth5();
-
-                    color: var(--color30);
-                    text-decoration: none;
-                    style: none;
-                    font-size: 0.6rem;
-                    font-weight: 500;
-                }
+             
             }
         }
         // HOME
@@ -163,7 +167,7 @@ body {
             }
             p {
                 @include fontText();
-                width: 70%;
+                //width: 70%;
                 padding-top: 5%;
             }
             .btnBox {
@@ -203,10 +207,11 @@ body {
                         background-image: url("../img/graphic_design_01.jpg");
                     }
                     .porBoxB {
-                        background-image: url("../img/web_design_01.jpg");
+                        background-image: url("../img/logos_02.jpg");
+                        
                     }
                     .porBoxC {
-                        background-image: url("../img/logos_02.jpg");
+                        background-image: url("../img/web_design_01.jpg");
                     }
                 }
             }
@@ -234,7 +239,7 @@ body {
                 }
             }
             .aboSec {
-                padding-top: 5%;
+                padding-top: 10%;
                 h1 {
                     @include fonth4();
                     font-size: 1.1rem;
@@ -246,6 +251,7 @@ body {
                     border-top: var(--color30) solid 0.1rem;
                     padding-top: 5%;
                     .aboutItem {
+                        
                         h2 {
                             @include fontTextMedium();
                             color: var(--color10);
@@ -256,7 +262,7 @@ body {
                             font-size: 0.6rem;
                         }
                         a {
-                            @include fonth5();
+                            @include fontTextMedium();
                             text-decoration: underline;
                             opacity: 0.5;
                             text-align: start;
@@ -298,8 +304,10 @@ body {
     }
     footer {
         background-color: rgba(236, 228, 206, 0.4);
-        padding: 5%;
-        margin-bottom: 5%;
+        background-color: #ece4ce66;
+        padding: 15%;
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
         .footerLogo {
             display: flex;
             justify-content: flex-start;
@@ -309,28 +317,29 @@ body {
             h5 {
                 @include resetmp();
                 @include fonth5();
-                font-size: 0.8rem;
-                padding-left: 4%;
+                font-weight: 500;
+                padding-left: 5%;
             }
             .logo {
                 width: 5%;
             }
         }
         .footerEmail {
-            padding-top: 5%;
+            padding-top: 15%;
 
             h2 {
                 @include resetmp();
                 @include fonth1();
-                //font-size: 2.5rem;
+                font-size: 2.5rem;
                 span {
                     @include fonth3();
+                    font-size: 2.5rem;
                 }
             }
             a {
                 @include fontTextLink();
                 color: var(--color30);
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
         }
         .footerLink {
@@ -364,13 +373,15 @@ body {
             padding-top: 15%;
             h5 {
                 @include fonth5();
-                font-weight: 400;
-                font-size: 0.8rem;
+                font-weight: 500;
+                font-size: 0.65rem;
                 opacity: 0.5;
+                text-align: left;
             }
             p {
+                padding-top:2%;
                 @include fontText();
-                width: 70%;
+                width: 100%;
             }
             .span {
                 @include fontText();
