@@ -65,8 +65,6 @@
     font-weight: 500;
 }
 
-
-
 @mixin fontTextMedium {
     font-family: var(--fontWork);
     font-weight: 500;
@@ -135,7 +133,7 @@ body {
                     .nav-item {
                         @include resetmp();
                         padding-left: 0%;
-                        padding-right: 15%;
+                        padding-left: 15%;
                     }
                 }
                 a {
@@ -301,7 +299,7 @@ body {
     footer {
         background-color: rgba(236, 228, 206, 0.4);
         padding: 5%;
-       margin-bottom: 5%;
+        margin-bottom: 5%;
         .footerLogo {
             display: flex;
             justify-content: flex-start;
@@ -320,7 +318,7 @@ body {
         }
         .footerEmail {
             padding-top: 5%;
-            
+
             h2 {
                 @include resetmp();
                 @include fonth1();
@@ -343,31 +341,43 @@ body {
                 @include fonth5();
                 font-size: 0.8rem;
             }
-            a{
+            a {
                 color: var(--color30);
                 @include fontButton02();
                 padding-top: 2%;
             }
+            .arrowBox {
+                @include resetmp();
+                display: flex;
+                justify-content: flex-start;
+                align-items: end;
+                .arrow {
+                    width: 15px;
+                    height: 25px;
+                    transform: rotate(-45deg);
+                    margin-left:2% ;
+                }
+            }
         }
 
-        .footerEnd{
+        .footerEnd {
             padding-top: 15%;
-            h5{
+            h5 {
                 @include fonth5();
                 font-weight: 400;
                 font-size: 0.8rem;
                 opacity: 0.5;
             }
-            p{
+            p {
                 @include fontText();
-                width: 70%
+                width: 70%;
             }
-            .span{
+            .span {
                 @include fontText();
                 color: var(--color30);
                 padding-top: 10%;
                 font-size: 0.6rem;
-                font-weight: 500;;
+                font-weight: 500;
             }
         }
     }

@@ -86,7 +86,7 @@ body .box .header .headerNav .nav .nav-item {
   padding: 0%;
   margin: 0%;
   padding-left: 0%;
-  padding-right: 15%;
+  padding-left: 15%;
 }
 
 body .box .header .headerNav a {
@@ -426,6 +426,28 @@ body footer .footerLink a {
   font-family: var(--fontWork);
   font-weight: 500;
   padding-top: 2%;
+}
+
+body footer .footerLink .arrowBox {
+  padding: 0%;
+  margin: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+body footer .footerLink .arrowBox .arrow {
+  width: 15px;
+  height: 25px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-left: 2%;
 }
 
 body footer .footerEnd {
