@@ -114,22 +114,23 @@ body .box .home {
 body .box .home h1 {
   font-family: var(--fontWork);
   font-weight: 420;
-  letter-spacing: -0.1rem;
-  font-size: 3rem;
+  letter-spacing: -0.2rem;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 body .box .home h1 span {
   font-family: var(--fontRob);
   font-weight: 0;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 body .box .home p {
   font-family: var(--fontWork);
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   letter-spacing: -0.005rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   padding-top: 5%;
 }
 
@@ -231,8 +232,9 @@ body .box .about .aboutHead .profilePicture {
 body .box .about .aboutHead h1 {
   font-family: var(--fontWork);
   font-weight: 420;
-  letter-spacing: -0.1rem;
-  font-size: 3rem;
+  letter-spacing: -0.2rem;
+  font-size: 4rem;
+  line-height: 4rem;
   padding-bottom: 4%;
   padding-top: 10%;
 }
@@ -286,9 +288,9 @@ body .box .about .aboSec .aboutGroup .aboutItem h2 {
 body .box .about .aboSec .aboutGroup .aboutItem p {
   font-family: var(--fontWork);
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   letter-spacing: -0.005rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   font-size: 0.6rem;
 }
 
@@ -400,8 +402,9 @@ body footer .footerEmail h2 {
   margin: 0%;
   font-family: var(--fontWork);
   font-weight: 420;
-  letter-spacing: -0.1rem;
-  font-size: 3rem;
+  letter-spacing: -0.2rem;
+  font-size: 4rem;
+  line-height: 4rem;
   font-size: 2.5rem;
 }
 
@@ -492,18 +495,18 @@ body footer .footerEnd p {
   padding-top: 2%;
   font-family: var(--fontWork);
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   letter-spacing: -0.005rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   width: 100%;
 }
 
 body footer .footerEnd .span {
   font-family: var(--fontWork);
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   letter-spacing: -0.005rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   color: var(--color30);
   padding-top: 10%;
   font-size: 0.6rem;

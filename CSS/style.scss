@@ -21,14 +21,15 @@
 @mixin fonth1 {
     font-family: var(--fontWork);
     font-weight: 420;
-    letter-spacing: -0.1rem;
-    font-size: 3rem;
+    letter-spacing: -0.2rem;
+    font-size: 4rem;
+    line-height: 4rem;
 }
 
 @mixin fonth2 {
     font-family: var(--fontRob);
     font-weight: 0;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 @mixin fonth3 {
@@ -55,9 +56,10 @@
 @mixin fontText {
     font-family: var(--fontWork);
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     letter-spacing: -0.005rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
+    
 }
 
 @mixin fontButton01 {
