@@ -43,6 +43,7 @@
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
+    line-height: 2rem;
 }
 
 @mixin fonth5 {
@@ -59,21 +60,18 @@
     font-size: 0.95rem;
     letter-spacing: -0.005rem;
     line-height: 1.2rem;
-    
 }
 
 @mixin fontButton01 {
     font-family: var(--fontWork);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--color30);
 }
-
 
 @mixin fontButton02 {
     font-family: var(--fontWork);
     font-weight: 500;
-    
 }
 
 @mixin fontTextMedium {
@@ -93,9 +91,20 @@
 }
 
 @mixin btn {
-    padding: 4%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 1.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--color60Aux);
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    @include fontButton01();
+}
+
+@mixin btnAux {
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: var(--color60Aux);
     border: none;
     border-radius: 2rem;
@@ -117,7 +126,7 @@ body {
             .headerLogo {
                 display: flex;
                 justify-content: flex-start;
-                align-items: end;                
+                align-items: end;
                 //background-color: greenyellow;
                 h5 {
                     @include resetmp();
@@ -130,7 +139,6 @@ body {
                 }
             }
             .headerNav {
-                
                 @include resetmp();
                 width: 100%;
 
@@ -153,11 +161,9 @@ body {
                             //background-color: #b73c3c;
                             font-size: 0.8rem;
                             font-weight: 500;
-                            
                         }
                     }
                 }
-             
             }
         }
         // HOME
@@ -183,8 +189,9 @@ body {
                 padding-top: 5%;
                 .btn {
                     @include btn();
-                    background-color: var(--color10);
-                    color: var(--color60);
+                    background-color: var(--color60);
+                    color: var(--color10);
+                    border: var(--color10) solid 1.5px;
                 }
                 .btn:hover {
                     opacity: 100%;
@@ -208,16 +215,15 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    
-                    p{
+                    // align-items: center;
+                    p {
                         padding-top: 5%;
                         @include fontText();
                         text-align: center;
                     }
-                    .btn{                        
+                    .btn {
                         width: 100%;
-                        @include btn();
-                        
+                        @include btnAux();
                     }
 
                     .porBox {
@@ -234,7 +240,6 @@ body {
                     }
                     .porBoxB {
                         background-image: url("../img/logos_02.jpg");
-                        
                     }
                     .porBoxC {
                         background-image: url("../img/web_design_01.jpg");
@@ -267,6 +272,7 @@ body {
             }
             .aboSec {
                 padding-top: 10%;
+
                 h1 {
                     @include fonth4();
                     font-size: 1.1rem;
@@ -277,8 +283,8 @@ body {
                 .aboutGroup {
                     border-top: var(--color30) solid 0.1rem;
                     padding-top: 5%;
+                    margin-top: -2%;
                     .aboutItem {
-                        
                         h2 {
                             @include fontTextMedium();
                             color: var(--color10);
@@ -313,17 +319,16 @@ body {
             }
             .btnGroup {
                 @include resetmp();
-                padding-top: 5%;
+
                 padding-bottom: 5%;
                 .btnBox {
                     @include resetmp();
                     display: flex;
-                    justify-content: flex-end;
+                    flex-direction: column;
+
                     .btn {
-                        @include btn();
-                        background-color: var(--color60Aux);
-                        color: var(--color30);
-                        margin-left: 10%;
+                        margin-top: 5%;
+                        @include btnAux();
                     }
                 }
             }
@@ -331,13 +336,15 @@ body {
     }
     footer {
         background-color: #ece4ce66;
-        padding: 15%;
+        padding-top: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
         border-top-right-radius: 1.5rem;
         border-top-left-radius: 1.5rem;
         .footerLogo {
             display: flex;
             justify-content: flex-start;
-            align-items: end;            
+            align-items: end;
             //background-color: greenyellow;
             h5 {
                 @include resetmp();
@@ -364,10 +371,11 @@ body {
             a {
                 @include fontTextLink();
                 color: var(--color30);
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
         }
         .footerLink {
+            @include resetmp();
             padding-top: 15%;
             display: flex;
             flex-direction: column;
@@ -389,22 +397,24 @@ body {
                     width: 15px;
                     height: 25px;
                     transform: rotate(-45deg);
-                    margin-left:2% ;
+                    margin-left: 2%;
                 }
             }
         }
 
         .footerEnd {
+            @include resetmp();
             padding-top: 15%;
             h5 {
                 @include fonth5();
                 font-weight: 500;
-                font-size: 0.65rem;
+                font-size: 0.8rem;
                 opacity: 0.5;
                 text-align: left;
+
             }
             p {
-                padding-top:2%;
+                padding-top: 2%;
                 @include fontText();
                 width: 100%;
             }
@@ -412,10 +422,11 @@ body {
                 @include fontText();
                 color: var(--color30);
                 padding-top: 10%;
-                font-size: 0.6rem;
-                font-weight: 500;
+                font-size: 0.8rem;
+                //font-weight: 500;
             }
         }
     }
 }
+
 @import "_576.scss";

@@ -141,19 +141,20 @@ body .box .home .btnBox {
 }
 
 body .box .home .btnBox .btn {
-  padding: 4%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding: 1.5%;
+  padding-left: 10%;
+  padding-right: 10%;
   background-color: var(--color60Aux);
   border: none;
   border-radius: 2rem;
   text-decoration: none;
   font-family: var(--fontWork);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--color30);
-  background-color: var(--color10);
-  color: var(--color60);
+  background-color: var(--color60);
+  color: var(--color10);
+  border: var(--color10) solid 1.5px;
 }
 
 body .box .home .btnBox .btn:hover {
@@ -168,6 +169,7 @@ body .box .portfolio .porRow h5 {
   font-family: var(--fontWork);
   font-weight: 500;
   letter-spacing: -0.004rem;
+  line-height: 2rem;
   font-size: 1.1rem;
   padding-left: 4%;
 }
@@ -201,16 +203,16 @@ body .box .portfolio .porRow .porColCss p {
 
 body .box .portfolio .porRow .porColCss .btn {
   width: 100%;
-  padding: 4%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
   background-color: var(--color60Aux);
   border: none;
   border-radius: 2rem;
   text-decoration: none;
   font-family: var(--fontWork);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--color30);
 }
 
@@ -266,6 +268,7 @@ body .box .about .aboutHead p {
   font-family: var(--fontWork);
   font-weight: 500;
   letter-spacing: -0.004rem;
+  line-height: 2rem;
   font-size: 1.1rem;
 }
 
@@ -277,6 +280,7 @@ body .box .about .aboSec h1 {
   font-family: var(--fontWork);
   font-weight: 500;
   letter-spacing: -0.004rem;
+  line-height: 2rem;
   font-size: 1.1rem;
 }
 
@@ -290,6 +294,7 @@ body .box .about .aboSec h1 span {
 body .box .about .aboSec .aboutGroup {
   border-top: var(--color30) solid 0.1rem;
   padding-top: 5%;
+  margin-top: -2%;
 }
 
 body .box .about .aboSec .aboutGroup .aboutItem h2 {
@@ -343,7 +348,6 @@ body .box .about .aboSec .aboutGroup .aboutItem .colC {
 body .box .about .btnGroup {
   padding: 0%;
   margin: 0%;
-  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -353,31 +357,32 @@ body .box .about .btnGroup .btnBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body .box .about .btnGroup .btnBox .btn {
-  padding: 4%;
-  padding-left: 15%;
-  padding-right: 15%;
+  margin-top: 5%;
+  padding: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
   background-color: var(--color60Aux);
   border: none;
   border-radius: 2rem;
   text-decoration: none;
   font-family: var(--fontWork);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--color30);
-  background-color: var(--color60Aux);
-  color: var(--color30);
-  margin-left: 10%;
 }
 
 body footer {
   background-color: #ece4ce66;
-  padding: 15%;
+  padding-top: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
 }
@@ -440,10 +445,12 @@ body footer .footerEmail a {
   letter-spacing: -0.005rem;
   text-decoration: underline;
   color: var(--color30);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 body footer .footerLink {
+  padding: 0%;
+  margin: 0%;
   padding-top: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,6 +500,8 @@ body footer .footerLink .arrowBox .arrow {
 }
 
 body footer .footerEnd {
+  padding: 0%;
+  margin: 0%;
   padding-top: 15%;
 }
 
@@ -503,7 +512,7 @@ body footer .footerEnd h5 {
   font-size: 0.8rem;
   text-align: justify;
   font-weight: 500;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   opacity: 0.5;
   text-align: left;
 }
@@ -526,8 +535,7 @@ body footer .footerEnd .span {
   line-height: 1.2rem;
   color: var(--color30);
   padding-top: 10%;
-  font-size: 0.6rem;
-  font-weight: 500;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 576px) {
