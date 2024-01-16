@@ -579,7 +579,8 @@ body footer .footerEnd .span {
   body .box .portfolio .porRow .porColCss .btn {
     width: 100%;
     padding: 1%;
-    margin-left: 0%;
+    margin-left: 4%;
+    margin-top: 2%;
     width: 30%;
     background-color: var(--color60Aux);
     border: none;
@@ -589,7 +590,6 @@ body footer .footerEnd .span {
     font-weight: 500;
     font-size: 1.3rem;
     color: var(--color30);
-    margin-left: 4%;
   }
   body .box .portfolio .porRow .porColCss .porBox {
     background-color: rgb(178, 178, 247);
@@ -727,7 +727,8 @@ body footer .footerEnd .span {
   body .box .about .btnGroup .btnBox .btn {
     margin-top: 5%;
     padding: 1%;
-    margin-left: 0%;
+    margin-left: 4%;
+    margin-top: 2%;
     width: 30%;
     background-color: var(--color60Aux);
     border: none;
