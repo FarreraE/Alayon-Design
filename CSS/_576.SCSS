@@ -313,17 +313,19 @@
                     }
                 }
                 .btnGroup {
-                    @include resetmp();
-
+                    //@include resetmp();
+                    
+                    //background-color: red;
                     padding-bottom: 5%;
                     .btnBox {
                         @include resetmp();
                         display: flex;
-                        flex-direction: column;
-
+                        flex-direction: row;
+                        justify-content: space-between;
                         .btn {
                             margin-top: 5%;
                             @include btnAux();
+                            width: 40%;
                         }
                     }
                 }
@@ -357,11 +359,9 @@
                 h2 {
                     @include resetmp();
                     @include fonth1();
-                    
-                    
+
                     span {
                         @include fonth3();
-                      
                     }
                 }
                 a {

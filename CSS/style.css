@@ -284,8 +284,6 @@ body .box .about .aboSec .aboutGroup .aboutItem .colC {
   text-align: center;
 }
 body .box .about .btnGroup {
-  padding: 0%;
-  margin: 0%;
   padding-bottom: 5%;
 }
 body .box .about .btnGroup .btnBox {
@@ -715,15 +713,14 @@ body footer .footerEnd .span {
     text-align: center;
   }
   body .box .about .btnGroup {
-    padding: 0%;
-    margin: 0%;
     padding-bottom: 5%;
   }
   body .box .about .btnGroup .btnBox {
     padding: 0%;
     margin: 0%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
   body .box .about .btnGroup .btnBox .btn {
     margin-top: 5%;
@@ -738,6 +735,7 @@ body footer .footerEnd .span {
     font-weight: 500;
     font-size: 1.5rem;
     color: var(--color30);
+    width: 40%;
   }
   body footer {
     background-color: rgba(236, 228, 206, 0.4);
