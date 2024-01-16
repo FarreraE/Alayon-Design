@@ -1,17 +1,17 @@
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 2000px) {
     /* Estilos específicos para pantallas pequeñas */
     @mixin fonth1 {
         font-family: var(--fontWork);
         font-weight: 420;
         letter-spacing: -0.2rem;
-        font-size: 4.5rem;
+        font-size: 4.6rem;
         line-height: 5rem;
     }
 
     @mixin fonth2 {
         font-family: var(--fontRob);
         font-weight: 0;
-        font-size: 4.5rem;
+        font-size: 4.6rem;
     }
 
     @mixin fonth3 {
@@ -41,15 +41,15 @@
     @mixin fontText {
         font-family: var(--fontWork);
         font-weight: 400;
-        font-size: 1rem;
-        letter-spacing: -0.005rem;
-        line-height: 1.5rem;
+        font-size: 0.7rem;
+        letter-spacing: -0.05rem;
+        line-height: 0.8rem;
     }
 
     @mixin fontButton01 {
         font-family: var(--fontWork);
         font-weight: 500;
-        font-size: 1.3rem;
+        font-size: 0.8rem;
         color: var(--color30);
     }
 
@@ -77,14 +77,13 @@
 
     @mixin btn {
         padding: 1.5%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         background-color: var(--color60Aux);
         border: none;
         border-radius: 2rem;
         text-decoration: none;
         @include fontButton01();
-        
     }
 
     @mixin btnAux {
@@ -104,83 +103,80 @@
 
     body {
         background-color: var(--color60);
+        padding: 3%;
         .box {
             @include resetmp();
-            padding: 5%;
+            //padding: 1%;
             // Header
-          /*  .header {
-                @include resetmp();
-                display: flex;
-                justify-content: space-between;
-                // background-color: purple;
-                .headerLogo {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: end;
-                    //background-color: greenyellow;
-                    h5 {
-                        @include resetmp();
-                        @include fonth5();
-                        font-weight: 500;
-                        padding-left: 5%;
-                    }
-                    .logo {
-                        width: 8%;
-                        padding-bottom: 2%;
-                    }
-                }
+            .header {
                 .headerNav {
-                    @include resetmp();
-                    width: 100%;
-
                     .nav {
-                        @include resetmp();
-                        display: flex;
-                        justify-content: end;
-                        align-items: end;
-                        list-style: none;
                         .nav-item {
                             @include resetmp();
                             padding-left: 0%;
-                            padding-left: 15%;
-                            a {
-                                @include resetmp();
-                                @include fonth5();
-                                padding-bottom: -50%;
-                                color: var(--color30);
-                                text-decoration: none;
-                                font-weight: 500;
-                            }
+                            padding-left: 5%;
+                        }
+                        .contact {
+                            display: block;
+                            // background-color: aquamarine;
                         }
                     }
                 }
-            }*/
+            }
             // HOME
             .home {
-                @include resetmp();
-                padding-top: 15%;
-                h1 {
-                    @include fonth1();
+                display: none;
+            }
+            .homeTwo {
+                display: block;
+                padding-top: 10%;
+                .branding {
+                    @include resetmp();
+                    width: 55%;
+                    //background-color: aqua;
+                    text-align: right;
+                    h1 {
+                        @include resetmp();
+                        @include fonth1();
+                    }
                     span {
                         @include fonth2();
                     }
                 }
-                p {
-                    @include fontText();
-                    padding-top: 2%;
-                }
-                .btnBox {
+                .webDesign {
                     @include resetmp();
-                    padding-top: 2%;
-                    .btn {
-                        @include btn();
-                        background-color: var(--color60);
-                        color: var(--color10);
-                        border: var(--color10) solid 1.5px;
+                    display: flex;
+                    //background-color: aqua;
+                    text-align: left;
+                    margin-left: auto;
+                    align-items: end;
+                    .btnBox {
+                        @include resetmp();
+                        width: 40%;
+                        //background-color: red;
+                        display: flex;
+                        justify-content: center;
+                        align-items: end;
+
+                        .btn {
+                            @include resetmp();
+                            @include btn();
+                            background-color: transparent;
+                            border: var(--color10) solid 1.5px;
+                            color: var(--color10);
+                            margin-bottom: 4.5%;
+                        }
                     }
-                    .btn:hover {
-                        opacity: 100%;
+                    h1 {
+                        @include resetmp();
+                        @include fonth1();
                     }
+                }
+                .text {
+                    @include fontText();
+                    padding-top: 10%;
+                    padding-left: 7%;
+                    padding-right: 5%;
                 }
             }
             // PORTFOLIO
@@ -192,14 +188,21 @@
                         @include fonth4();
                         padding-left: 4%;
                     }
+                    .porB {
+                        background-color: yellow;
+                    }
+                    .porC {
+                        background-color: aqua;
+                        height: inherit;
+                    }
+
                     .porColCss {
                         @include resetmp();
-                        padding-top: 10%;
-                        padding-bottom: 5%;
+                        padding: 5%;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        // align-items: center;
+                        //background-color: red;
                         p {
                             padding-top: 5%;
                             @include fontText();
@@ -210,12 +213,12 @@
                         .btn {
                             width: 100%;
                             @include btnAux();
-                            
+                            display: none;
                         }
 
                         .porBox {
                             background-color: rgb(178, 178, 247);
-                            height: 380px;
+                            height: 300px;
                             border-radius: 1rem;
                             opacity: 1;
                             background-repeat: none;
@@ -223,14 +226,17 @@
                             margin-top: 2%;
                         }
                         .porBoxA {
-                            background-image: url("../img/graphic_design_01.jpg");
-                            background-color: red;
+                            background-image: url("../img/logos_01.jpg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
                         }
                         .porBoxB {
                             background-image: url("../img/logos_02.jpg");
                         }
                         .porBoxC {
-                            background-image: url("../img/web_design_01.jpg");
+                            background-image: url("../img/graphic_design_01.jpg");
+                            
                         }
                     }
                 }
@@ -238,10 +244,11 @@
             // ABOUT
             .about {
                 padding-top: 15%;
+
                 .aboutHead {
                     .profilePicture {
                         width: 30%;
-                        border-radius: 5rem;
+                        border-radius: 50rem;
                     }
                     h1 {
                         @include fonth1();
@@ -319,7 +326,7 @@
                 }
                 .btnGroup {
                     //@include resetmp();
-                    
+
                     //background-color: red;
                     padding-bottom: 5%;
                     .btnBox {
@@ -343,7 +350,7 @@
             //padding-right: 5%;
             border-top-right-radius: 1.5rem;
             border-top-left-radius: 1.5rem;
-           /* .footerLogo {
+            /* .footerLogo {
                 display: flex;
                 justify-content: flex-start;
                 align-items: end;

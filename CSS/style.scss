@@ -116,6 +116,7 @@
 
 body {
     background-color: var(--color60);
+
     .box {
         @include resetmp();
         padding: 5%;
@@ -164,10 +165,16 @@ body {
                             font-weight: 500;
                         }
                     }
+                    .contact {
+                        display: none;
+                    }
                 }
             }
         }
         // HOME
+        .homeTwo {
+            display: none;
+        }
         .home {
             @include resetmp();
             padding-top: 15%;
@@ -233,12 +240,21 @@ body {
                     }
                     .porBoxA {
                         background-image: url("../img/graphic_design_01.jpg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
                     }
                     .porBoxB {
                         background-image: url("../img/logos_02.jpg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
                     }
                     .porBoxC {
                         background-image: url("../img/web_design_01.jpg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
                     }
                 }
             }
@@ -278,7 +294,7 @@ body {
                 }
                 .aboutGroup {
                     border-top: var(--color30) solid 0.1rem;
-                    padding-top: 5%;                  
+                    padding-top: 5%;
                     .aboutItem {
                         h2 {
                             margin-top: auto;
@@ -288,13 +304,11 @@ body {
                             text-align: start;
                         }
                         p {
-                            
                             @include fontText();
                             //cambiar
                             font-size: 0.6rem;
                         }
                         a {
-                            
                             @include fontTextMedium();
                             text-decoration: underline;
                             opacity: 0.5;
@@ -421,10 +435,11 @@ body {
                 color: var(--color30);
                 padding-top: 10%;
                 //cambiar
-                font-size: 0.8rem;                
+                font-size: 0.8rem;
             }
         }
     }
 }
 
 @import "_576.scss";
+@import "_768.scss";
