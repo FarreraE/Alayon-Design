@@ -1,6 +1,423 @@
-@media (min-width: 576px) {
-    /* Estilos específicos para pantallas extra pequeñas */
-    body{
-        background-color: red;
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Estilos específicos para pantallas pequeñas */
+    @mixin fonth1 {
+        font-family: var(--fontWork);
+        font-weight: 420;
+        letter-spacing: -0.2rem;
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+
+    @mixin fonth2 {
+        font-family: var(--fontRob);
+        font-weight: 0;
+        font-size: 4.5rem;
+    }
+
+    @mixin fonth3 {
+        font-family: var(--fontRob);
+        font-style: italic;
+        font-weight: 0;
+        font-size: 4.5rem;
+        //background-color: #b73c3c;
+    }
+    @mixin fonth4 {
+        font-family: var(--fontWork);
+        font-weight: 500;
+        letter-spacing: -0.004rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    @mixin fonth5 {
+        font-family: var(--fontWork);
+        font-weight: 400;
+        letter-spacing: 0%;
+        font-size: 1.2rem;
+        text-align: justify;
+        //background-color: red;
+    }
+
+    @mixin fontText {
+        font-family: var(--fontWork);
+        font-weight: 400;
+        font-size: 1rem;
+        letter-spacing: -0.005rem;
+        line-height: 1.5rem;
+    }
+
+    @mixin fontButton01 {
+        font-family: var(--fontWork);
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: var(--color30);
+    }
+
+    @mixin fontButton02 {
+        font-family: var(--fontWork);
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    @mixin fontTextMedium {
+        font-family: var(--fontWork);
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: -0.005rem;
+        line-height: 0.8rem;
+    }
+
+    @mixin fontTextLink {
+        font-family: var(--fontWork);
+        font-weight: 400;
+        font-size: 1.8rem;
+        letter-spacing: -0.005rem;
+        text-decoration: underline;
+    }
+
+    @mixin btn {
+        padding: 1.5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: var(--color60Aux);
+        border: none;
+        border-radius: 2rem;
+        text-decoration: none;
+        @include fontButton01();
+    }
+
+    @mixin btnAux {
+        padding: 1%;
+        margin-left: 0%;
+        //padding-left: 10%;
+        //padding-right: 10%;
+        width: 30%;
+        background-color: var(--color60Aux);
+        border: none;
+        border-radius: 2rem;
+        text-decoration: none;
+        @include fontButton01();
+    }
+
+    body {
+        background-color: var(--color60);
+        .box {
+            @include resetmp();
+            padding: 5%;
+            // Header
+            .header {
+                @include resetmp();
+                display: flex;
+                justify-content: space-between;
+                // background-color: purple;
+                .headerLogo {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: end;
+                    //background-color: greenyellow;
+                    h5 {
+                        @include resetmp();
+                        @include fonth5();
+                        font-weight: 500;
+                        padding-left: 5%;
+                    }
+                    .logo {
+                        width: 8%;
+                        padding-bottom: 2%;
+                    }
+                }
+                .headerNav {
+                    @include resetmp();
+                    width: 100%;
+
+                    .nav {
+                        @include resetmp();
+                        display: flex;
+                        justify-content: end;
+                        align-items: end;
+                        list-style: none;
+                        .nav-item {
+                            @include resetmp();
+                            padding-left: 0%;
+                            padding-left: 15%;
+                            a {
+                                @include resetmp();
+                                @include fonth5();
+                                padding-bottom: -50%;
+                                color: var(--color30);
+                                text-decoration: none;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+            // HOME
+            .home {
+                @include resetmp();
+                padding-top: 15%;
+                h1 {
+                    @include fonth1();
+                    span {
+                        @include fonth2();
+                    }
+                }
+                p {
+                    @include fontText();
+                    padding-top: 2%;
+                }
+                .btnBox {
+                    @include resetmp();
+                    padding-top: 2%;
+                    .btn {
+                        @include btn();
+                        background-color: var(--color60);
+                        color: var(--color10);
+                        border: var(--color10) solid 1.5px;
+                    }
+                    .btn:hover {
+                        opacity: 100%;
+                    }
+                }
+            }
+            // PORTFOLIO
+            .portfolio {
+                padding-top: 15%;
+                .porRow {
+                    //background-color: #282b30;
+                    h5 {
+                        @include fonth4();
+                        padding-left: 4%;
+                    }
+                    .porColCss {
+                        @include resetmp();
+                        padding-top: 10%;
+                        padding-bottom: 5%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        // align-items: center;
+                        p {
+                            padding-top: 5%;
+                            @include fontText();
+                            text-align: left;
+                            //background-color: red;
+                        }
+                        .btn {
+                            width: 100%;
+                            @include btnAux();
+                        }
+
+                        .porBox {
+                            background-color: rgb(178, 178, 247);
+                            height: 380px;
+                            border-radius: 1rem;
+                            opacity: 1;
+                            background-repeat: none;
+                            background-size: cover;
+                            margin-top: 2%;
+                        }
+                        .porBoxA {
+                            background-image: url("../img/graphic_design_01.jpg");
+                            background-color: red;
+                        }
+                        .porBoxB {
+                            background-image: url("../img/logos_02.jpg");
+                        }
+                        .porBoxC {
+                            background-image: url("../img/web_design_01.jpg");
+                        }
+                    }
+                }
+            }
+            // ABOUT
+            .about {
+                padding-top: 15%;
+                .aboutHead {
+                    .profilePicture {
+                        width: 25%;
+                        border-radius: 5rem;
+                    }
+                    h1 {
+                        @include fonth1();
+                        padding-bottom: 4%;
+                        padding-top: 10%;
+                        span {
+                            @include fonth3();
+                            //background-color: red;
+                        }
+                    }
+                    p {
+                        @include fonth4();
+                        //background-color: red;
+                    }
+                }
+                .aboSec {
+                    padding-top: 10%;
+
+                    h1 {
+                        @include fonth4();
+                        span {
+                            @include fonth3();
+                        }
+                    }
+                    .aboutGroup {
+                        border-top: var(--color30) solid 0.1rem;
+                        padding-top: 5%;
+                        .aboutItem {
+                            padding-top: 2%;
+                            h2 {
+                                margin: auto;
+                                @include fontTextMedium();
+                                color: var(--color10);
+                                text-align: start;
+                                line-height: 1.2rem;
+                                //background-color: red;
+                                height: 100%;
+                            }
+                            p {
+                                height: 100%;
+                                @include fontText();
+                                //cambiar
+                                font-size: 0.9rem;
+                                padding-top: 5%;
+                                // background-color: red;
+                            }
+                            a {
+                                height: 100%;
+                                @include fontTextMedium();
+                                text-decoration: underline;
+                                opacity: 0.5;
+                                text-align: start;
+                                //background-color: red;
+                                height: 100%;
+                            }
+
+                            .colA {
+                                @include resetmp();
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+                            }
+                            .colB {
+                                @include resetmp();
+                                text-align: start;
+                                padding-right: 5%;
+                            }
+                            .colC {
+                                @include resetmp();
+                                text-align: center;
+                                //padding-left: 5%
+                            }
+                        }
+                    }
+                }
+                .btnGroup {
+                    @include resetmp();
+
+                    padding-bottom: 5%;
+                    .btnBox {
+                        @include resetmp();
+                        display: flex;
+                        flex-direction: column;
+
+                        .btn {
+                            margin-top: 5%;
+                            @include btnAux();
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            background-color: #ece4ce66;
+            padding-top: 10%;
+            //padding-left: 5%;
+            //padding-right: 5%;
+            border-top-right-radius: 1.5rem;
+            border-top-left-radius: 1.5rem;
+            .footerLogo {
+                display: flex;
+                justify-content: flex-start;
+                align-items: end;
+                //background-color: greenyellow;
+                h5 {
+                    @include resetmp();
+                    @include fonth5();
+                    font-weight: 500;
+                    padding-left: 5%;
+                }
+                .logo {
+                    width: 5%;
+                }
+            }
+            .footerEmail {
+                padding-top: 5%;
+
+                h2 {
+                    @include resetmp();
+                    @include fonth1();
+                    
+                    
+                    span {
+                        @include fonth3();
+                      
+                    }
+                }
+                a {
+                    @include fontTextLink();
+                    color: var(--color30);
+                }
+            }
+            .footerLink {
+                @include resetmp();
+                padding-top: 5%;
+                display: flex;
+                flex-direction: column;
+                h5 {
+                    @include fonth5();
+                }
+                a {
+                    color: var(--color30);
+                    @include fontButton02();
+                    padding-top: 2%;
+                }
+                .arrowBox {
+                    @include resetmp();
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: end;
+                    .arrow {
+                        width: 15px;
+                        height: 25px;
+                        transform: rotate(-45deg);
+                        margin-left: 2%;
+                    }
+                }
+            }
+
+            .footerEnd {
+                @include resetmp();
+                padding-top: 5%;
+                h5 {
+                    @include fonth5();
+                    font-weight: 500;
+                    opacity: 0.5;
+                    text-align: left;
+                }
+                p {
+                    padding-top: 2%;
+                    @include fontText();
+                    width: 100%;
+                }
+                .span {
+                    @include fontText();
+                    color: var(--color30);
+                    padding-top: 10%;
+                    //cambiar
+                    font-size: 0.8rem;
+                }
+            }
+        }
     }
 }
