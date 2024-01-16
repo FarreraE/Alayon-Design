@@ -574,6 +574,7 @@ body footer .footerEnd .span {
     letter-spacing: -0.005rem;
     line-height: 1.5rem;
     text-align: left;
+    padding-left: 4%;
   }
   body .box .portfolio .porRow .porColCss .btn {
     width: 100%;
@@ -588,6 +589,7 @@ body footer .footerEnd .span {
     font-weight: 500;
     font-size: 1.3rem;
     color: var(--color30);
+    margin-left: 4%;
   }
   body .box .portfolio .porRow .porColCss .porBox {
     background-color: rgb(178, 178, 247);

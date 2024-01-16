@@ -203,11 +203,13 @@
                             padding-top: 5%;
                             @include fontText();
                             text-align: left;
+                            padding-left: 4%;
                             //background-color: red;
                         }
                         .btn {
                             width: 100%;
                             @include btnAux();
+                            margin-left: 4%;
                         }
 
                         .porBox {
