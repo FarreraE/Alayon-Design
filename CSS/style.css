@@ -537,7 +537,7 @@ body footer .footerEnd .span {
     text-decoration: none;
     font-family: var(--fontWork);
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--color30);
     background-color: var(--color60);
     color: var(--color10);
@@ -586,7 +586,7 @@ body footer .footerEnd .span {
     text-decoration: none;
     font-family: var(--fontWork);
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--color30);
   }
   body .box .portfolio .porRow .porColCss .porBox {
@@ -733,7 +733,7 @@ body footer .footerEnd .span {
     text-decoration: none;
     font-family: var(--fontWork);
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--color30);
     width: 40%;
   }

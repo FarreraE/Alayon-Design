@@ -49,7 +49,7 @@
     @mixin fontButton01 {
         font-family: var(--fontWork);
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: var(--color30);
     }
 
@@ -84,6 +84,7 @@
         border-radius: 2rem;
         text-decoration: none;
         @include fontButton01();
+        
     }
 
     @mixin btnAux {
@@ -97,6 +98,7 @@
         border-radius: 2rem;
         text-decoration: none;
         @include fontButton01();
+        //background-color: var(--color10);
     }
 
     body {
