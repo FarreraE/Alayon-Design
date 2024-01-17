@@ -20,6 +20,7 @@ body .box {
   padding: 0%;
   margin: 0%;
   padding: 5%;
+  padding-bottom: 0%;
 }
 body .box .header {
   padding: 0%;
@@ -78,8 +79,12 @@ body .box .header .headerNav .nav .nav-item a {
   color: var(--color30);
   text-decoration: none;
   font-weight: 500;
+  text-align: end;
 }
 body .box .header .headerNav .nav .contact {
+  display: block;
+}
+body .box .header .headerNav .nav .contact2 {
   display: none;
 }
 body .box .homeTwo {
@@ -125,7 +130,7 @@ body .box .home .btnBox .btn {
   text-decoration: none;
   font-family: var(--fontWork);
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color30);
   background-color: var(--color60);
   color: var(--color10);
@@ -174,7 +179,7 @@ body .box .portfolio .porRow .porColCss .btn {
   text-decoration: none;
   font-family: var(--fontWork);
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color30);
 }
 body .box .portfolio .porRow .porColCss .porBox {
@@ -206,6 +211,9 @@ body .box .portfolio .porRow .porColCss .porBoxC {
 }
 body .box .about {
   padding-top: 15%;
+}
+body .box .about .btnGroup2 {
+  display: none;
 }
 body .box .about .aboutHead .profilePicture {
   width: 25%;
@@ -318,8 +326,12 @@ body .box .about .btnGroup .btnBox .btn {
   text-decoration: none;
   font-family: var(--fontWork);
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color30);
+}
+body .box .about .btnGroup .btnBox .git {
+  background-color: var(--color30);
+  color: var(--color60);
 }
 body footer {
   background-color: rgba(236, 228, 206, 0.4);
@@ -453,53 +465,54 @@ body footer .footerEnd .span {
     padding: 0%;
     margin: 0%;
     padding: 5%;
+    padding-bottom: 0%;
     /*  .header {
-          @include resetmp();
-          display: flex;
-          justify-content: space-between;
-          // background-color: purple;
-          .headerLogo {
-              display: flex;
-              justify-content: flex-start;
-              align-items: end;
-              //background-color: greenyellow;
-              h5 {
-                  @include resetmp();
-                  @include fonth5();
-                  font-weight: 500;
-                  padding-left: 5%;
-              }
-              .logo {
-                  width: 8%;
-                  padding-bottom: 2%;
-              }
-          }
-          .headerNav {
-              @include resetmp();
-              width: 100%;
+        @include resetmp();
+        display: flex;
+        justify-content: space-between;
+        // background-color: purple;
+        .headerLogo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: end;
+            //background-color: greenyellow;
+            h5 {
+                @include resetmp();
+                @include fonth5();
+                font-weight: 500;
+                padding-left: 5%;
+            }
+            .logo {
+                width: 8%;
+                padding-bottom: 2%;
+            }
+        }
+        .headerNav {
+            @include resetmp();
+            width: 100%;
 
-              .nav {
-                  @include resetmp();
-                  display: flex;
-                  justify-content: end;
-                  align-items: end;
-                  list-style: none;
-                  .nav-item {
-                      @include resetmp();
-                      padding-left: 0%;
-                      padding-left: 15%;
-                      a {
-                          @include resetmp();
-                          @include fonth5();
-                          padding-bottom: -50%;
-                          color: var(--color30);
-                          text-decoration: none;
-                          font-weight: 500;
-                      }
-                  }
-              }
-          }
-      }*/
+            .nav {
+                @include resetmp();
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                list-style: none;
+                .nav-item {
+                    @include resetmp();
+                    padding-left: 0%;
+                    padding-left: 15%;
+                    a {
+                        @include resetmp();
+                        @include fonth5();
+                        padding-bottom: -50%;
+                        color: var(--color30);
+                        text-decoration: none;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }*/
   }
   body .box .home {
     padding: 0%;
@@ -541,7 +554,7 @@ body footer .footerEnd .span {
     text-decoration: none;
     font-family: var(--fontWork);
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--color30);
     background-color: var(--color60);
     color: var(--color10);
@@ -592,7 +605,7 @@ body footer .footerEnd .span {
     text-decoration: none;
     font-family: var(--fontWork);
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--color30);
   }
   body .box .portfolio .porRow .porColCss .porBox {
@@ -740,35 +753,38 @@ body footer .footerEnd .span {
     text-decoration: none;
     font-family: var(--fontWork);
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--color30);
     width: 40%;
   }
   body footer {
-    background-color: rgba(236, 228, 206, 0.4);
-    padding-top: 10%;
+    padding-top: 8%;
+  }
+  body footer .footerMain {
+    background-color: transparent;
+    padding-top: 0%;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
     /* .footerLogo {
-         display: flex;
-         justify-content: flex-start;
-         align-items: end;
-         //background-color: greenyellow;
-         h5 {
-             @include resetmp();
-             @include fonth5();
-             font-weight: 500;
-             padding-left: 5%;
-         }
-         .logo {
-             width: 5%;
-         }
-     }*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: end;
+        //background-color: greenyellow;
+        h5 {
+            @include resetmp();
+            @include fonth5();
+            font-weight: 500;
+            padding-left: 5%;
+        }
+        .logo {
+            width: 5%;
+        }
+    }*/
   }
-  body footer .footerEmail {
+  body footer .footerMain .footerEmail {
     padding-top: 5%;
   }
-  body footer .footerEmail h2 {
+  body footer .footerMain .footerEmail h2 {
     padding: 0%;
     margin: 0%;
     font-family: var(--fontWork);
@@ -776,61 +792,67 @@ body footer .footerEnd .span {
     letter-spacing: -0.2rem;
     font-size: 4.5rem;
     line-height: 5rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
   }
-  body footer .footerEmail h2 span {
+  body footer .footerMain .footerEmail h2 span {
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
     font-size: 4.5rem;
+    font-size: 3.5rem;
   }
-  body footer .footerEmail a {
+  body footer .footerMain .footerEmail a {
     font-family: var(--fontWork);
     font-weight: 400;
     font-size: 1.8rem;
     letter-spacing: -0.005rem;
     text-decoration: underline;
     color: var(--color30);
+    padding-top: 5%;
   }
-  body footer .footerLink {
+  body footer .footerMain .footerLink {
     padding: 0%;
     margin: 0%;
-    padding-top: 5%;
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
   }
-  body footer .footerLink h5 {
+  body footer .footerMain .footerLink h5 {
     font-family: var(--fontWork);
     font-weight: 400;
     letter-spacing: 0%;
     font-size: 1.2rem;
     text-align: justify;
+    font-size: 1rem;
   }
-  body footer .footerLink a {
+  body footer .footerMain .footerLink a {
     color: var(--color30);
     font-family: var(--fontWork);
     font-weight: 500;
     font-size: 1.2rem;
     padding-top: 2%;
+    font-size: 1rem;
   }
-  body footer .footerLink .arrowBox {
+  body footer .footerMain .footerLink .arrowBox {
     padding: 0%;
     margin: 0%;
     display: flex;
     justify-content: flex-start;
     align-items: end;
   }
-  body footer .footerLink .arrowBox .arrow {
+  body footer .footerMain .footerLink .arrowBox .arrow {
     width: 15px;
     height: 25px;
     transform: rotate(-45deg);
     margin-left: 2%;
   }
-  body footer .footerEnd {
+  body footer .footerMain .footerEnd {
     padding: 0%;
     margin: 0%;
-    padding-top: 5%;
+    padding-top: 10%;
   }
-  body footer .footerEnd h5 {
+  body footer .footerMain .footerEnd h5 {
     font-family: var(--fontWork);
     font-weight: 400;
     letter-spacing: 0%;
@@ -839,17 +861,24 @@ body footer .footerEnd .span {
     font-weight: 500;
     opacity: 0.5;
     text-align: left;
+    font-size: 1rem;
   }
-  body footer .footerEnd p {
+  body footer .footerMain .footerEnd p {
     padding-top: 2%;
     font-family: var(--fontWork);
     font-weight: 400;
     font-size: 1rem;
     letter-spacing: -0.005rem;
     line-height: 1.5rem;
+    font-weight: 500;
     width: 100%;
   }
-  body footer .footerEnd .span {
+  body footer .footerMain .pRig {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+  }
+  body footer .footerMain .pRig .span {
     font-family: var(--fontWork);
     font-weight: 400;
     font-size: 1rem;
@@ -858,6 +887,7 @@ body footer .footerEnd .span {
     color: var(--color30);
     padding-top: 10%;
     font-size: 0.8rem;
+    text-align: end;
   }
 }
 @media (min-width: 769px) and (max-width: 2000px) {
@@ -865,19 +895,49 @@ body footer .footerEnd .span {
   body {
     background-color: var(--color60);
     padding: 3%;
+    padding-bottom: 0%;
   }
   body .box {
     padding: 0%;
     margin: 0%;
   }
+  body .box .header .headerLogo {
+    align-items: center;
+  }
+  body .box .header .headerNav .nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
   body .box .header .headerNav .nav .nav-item {
     padding: 0%;
     margin: 0%;
-    padding-left: 0%;
-    padding-left: 5%;
+    padding-right: 0%;
+    padding-left: 10%;
+    text-align: end;
+    width: auto;
   }
   body .box .header .headerNav .nav .contact {
+    display: none;
+  }
+  body .box .header .headerNav .nav .contact2 {
     display: block;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: var(--color60Aux);
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-family: var(--fontWork);
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--color30);
+    background-color: transparent;
+    border: var(--color30) solid 1.5px;
+    margin-left: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
   body .box .home {
     display: none;
@@ -925,7 +985,7 @@ body footer .footerEnd .span {
   body .box .homeTwo .webDesign .btnBox .btn {
     padding: 0%;
     margin: 0%;
-    padding: 1.5%;
+    padding: 1%;
     padding-left: 5%;
     padding-right: 5%;
     background-color: var(--color60Aux);
@@ -961,14 +1021,14 @@ body footer .footerEnd .span {
     padding-right: 5%;
   }
   body .box .portfolio {
-    padding-top: 10%;
+    padding-top: 5%;
   }
   body .box .portfolio .porRow h5 {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
     padding-left: 4%;
   }
   body .box .portfolio .porRow .porB {
@@ -1034,11 +1094,49 @@ body footer .footerEnd .span {
     background-image: url("../img/graphic_design_01.jpg");
   }
   body .box .about {
-    padding-top: 15%;
+    padding: 0%;
+    margin: 0%;
+    padding-top: 5%;
+  }
+  body .box .about .btnGroup2 {
+    display: block;
+    padding-top: 3%;
+  }
+  body .box .about .btnGroup2 .btnBox2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body .box .about .btnGroup2 .btnBox2 .btn {
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: var(--color60Aux);
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-family: var(--fontWork);
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--color30);
+    margin-left: 5%;
+  }
+  body .box .about .btnGroup2 .btnBox2 .git {
+    background-color: var(--color30);
+    color: var(--color60);
+  }
+  body .box .about .aboutHead .horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0%;
+    margin: 0%;
   }
   body .box .about .aboutHead .profilePicture {
-    width: 30%;
+    width: 15%;
     border-radius: 50rem;
+    margin-top: 3%;
+    margin-right: 4%;
   }
   body .box .about .aboutHead h1 {
     font-family: var(--fontWork);
@@ -1046,31 +1144,35 @@ body footer .footerEnd .span {
     letter-spacing: -0.2rem;
     font-size: 4.6rem;
     line-height: 5rem;
-    padding-bottom: 4%;
-    padding-top: 10%;
+    padding: 0%;
+    margin: 0%;
+    font-size: 3rem;
   }
   body .box .about .aboutHead h1 span {
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
     font-size: 4.5rem;
+    font-size: 3rem;
   }
   body .box .about .aboutHead p {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding: 5%;
   }
   body .box .about .aboSec {
-    padding-top: 10%;
+    padding-top: 5%;
   }
   body .box .about .aboSec h1 {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
   }
   body .box .about .aboSec h1 span {
     font-family: var(--fontRob);
@@ -1104,8 +1206,8 @@ body footer .footerEnd .span {
     font-size: 0.7rem;
     letter-spacing: -0.05rem;
     line-height: 0.8rem;
-    font-size: 0.9rem;
-    padding-top: 5%;
+    font-size: 0.8rem;
+    padding-top: 15%;
   }
   body .box .about .aboSec .aboutGroup .aboutItem a {
     height: 100%;
@@ -1141,31 +1243,16 @@ body footer .footerEnd .span {
     padding-bottom: 5%;
   }
   body .box .about .btnGroup .btnBox {
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  body .box .about .btnGroup .btnBox .btn {
-    margin-top: 5%;
-    padding: 1%;
-    margin-left: 4%;
-    margin-top: 2%;
-    width: 30%;
-    background-color: var(--color60Aux);
-    border: none;
-    border-radius: 2rem;
-    text-decoration: none;
-    font-family: var(--fontWork);
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: var(--color30);
-    width: 40%;
+    display: none;
   }
   body footer {
-    background-color: rgba(236, 228, 206, 0.4);
-    padding-top: 10%;
+    padding-top: 8%;
+    margin-top: 8%;
+  }
+  body footer .footerMain {
+    background-color: transparent;
+    padding: 0%;
+    margin: 0%;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
     /* .footerLogo {
@@ -1184,72 +1271,80 @@ body footer .footerEnd .span {
         }
     }*/
   }
-  body footer .footerEmail {
-    padding-top: 5%;
-  }
-  body footer .footerEmail h2 {
+  body footer .footerMain .footerEmail {
     padding: 0%;
     margin: 0%;
+    padding-top: 5%;
+  }
+  body footer .footerMain .footerEmail h2 {
     font-family: var(--fontWork);
     font-weight: 420;
     letter-spacing: -0.2rem;
     font-size: 4.6rem;
     line-height: 5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
-  body footer .footerEmail h2 span {
+  body footer .footerMain .footerEmail h2 span {
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
     font-size: 4.5rem;
+    font-size: 2rem;
   }
-  body footer .footerEmail a {
+  body footer .footerMain .footerEmail a {
     font-family: var(--fontWork);
     font-weight: 400;
     font-size: 1.8rem;
     letter-spacing: -0.005rem;
     text-decoration: underline;
     color: var(--color30);
+    font-size: 1.5rem;
   }
-  body footer .footerLink {
+  body footer .footerMain .footerLink {
     padding: 0%;
     margin: 0%;
     padding-top: 5%;
     display: flex;
     flex-direction: column;
   }
-  body footer .footerLink h5 {
+  body footer .footerMain .footerLink h5 {
     font-family: var(--fontWork);
     font-weight: 400;
     letter-spacing: 0%;
     font-size: 1.2rem;
     text-align: justify;
+    text-align: end;
+    font-size: 1rem;
   }
-  body footer .footerLink a {
+  body footer .footerMain .footerLink a {
     color: var(--color30);
     font-family: var(--fontWork);
     font-weight: 500;
     font-size: 1.2rem;
     padding-top: 2%;
+    text-align: end;
+    font-size: 1rem;
   }
-  body footer .footerLink .arrowBox {
+  body footer .footerMain .footerLink .arrowBox {
     padding: 0%;
     margin: 0%;
     display: flex;
     justify-content: flex-start;
     align-items: end;
   }
-  body footer .footerLink .arrowBox .arrow {
+  body footer .footerMain .footerLink .arrowBox .arrow {
     width: 15px;
     height: 25px;
     transform: rotate(-45deg);
     margin-left: 2%;
   }
-  body footer .footerEnd {
+  body footer .footerMain .footerEnd {
     padding: 0%;
     margin: 0%;
     padding-top: 5%;
   }
-  body footer .footerEnd h5 {
+  body footer .footerMain .footerEnd h5 {
     font-family: var(--fontWork);
     font-weight: 400;
     letter-spacing: 0%;
@@ -1258,17 +1353,24 @@ body footer .footerEnd .span {
     font-weight: 500;
     opacity: 0.5;
     text-align: left;
+    font-size: 0.6rem;
   }
-  body footer .footerEnd p {
+  body footer .footerMain .footerEnd p {
     padding-top: 2%;
     font-family: var(--fontWork);
     font-weight: 400;
     font-size: 0.7rem;
     letter-spacing: -0.05rem;
     line-height: 0.8rem;
-    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
   }
-  body footer .footerEnd .span {
+  body footer .footerMain .pRig {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  body footer .footerMain .pRig .span {
     font-family: var(--fontWork);
     font-weight: 400;
     font-size: 0.7rem;
@@ -1277,5 +1379,6 @@ body footer .footerEnd .span {
     color: var(--color30);
     padding-top: 10%;
     font-size: 0.8rem;
+    text-align: end;
   }
 }/*# sourceMappingURL=style.css.map */

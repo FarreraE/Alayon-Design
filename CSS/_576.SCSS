@@ -49,7 +49,7 @@
     @mixin fontButton01 {
         font-family: var(--fontWork);
         font-weight: 500;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: var(--color30);
     }
 
@@ -84,7 +84,6 @@
         border-radius: 2rem;
         text-decoration: none;
         @include fontButton01();
-        
     }
 
     @mixin btnAux {
@@ -107,8 +106,9 @@
         .box {
             @include resetmp();
             padding: 5%;
+            padding-bottom: 0%;
             // Header
-          /*  .header {
+            /*  .header {
                 @include resetmp();
                 display: flex;
                 justify-content: space-between;
@@ -210,7 +210,6 @@
                         .btn {
                             width: 100%;
                             @include btnAux();
-                            
                         }
 
                         .porBox {
@@ -319,7 +318,7 @@
                 }
                 .btnGroup {
                     //@include resetmp();
-                    
+
                     //background-color: red;
                     padding-bottom: 5%;
                     .btnBox {
@@ -337,13 +336,16 @@
             }
         }
         footer {
-            background-color: #ece4ce66;
-            padding-top: 10%;
-            //padding-left: 5%;
-            //padding-right: 5%;
-            border-top-right-radius: 1.5rem;
-            border-top-left-radius: 1.5rem;
-           /* .footerLogo {
+        
+            padding-top: 8%;
+            .footerMain {
+                background-color: transparent;
+                padding-top: 0%;
+                //padding-left: 5%;
+                //padding-right: 5%;
+                border-top-right-radius: 1.5rem;
+                border-top-left-radius: 1.5rem;
+                /* .footerLogo {
                 display: flex;
                 justify-content: flex-start;
                 align-items: end;
@@ -358,69 +360,84 @@
                     width: 5%;
                 }
             }*/
-            .footerEmail {
-                padding-top: 5%;
+                .footerEmail {
+                    padding-top: 5%;
 
-                h2 {
-                    @include resetmp();
-                    @include fonth1();
-
-                    span {
-                        @include fonth3();
+                    h2 {
+                        @include resetmp();
+                        @include fonth1();
+                        font-size: 3.5rem;
+                        line-height: 3.5rem;
+                        span {
+                            @include fonth3();
+                            font-size: 3.5rem;
+                        }
+                    }
+                    a {
+                        @include fontTextLink();
+                        color: var(--color30);
+                        padding-top: 5%;
                     }
                 }
-                a {
-                    @include fontTextLink();
-                    color: var(--color30);
-                }
-            }
-            .footerLink {
-                @include resetmp();
-                padding-top: 5%;
-                display: flex;
-                flex-direction: column;
-                h5 {
-                    @include fonth5();
-                }
-                a {
-                    color: var(--color30);
-                    @include fontButton02();
-                    padding-top: 2%;
-                }
-                .arrowBox {
+                .footerLink {
                     @include resetmp();
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: end;
-                    .arrow {
-                        width: 15px;
-                        height: 25px;
-                        transform: rotate(-45deg);
-                        margin-left: 2%;
-                    }
-                }
-            }
-
-            .footerEnd {
-                @include resetmp();
-                padding-top: 5%;
-                h5 {
-                    @include fonth5();
-                    font-weight: 500;
-                    opacity: 0.5;
-                    text-align: left;
-                }
-                p {
-                    padding-top: 2%;
-                    @include fontText();
-                    width: 100%;
-                }
-                .span {
-                    @include fontText();
-                    color: var(--color30);
                     padding-top: 10%;
-                    //cambiar
-                    font-size: 0.8rem;
+                    display: flex;
+                    flex-direction: column;
+                    h5 {
+                        @include fonth5();
+                        font-size: 1rem;
+                    }
+                    a {
+                        color: var(--color30);
+                        @include fontButton02();
+                        padding-top: 2%;
+                        font-size: 1rem;
+                    }
+                    .arrowBox {
+                        @include resetmp();
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: end;
+                        .arrow {
+                            width: 15px;
+                            height: 25px;
+                            transform: rotate(-45deg);
+                            margin-left: 2%;
+                        }
+                    }
+                }
+
+                .footerEnd {
+                    @include resetmp();
+                    padding-top: 10%;
+                    h5 {
+                        @include fonth5();
+                        font-weight: 500;
+                        opacity: 0.5;
+                        text-align: left;
+                        font-size: 1rem;;
+                    }
+                    p {
+                        padding-top: 2%;
+                        @include fontText();
+                        font-weight: 500;
+                        width: 100%;
+                    }
+                }
+                .pRig {
+                    display: flex;
+                    justify-content: start;
+                    align-items: end;
+                    .span {
+                        @include fontText();
+                        color: var(--color30);
+                        padding-top: 10%;
+                        //cambiar
+                        font-size: 0.8rem;
+                        text-align: end;
+                        //background-color: red;
+                    }
                 }
             }
         }

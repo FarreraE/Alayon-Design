@@ -67,7 +67,7 @@
 @mixin fontButton01 {
     font-family: var(--fontWork);
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--color30);
 }
 
@@ -120,6 +120,7 @@ body {
     .box {
         @include resetmp();
         padding: 5%;
+        padding-bottom: 0%;
         // Header
         .header {
             @include resetmp();
@@ -156,6 +157,7 @@ body {
                         @include resetmp();
                         padding-left: 0%;
                         padding-left: 15%;
+
                         a {
                             @include resetmp();
                             @include fonth5();
@@ -163,9 +165,13 @@ body {
                             color: var(--color30);
                             text-decoration: none;
                             font-weight: 500;
+                            text-align: end;
                         }
                     }
                     .contact {
+                        display: block;
+                    }
+                    .contact2 {
                         display: none;
                     }
                 }
@@ -262,6 +268,9 @@ body {
         // ABOUT
         .about {
             padding-top: 15%;
+            .btnGroup2{
+                display: none;
+            }
             .aboutHead {
                 .profilePicture {
                     width: 25%;
@@ -343,6 +352,10 @@ body {
                     .btn {
                         margin-top: 5%;
                         @include btnAux();
+                    }
+                    .git{
+                        background-color: var(--color30);
+                        color: var(--color60);
                     }
                 }
             }
