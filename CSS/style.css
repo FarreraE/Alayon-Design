@@ -157,7 +157,7 @@ body .box .portfolio .porRow .porColCss {
   padding-bottom: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
 }
 body .box .portfolio .porRow .porColCss p {
   padding-top: 5%;
@@ -1015,36 +1015,32 @@ body footer .footerEnd .span {
     font-weight: 400;
     font-size: 0.7rem;
     letter-spacing: -0.05rem;
-    line-height: 0.8rem;
+    line-height: 1rem;
     padding-top: 10%;
     padding-left: 7%;
     padding-right: 5%;
   }
   body .box .portfolio {
     padding-top: 5%;
-  }
-  body .box .portfolio .porRow h5 {
-    font-family: var(--fontWork);
-    font-weight: 500;
-    letter-spacing: -0.004rem;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding-left: 4%;
-  }
-  body .box .portfolio .porRow .porB {
-    background-color: yellow;
-  }
-  body .box .portfolio .porRow .porC {
-    background-color: aqua;
-    height: inherit;
+    padding: 0%;
   }
   body .box .portfolio .porRow .porColCss {
     padding: 0%;
     margin: 0%;
     padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 0%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+  }
+  body .box .portfolio .porRow .porColCss h5 {
+    font-family: var(--fontWork);
+    font-weight: 500;
+    letter-spacing: -0.004rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    height: 4vh;
   }
   body .box .portfolio .porRow .porColCss p {
     padding-top: 5%;
@@ -1052,9 +1048,10 @@ body footer .footerEnd .span {
     font-weight: 400;
     font-size: 0.7rem;
     letter-spacing: -0.05rem;
-    line-height: 0.8rem;
+    line-height: 1rem;
     text-align: left;
     padding-left: 4%;
+    height: 5vh;
   }
   body .box .portfolio .porRow .porColCss .btn {
     width: 100%;
@@ -1083,15 +1080,17 @@ body footer .footerEnd .span {
   }
   body .box .portfolio .porRow .porColCss .porBoxA {
     background-image: url("../img/logos_01.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
   body .box .portfolio .porRow .porColCss .porBoxB {
     background-image: url("../img/logos_02.jpg");
   }
   body .box .portfolio .porRow .porColCss .porBoxC {
     background-image: url("../img/graphic_design_01.jpg");
+    height: 117vh;
+  }
+  body .box .portfolio .porRow .porC {
+    display: flex;
+    justify-content: flex-start;
   }
   body .box .about {
     padding: 0%;
@@ -1100,11 +1099,10 @@ body footer .footerEnd .span {
   }
   body .box .about .btnGroup2 {
     display: block;
-    padding-top: 3%;
   }
   body .box .about .btnGroup2 .btnBox2 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     align-items: center;
   }
   body .box .about .btnGroup2 .btnBox2 .btn {
@@ -1159,7 +1157,7 @@ body footer .footerEnd .span {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     line-height: 1.5rem;
     font-size: 1rem;
     padding: 5%;
@@ -1167,14 +1165,14 @@ body footer .footerEnd .span {
   body .box .about .aboSec {
     padding-top: 5%;
   }
-  body .box .about .aboSec h1 {
+  body .box .about .aboSec h4 {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     line-height: 1.5rem;
   }
-  body .box .about .aboSec h1 span {
+  body .box .about .aboSec h4 span {
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
@@ -1182,7 +1180,9 @@ body footer .footerEnd .span {
   }
   body .box .about .aboSec .aboutGroup {
     border-top: var(--color30) solid 0.1rem;
+    padding: 8%;
     padding-top: 5%;
+    padding-bottom: 0%;
   }
   body .box .about .aboSec .aboutGroup .aboutItem {
     padding-top: 2%;
@@ -1191,7 +1191,7 @@ body footer .footerEnd .span {
     margin: auto;
     font-family: var(--fontWork);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: -0.005rem;
     line-height: 0.8rem;
     color: var(--color10);
@@ -1205,15 +1205,13 @@ body footer .footerEnd .span {
     font-weight: 400;
     font-size: 0.7rem;
     letter-spacing: -0.05rem;
-    line-height: 0.8rem;
-    font-size: 0.8rem;
+    line-height: 1rem;
     padding-top: 15%;
   }
   body .box .about .aboSec .aboutGroup .aboutItem a {
-    height: 100%;
     font-family: var(--fontWork);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: -0.005rem;
     line-height: 0.8rem;
     text-decoration: underline;
@@ -1361,7 +1359,7 @@ body footer .footerEnd .span {
     font-weight: 400;
     font-size: 0.7rem;
     letter-spacing: -0.05rem;
-    line-height: 0.8rem;
+    line-height: 1rem;
     font-size: 0.8rem;
     line-height: 1.1rem;
   }
@@ -1375,7 +1373,7 @@ body footer .footerEnd .span {
     font-weight: 400;
     font-size: 0.7rem;
     letter-spacing: -0.05rem;
-    line-height: 0.8rem;
+    line-height: 1rem;
     color: var(--color30);
     padding-top: 10%;
     font-size: 0.8rem;

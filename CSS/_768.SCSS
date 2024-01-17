@@ -25,9 +25,8 @@
         font-family: var(--fontWork);
         font-weight: 500;
         letter-spacing: -0.004rem;
-        font-size: 1.5rem;
+        font-size: 0.9rem;
         line-height: 1.5rem;
-        //background-color: red;
     }
 
     @mixin fonth5 {
@@ -44,7 +43,8 @@
         font-weight: 400;
         font-size: 0.7rem;
         letter-spacing: -0.05rem;
-        line-height: 0.8rem;
+        line-height: 1rem;
+        //background-color: red;
     }
 
     @mixin fontButton01 {
@@ -64,7 +64,7 @@
     @mixin fontTextMedium {
         font-family: var(--fontWork);
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 0.8rem;
         letter-spacing: -0.005rem;
         line-height: 0.8rem;
         //background-color: red;
@@ -203,33 +203,33 @@
             // PORTFOLIO
             .portfolio {
                 padding-top: 5%;
+                padding: 0%;
                 .porRow {
-                    //background-color: #282b30;
-                    h5 {
-                        @include fonth4();
-                        padding-left: 4%;
-                    }
-                    .porB {
-                        background-color: yellow;
-                    }
-                    .porC {
-                        background-color: aqua;
-                        height: inherit;
-                    }
+                    
+                    
+                 
+                   
 
                     .porColCss {
                         @include resetmp();
                         padding: 5%;
+                        padding-top: 2%;    
+                        padding-bottom: 0%;                    
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
+                        justify-content:space-between;
                         //background-color: red;
+                        h5 {
+                            @include fonth4();
+                            height: 4vh;
+                        }
                         p {
                             padding-top: 5%;
                             @include fontText();
                             text-align: left;
                             padding-left: 4%;
                             //background-color: red;
+                            height: 5vh;
                         }
                         .btn {
                             width: 100%;
@@ -248,16 +248,24 @@
                         }
                         .porBoxA {
                             background-image: url("../img/logos_01.jpg");
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size: cover;
                         }
                         .porBoxB {
                             background-image: url("../img/logos_02.jpg");
+                            
                         }
                         .porBoxC {
                             background-image: url("../img/graphic_design_01.jpg");
+                            height: 117vh;
                         }
+                    }
+                    .porB {
+                        //background-color: yellow;
+                    }
+                    .porC {
+                        display: flex;
+                        justify-content: flex-start;
+                        //background-color: aqua;
+                        //height:800px;
                     }
                 }
             }
@@ -267,16 +275,15 @@
                 padding-top: 5%;
                 .btnGroup2 {
                     display: block;
-                    padding-top: 3%;
                     .btnBox2 {
                         display: flex;
-                        justify-content: flex-end;
+                        justify-content: end;
                         align-items: center;
                         .btn {
                             @include btn();
                             margin-left: 5%;
                         }
-                        .git{
+                        .git {
                             background-color: var(--color30);
                             color: var(--color60);
                         }
@@ -311,13 +318,12 @@
                         @include fonth4();
                         font-size: 1rem;
                         padding: 5%;
-                      
                     }
                 }
                 .aboSec {
                     padding-top: 5%;
 
-                    h1 {
+                    h4 {
                         @include fonth4();
                         span {
                             @include fonth3();
@@ -325,9 +331,12 @@
                     }
                     .aboutGroup {
                         border-top: var(--color30) solid 0.1rem;
+                        padding: 8%;
                         padding-top: 5%;
+                        padding-bottom: 0%;
                         .aboutItem {
                             padding-top: 2%;
+                            
                             h2 {
                                 margin: auto;
                                 @include fontTextMedium();
@@ -336,22 +345,22 @@
                                 line-height: 1.2rem;
                                 //volver
                                 height: 100%;
+                                
                             }
                             p {
                                 height: 100%;
                                 @include fontText();
                                 //cambiar
-                                font-size: 0.8rem;
                                 padding-top: 15%;
                                 // background-color: red;
                             }
                             a {
-                                height: 100%;
+                                //height: 100%;
                                 @include fontTextMedium();
                                 text-decoration: underline;
                                 opacity: 0.5;
                                 text-align: start;
-                                //background-color: red;
+                               
                                 height: 100%;
                             }
 
@@ -365,8 +374,6 @@
                                 @include resetmp();
                                 text-align: start;
                                 padding-right: 5%;
-
-                               
                             }
                             .colC {
                                 @include resetmp();
