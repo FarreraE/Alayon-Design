@@ -1,4 +1,4 @@
-@media (min-width: 992px){
+@media (min-width: 769px) and (max-width: 992px) {
     /* Estilos específicos para pantallas pequeñas */
     @mixin fonth1 {
         font-family: var(--fontWork);
@@ -41,8 +41,8 @@
     @mixin fontText {
         font-family: var(--fontWork);
         font-weight: 400;
-        font-size: 0.7rem;
-        letter-spacing: -0.05rem;
+        font-size: 0.8rem;
+        //letter-spacing: -0.05rem;
         line-height: 1rem;
         //background-color: red;
     }
@@ -104,14 +104,15 @@
         //background-color: var(--color10);
     }
 
-    body {
+    .body {
         background-color: var(--color60);
-        padding: 3%;
-        padding-bottom: 0%;
+        @include resetmp();
+        
         .box {
             @include resetmp();
             //padding: 1%;
             // Header
+            padding: 3%;
             .header {
                 .headerLogo {
                     align-items: center;
@@ -124,22 +125,19 @@
                         .nav-item {
                             @include resetmp();
                             padding-right: 0%;
-                            padding-left: 10%;
+                            padding-left: 5%;
                             text-align: end;
                             //background-color: red;
                             width: auto;
+
+                            .contact {
+                                @include resetmp();
+                                display: block;
+                            }
                         }
                         .contact {
-                            display: none;
-                        }
-                        .contact2 {
+                            
                             display: block;
-                            @include btn();
-                            background-color: transparent;
-                            border: var(--color30) solid 1.5px;
-                            margin-left: 10%;
-                            padding-top: 1%;
-                            padding-bottom: 1%;
                         }
                     }
                 }
@@ -383,15 +381,18 @@
             }
         }
         footer {
+            
             padding-top: 8%;
             margin-top: 8%;
+            border-top-right-radius: 1.5rem;
+            border-top-left-radius: 1.5rem;
+            background-color: #ece4ce66;
             .footerMain {
                 background-color: transparent;
                 @include resetmp();
                 //padding-left: 5%;
                 //padding-right: 5%;
-                border-top-right-radius: 1.5rem;
-                border-top-left-radius: 1.5rem;
+
                 /* .footerLogo {
                 display: flex;
                 justify-content: flex-start;

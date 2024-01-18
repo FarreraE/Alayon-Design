@@ -1,32 +1,33 @@
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 993px){
     /* Estilos específicos para pantallas pequeñas */
     @mixin fonth1 {
         font-family: var(--fontWork);
         font-weight: 420;
         letter-spacing: -0.2rem;
-        font-size: 4.6rem;
-        line-height: 5rem;
+        font-size: 6rem;
+        line-height: 6.5rem;
     }
 
     @mixin fonth2 {
         font-family: var(--fontRob);
         font-weight: 0;
-        font-size: 4.6rem;
+        font-size: 5rem;
     }
 
     @mixin fonth3 {
         font-family: var(--fontRob);
         font-style: italic;
         font-weight: 0;
-        font-size: 4.5rem;
+        font-size: 6rem;
         //background-color: #b73c3c;
     }
     @mixin fonth4 {
         font-family: var(--fontWork);
         font-weight: 500;
         letter-spacing: -0.004rem;
-        font-size: 0.9rem;
-        line-height: 1.5rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        //background-color: red;
     }
 
     @mixin fonth5 {
@@ -41,18 +42,19 @@
     @mixin fontText {
         font-family: var(--fontWork);
         font-weight: 400;
-        font-size: 0.7rem;
+        font-size: 1rem;
         letter-spacing: -0.05rem;
-        line-height: 1rem;
+        line-height: 1.2rem;
         //background-color: red;
     }
 
     @mixin fontButton01 {
         font-family: var(--fontWork);
         font-weight: 500;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         color: var(--color30);
         //background-color: red;
+  
     }
 
     @mixin fontButton02 {
@@ -64,10 +66,10 @@
     @mixin fontTextMedium {
         font-family: var(--fontWork);
         font-weight: 500;
-        font-size: 0.8rem;
+        font-size: 1.1rem;
         letter-spacing: -0.005rem;
         line-height: 0.8rem;
-        //background-color: red;
+       // background-color: red;
     }
 
     @mixin fontTextLink {
@@ -87,6 +89,8 @@
         border-radius: 2rem;
         text-decoration: none;
         @include fontButton01();
+        
+ 
     }
 
     @mixin btnAux {
@@ -104,14 +108,15 @@
         //background-color: var(--color10);
     }
 
-    body {
+    .body {
         background-color: var(--color60);
-        padding: 3%;
-        padding-bottom: 0%;
+        @include resetmp();
+        
         .box {
             @include resetmp();
             //padding: 1%;
             // Header
+            padding: 3%;
             .header {
                 .headerLogo {
                     align-items: center;
@@ -124,22 +129,19 @@
                         .nav-item {
                             @include resetmp();
                             padding-right: 0%;
-                            padding-left: 10%;
+                            padding-left: 5%;
                             text-align: end;
                             //background-color: red;
                             width: auto;
+
+                            .contact {
+                                @include resetmp();
+                                display: block;
+                            }
                         }
                         .contact {
-                            display: none;
-                        }
-                        .contact2 {
+                            
                             display: block;
-                            @include btn();
-                            background-color: transparent;
-                            border: var(--color30) solid 1.5px;
-                            margin-left: 10%;
-                            padding-top: 1%;
-                            padding-bottom: 1%;
                         }
                     }
                 }
@@ -148,9 +150,11 @@
             .home {
                 display: none;
             }
+              // HOME 2
             .homeTwo {
                 display: block;
                 padding-top: 10%;
+                
                 .branding {
                     @include resetmp();
                     width: 55%;
@@ -159,6 +163,7 @@
                     h1 {
                         @include resetmp();
                         @include fonth1();
+                        
                     }
                     span {
                         @include fonth2();
@@ -185,7 +190,7 @@
                             background-color: transparent;
                             border: var(--color10) solid 1.5px;
                             color: var(--color10);
-                            margin-bottom: 4.5%;
+                            margin-bottom: 7%;
                         }
                     }
                     h1 {
@@ -216,6 +221,7 @@
                         //background-color: red;
                         h5 {
                             @include fonth4();
+                   
                         }
                         p {
                             padding-top: 5%;
@@ -247,7 +253,7 @@
                         }
                         .porBoxC {
                             background-image: url("../img/graphic_design_01.jpg");
-                            height: 716px;
+                            height: 730px;
                         }
                     }
                     .porB {
@@ -264,15 +270,17 @@
             // ABOUT
             .about {
                 @include resetmp();
-                padding-top: 5%;
+                padding-top: 10%;
                 .btnGroup2 {
                     display: block;
+                    //padding-top: 4;
                     .btnBox2 {
                         display: flex;
                         justify-content: end;
                         align-items: center;
                         .btn {
                             @include btn();
+                            font-size: 1rem;
                             margin-left: 5%;
                         }
                         .git {
@@ -300,21 +308,23 @@
                     h1 {
                         @include fonth1();
                         @include resetmp();
-                        font-size: 3rem;
+                        font-size: 4.5rem;
                         span {
                             @include fonth3();
-                            font-size: 3rem;
+                            font-size: 4.5rem;
                         }
                     }
                     p {
                         @include fonth4();
-                        font-size: 1rem;
+                       font-size: 1.2rem;
+                       
                         padding: 5%;
                     }
                 }
                 .aboSec {
-                    padding-top: 5%;
-
+                    padding-top: 10%;
+                    padding: 5%;
+                    
                     h4 {
                         @include fonth4();
                         span {
@@ -323,7 +333,7 @@
                     }
                     .aboutGroup {
                         border-top: var(--color30) solid 0.1rem;
-                        padding: 8%;
+                        padding: 4%;
                         padding-top: 5%;
                         padding-bottom: 0%;
                         .aboutItem {
@@ -341,9 +351,9 @@
                             p {
                                 height: 100%;
                                 @include fontText();
-                                //cambiar
-                                padding-top: 15%;
-                                // background-color: red;
+                                
+                                padding-top: 7%;
+                                //background-color: red;
                             }
                             a {
                                 //height: 100%;
@@ -351,8 +361,9 @@
                                 text-decoration: underline;
                                 opacity: 0.5;
                                 text-align: start;
-
+                          
                                 height: 100%;
+                                padding-top: 7%;
                             }
 
                             .colA {
@@ -383,15 +394,18 @@
             }
         }
         footer {
+            
             padding-top: 8%;
             margin-top: 8%;
+            border-top-right-radius: 1.5rem;
+            border-top-left-radius: 1.5rem;
+            background-color: #ece4ce66;
             .footerMain {
                 background-color: transparent;
                 @include resetmp();
                 //padding-left: 5%;
                 //padding-right: 5%;
-                border-top-right-radius: 1.5rem;
-                border-top-left-radius: 1.5rem;
+
                 /* .footerLogo {
                 display: flex;
                 justify-content: flex-start;

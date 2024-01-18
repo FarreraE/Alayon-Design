@@ -13,30 +13,34 @@
   --color10: #b73c3c;
 }
 
-body {
+.body {
   background-color: var(--color60);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
 }
-body .box {
+.body .box {
   max-width: 1200px;
   padding: 0%;
   margin: 0%;
   padding: 5%;
   padding-bottom: 0%;
 }
-body .box .header {
+.body .box .header {
   padding: 0%;
   margin: 0%;
   display: flex;
   justify-content: space-between;
 }
-body .box .header .headerLogo {
+.body .box .header .headerLogo {
   display: flex;
   justify-content: flex-start;
   align-items: end;
 }
-body .box .header .headerLogo h5 {
+.body .box .header .headerLogo h5 {
   padding: 0%;
   margin: 0%;
   font-family: var(--fontWork);
@@ -47,16 +51,16 @@ body .box .header .headerLogo h5 {
   font-weight: 500;
   padding-left: 5%;
 }
-body .box .header .headerLogo .logo {
+.body .box .header .headerLogo .logo {
   width: 8%;
   padding-bottom: 2%;
 }
-body .box .header .headerNav {
+.body .box .header .headerNav {
   padding: 0%;
   margin: 0%;
   width: 100%;
 }
-body .box .header .headerNav .nav {
+.body .box .header .headerNav .nav {
   padding: 0%;
   margin: 0%;
   display: flex;
@@ -64,13 +68,13 @@ body .box .header .headerNav .nav {
   align-items: end;
   list-style: none;
 }
-body .box .header .headerNav .nav .nav-item {
+.body .box .header .headerNav .nav .nav-item {
   padding: 0%;
   margin: 0%;
   padding-left: 0%;
   padding-left: 15%;
 }
-body .box .header .headerNav .nav .nav-item a {
+.body .box .header .headerNav .nav .nav-item a {
   padding: 0%;
   margin: 0%;
   font-family: var(--fontWork);
@@ -84,33 +88,33 @@ body .box .header .headerNav .nav .nav-item a {
   font-weight: 500;
   text-align: end;
 }
-body .box .header .headerNav .nav .contact {
-  display: block;
-}
-body .box .header .headerNav .nav .contact2 {
+.body .box .header .headerNav .nav .nav-item .contact {
   display: none;
 }
-body .box .homeTwo {
+.body .box .header .headerNav .nav .contact {
   display: none;
 }
-body .box .home {
+.body .box .homeTwo {
+  display: none;
+}
+.body .box .home {
   padding: 0%;
   margin: 0%;
   padding-top: 15%;
 }
-body .box .home h1 {
+.body .box .home h1 {
   font-family: var(--fontWork);
   font-weight: 420;
   letter-spacing: -0.2rem;
   font-size: 3.5rem;
   line-height: 4rem;
 }
-body .box .home h1 span {
+.body .box .home h1 span {
   font-family: var(--fontRob);
   font-weight: 0;
   font-size: 3.5rem;
 }
-body .box .home p {
+.body .box .home p {
   font-family: var(--fontWork);
   font-weight: 400;
   font-size: 0.95rem;
@@ -118,12 +122,12 @@ body .box .home p {
   line-height: 1.2rem;
   padding-top: 2%;
 }
-body .box .home .btnBox {
+.body .box .home .btnBox {
   padding: 0%;
   margin: 0%;
   padding-top: 2%;
 }
-body .box .home .btnBox .btn {
+.body .box .home .btnBox .btn {
   padding: 1.5%;
   padding-left: 10%;
   padding-right: 10%;
@@ -139,13 +143,13 @@ body .box .home .btnBox .btn {
   color: var(--color10);
   border: var(--color10) solid 1.5px;
 }
-body .box .home .btnBox .btn:hover {
+.body .box .home .btnBox .btn:hover {
   opacity: 100%;
 }
-body .box .portfolio {
+.body .box .portfolio {
   padding-top: 15%;
 }
-body .box .portfolio .porRow h5 {
+.body .box .portfolio .porRow h5 {
   font-family: var(--fontWork);
   font-weight: 500;
   letter-spacing: -0.004rem;
@@ -153,7 +157,7 @@ body .box .portfolio .porRow h5 {
   line-height: 2.1rem;
   padding-left: 4%;
 }
-body .box .portfolio .porRow .porColCss {
+.body .box .portfolio .porRow .porColCss {
   padding: 0%;
   margin: 0%;
   padding-top: 10%;
@@ -162,7 +166,7 @@ body .box .portfolio .porRow .porColCss {
   flex-direction: column;
   justify-content: end;
 }
-body .box .portfolio .porRow .porColCss p {
+.body .box .portfolio .porRow .porColCss p {
   padding-top: 5%;
   font-family: var(--fontWork);
   font-weight: 400;
@@ -171,7 +175,7 @@ body .box .portfolio .porRow .porColCss p {
   line-height: 1.2rem;
   text-align: center;
 }
-body .box .portfolio .porRow .porColCss .btn {
+.body .box .portfolio .porRow .porColCss .btn {
   width: 100%;
   padding: 3%;
   padding-left: 10%;
@@ -185,7 +189,7 @@ body .box .portfolio .porRow .porColCss .btn {
   font-size: 1rem;
   color: var(--color30);
 }
-body .box .portfolio .porRow .porColCss .porBox {
+.body .box .portfolio .porRow .porColCss .porBox {
   background-color: rgb(178, 178, 247);
   height: 380px;
   border-radius: 1rem;
@@ -194,35 +198,35 @@ body .box .portfolio .porRow .porColCss .porBox {
   background-size: cover;
   margin-top: 2%;
 }
-body .box .portfolio .porRow .porColCss .porBoxA {
+.body .box .portfolio .porRow .porColCss .porBoxA {
   background-image: url("../img/graphic_design_01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-body .box .portfolio .porRow .porColCss .porBoxB {
+.body .box .portfolio .porRow .porColCss .porBoxB {
   background-image: url("../img/logos_02.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-body .box .portfolio .porRow .porColCss .porBoxC {
+.body .box .portfolio .porRow .porColCss .porBoxC {
   background-image: url("../img/web_design_01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-body .box .about {
+.body .box .about {
   padding-top: 15%;
 }
-body .box .about .btnGroup2 {
+.body .box .about .btnGroup2 {
   display: none;
 }
-body .box .about .aboutHead .profilePicture {
+.body .box .about .aboutHead .profilePicture {
   width: 25%;
   border-radius: 5rem;
 }
-body .box .about .aboutHead h1 {
+.body .box .about .aboutHead h1 {
   font-family: var(--fontWork);
   font-weight: 420;
   letter-spacing: -0.2rem;
@@ -231,13 +235,13 @@ body .box .about .aboutHead h1 {
   padding-bottom: 4%;
   padding-top: 10%;
 }
-body .box .about .aboutHead h1 span {
+.body .box .about .aboutHead h1 span {
   font-family: var(--fontRob);
   font-style: italic;
   font-weight: 0;
   font-size: 3.5rem;
 }
-body .box .about .aboutHead p {
+.body .box .about .aboutHead p {
   font-family: var(--fontWork);
   font-weight: 500;
   letter-spacing: -0.004rem;
@@ -245,27 +249,27 @@ body .box .about .aboutHead p {
   line-height: 2.1rem;
   font-size: 1.2rem;
 }
-body .box .about .aboSec {
+.body .box .about .aboSec {
   padding-top: 10%;
 }
-body .box .about .aboSec h1 {
+.body .box .about .aboSec h1 {
   font-family: var(--fontWork);
   font-weight: 500;
   letter-spacing: -0.004rem;
   font-size: 1.1rem;
   line-height: 2.1rem;
 }
-body .box .about .aboSec h1 span {
+.body .box .about .aboSec h1 span {
   font-family: var(--fontRob);
   font-style: italic;
   font-weight: 0;
   font-size: 3.5rem;
 }
-body .box .about .aboSec .aboutGroup {
+.body .box .about .aboSec .aboutGroup {
   border-top: var(--color30) solid 0.1rem;
   padding-top: 5%;
 }
-body .box .about .aboSec .aboutGroup .aboutItem h2 {
+.body .box .about .aboSec .aboutGroup .aboutItem h2 {
   margin-top: auto;
   margin-bottom: auto;
   font-family: var(--fontWork);
@@ -276,7 +280,7 @@ body .box .about .aboSec .aboutGroup .aboutItem h2 {
   color: var(--color10);
   text-align: start;
 }
-body .box .about .aboSec .aboutGroup .aboutItem p {
+.body .box .about .aboSec .aboutGroup .aboutItem p {
   font-family: var(--fontWork);
   font-weight: 400;
   font-size: 0.95rem;
@@ -284,7 +288,7 @@ body .box .about .aboSec .aboutGroup .aboutItem p {
   line-height: 1.2rem;
   font-size: 0.6rem;
 }
-body .box .about .aboSec .aboutGroup .aboutItem a {
+.body .box .about .aboSec .aboutGroup .aboutItem a {
   font-family: var(--fontWork);
   font-weight: 500;
   font-size: 0.7rem;
@@ -294,31 +298,31 @@ body .box .about .aboSec .aboutGroup .aboutItem a {
   opacity: 0.5;
   text-align: start;
 }
-body .box .about .aboSec .aboutGroup .aboutItem .colA {
+.body .box .about .aboSec .aboutGroup .aboutItem .colA {
   padding: 0%;
   margin: 0%;
 }
-body .box .about .aboSec .aboutGroup .aboutItem .colB {
+.body .box .about .aboSec .aboutGroup .aboutItem .colB {
   padding: 0%;
   margin: 0%;
   text-align: start;
   padding-right: 5%;
 }
-body .box .about .aboSec .aboutGroup .aboutItem .colC {
+.body .box .about .aboSec .aboutGroup .aboutItem .colC {
   padding: 0%;
   margin: 0%;
   text-align: center;
 }
-body .box .about .btnGroup {
+.body .box .about .btnGroup {
   padding-bottom: 5%;
 }
-body .box .about .btnGroup .btnBox {
+.body .box .about .btnGroup .btnBox {
   padding: 0%;
   margin: 0%;
   display: flex;
   flex-direction: column;
 }
-body .box .about .btnGroup .btnBox .btn {
+.body .box .about .btnGroup .btnBox .btn {
   margin-top: 5%;
   padding: 3%;
   padding-left: 10%;
@@ -332,24 +336,27 @@ body .box .about .btnGroup .btnBox .btn {
   font-size: 1rem;
   color: var(--color30);
 }
-body .box .about .btnGroup .btnBox .git {
+.body .box .about .btnGroup .btnBox .git {
   background-color: var(--color30);
   color: var(--color60);
 }
-body footer {
+.body footer {
+  padding: 0%;
+  margin: 0%;
   background-color: rgba(236, 228, 206, 0.4);
   padding-top: 15%;
   padding-left: 5%;
   padding-right: 5%;
+  margin-top: 15%;
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
 }
-body footer .footerLogo {
+.body footer .footerLogo {
   display: flex;
   justify-content: flex-start;
   align-items: end;
 }
-body footer .footerLogo h5 {
+.body footer .footerLogo h5 {
   padding: 0%;
   margin: 0%;
   font-family: var(--fontWork);
@@ -360,13 +367,13 @@ body footer .footerLogo h5 {
   font-weight: 500;
   padding-left: 5%;
 }
-body footer .footerLogo .logo {
+.body footer .footerLogo .logo {
   width: 5%;
 }
-body footer .footerEmail {
+.body footer .footerEmail {
   padding-top: 15%;
 }
-body footer .footerEmail h2 {
+.body footer .footerEmail h2 {
   padding: 0%;
   margin: 0%;
   font-family: var(--fontWork);
@@ -376,14 +383,14 @@ body footer .footerEmail h2 {
   line-height: 4rem;
   font-size: 2.5rem;
 }
-body footer .footerEmail h2 span {
+.body footer .footerEmail h2 span {
   font-family: var(--fontRob);
   font-style: italic;
   font-weight: 0;
   font-size: 3.5rem;
   font-size: 2.5rem;
 }
-body footer .footerEmail a {
+.body footer .footerEmail a {
   font-family: var(--fontWork);
   font-weight: 400;
   font-size: 1.2rem;
@@ -391,45 +398,45 @@ body footer .footerEmail a {
   text-decoration: underline;
   color: var(--color30);
 }
-body footer .footerLink {
+.body footer .footerLink {
   padding: 0%;
   margin: 0%;
   padding-top: 15%;
   display: flex;
   flex-direction: column;
 }
-body footer .footerLink h5 {
+.body footer .footerLink h5 {
   font-family: var(--fontWork);
   font-weight: 400;
   letter-spacing: 0%;
   font-size: 0.8rem;
   text-align: justify;
 }
-body footer .footerLink a {
+.body footer .footerLink a {
   color: var(--color30);
   font-family: var(--fontWork);
   font-weight: 500;
   padding-top: 2%;
 }
-body footer .footerLink .arrowBox {
+.body footer .footerLink .arrowBox {
   padding: 0%;
   margin: 0%;
   display: flex;
   justify-content: flex-start;
   align-items: end;
 }
-body footer .footerLink .arrowBox .arrow {
+.body footer .footerLink .arrowBox .arrow {
   width: 15px;
   height: 25px;
   transform: rotate(-45deg);
   margin-left: 2%;
 }
-body footer .footerEnd {
+.body footer .footerEnd {
   padding: 0%;
   margin: 0%;
   padding-top: 15%;
 }
-body footer .footerEnd h5 {
+.body footer .footerEnd h5 {
   font-family: var(--fontWork);
   font-weight: 400;
   letter-spacing: 0%;
@@ -439,7 +446,7 @@ body footer .footerEnd h5 {
   opacity: 0.5;
   text-align: left;
 }
-body footer .footerEnd p {
+.body footer .footerEnd p {
   padding-top: 2%;
   font-family: var(--fontWork);
   font-weight: 400;
@@ -448,7 +455,7 @@ body footer .footerEnd p {
   line-height: 1.2rem;
   width: 100%;
 }
-body footer .footerEnd .span {
+.body footer .footerEnd .span {
   font-family: var(--fontWork);
   font-weight: 400;
   font-size: 0.95rem;
@@ -461,10 +468,12 @@ body footer .footerEnd .span {
 
 @media (min-width: 576px) and (max-width: 768px) {
   /* Estilos específicos para pantallas pequeñas */
-  body {
+  .body {
+    padding: 0%;
+    margin: 0%;
     background-color: var(--color60);
   }
-  body .box {
+  .body .box {
     padding: 0%;
     margin: 0%;
     padding: 5%;
@@ -517,24 +526,24 @@ body footer .footerEnd .span {
         }
     }*/
   }
-  body .box .home {
+  .body .box .home {
     padding: 0%;
     margin: 0%;
     padding-top: 15%;
   }
-  body .box .home h1 {
+  .body .box .home h1 {
     font-family: var(--fontWork);
     font-weight: 420;
     letter-spacing: -0.2rem;
     font-size: 4.5rem;
     line-height: 5rem;
   }
-  body .box .home h1 span {
+  .body .box .home h1 span {
     font-family: var(--fontRob);
     font-weight: 0;
     font-size: 4.5rem;
   }
-  body .box .home p {
+  .body .box .home p {
     font-family: var(--fontWork);
     font-weight: 400;
     font-size: 1rem;
@@ -542,12 +551,12 @@ body footer .footerEnd .span {
     line-height: 1.5rem;
     padding-top: 2%;
   }
-  body .box .home .btnBox {
+  .body .box .home .btnBox {
     padding: 0%;
     margin: 0%;
     padding-top: 2%;
   }
-  body .box .home .btnBox .btn {
+  .body .box .home .btnBox .btn {
     padding: 1.5%;
     padding-left: 10%;
     padding-right: 10%;
@@ -563,13 +572,13 @@ body footer .footerEnd .span {
     color: var(--color10);
     border: var(--color10) solid 1.5px;
   }
-  body .box .home .btnBox .btn:hover {
+  .body .box .home .btnBox .btn:hover {
     opacity: 100%;
   }
-  body .box .portfolio {
+  .body .box .portfolio {
     padding-top: 10%;
   }
-  body .box .portfolio .porRow h5 {
+  .body .box .portfolio .porRow h5 {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
@@ -577,7 +586,7 @@ body footer .footerEnd .span {
     line-height: 2.5rem;
     padding-left: 4%;
   }
-  body .box .portfolio .porRow .porColCss {
+  .body .box .portfolio .porRow .porColCss {
     padding: 0%;
     margin: 0%;
     padding-top: 10%;
@@ -586,7 +595,7 @@ body footer .footerEnd .span {
     flex-direction: column;
     justify-content: center;
   }
-  body .box .portfolio .porRow .porColCss p {
+  .body .box .portfolio .porRow .porColCss p {
     padding-top: 5%;
     font-family: var(--fontWork);
     font-weight: 400;
@@ -596,7 +605,7 @@ body footer .footerEnd .span {
     text-align: left;
     padding-left: 4%;
   }
-  body .box .portfolio .porRow .porColCss .btn {
+  .body .box .portfolio .porRow .porColCss .btn {
     width: 100%;
     padding: 1%;
     margin-left: 4%;
@@ -611,7 +620,7 @@ body footer .footerEnd .span {
     font-size: 1.2rem;
     color: var(--color30);
   }
-  body .box .portfolio .porRow .porColCss .porBox {
+  .body .box .portfolio .porRow .porColCss .porBox {
     background-color: rgb(178, 178, 247);
     height: 380px;
     border-radius: 1rem;
@@ -620,24 +629,24 @@ body footer .footerEnd .span {
     background-size: cover;
     margin-top: 2%;
   }
-  body .box .portfolio .porRow .porColCss .porBoxA {
+  .body .box .portfolio .porRow .porColCss .porBoxA {
     background-image: url("../img/graphic_design_01.jpg");
     background-color: red;
   }
-  body .box .portfolio .porRow .porColCss .porBoxB {
+  .body .box .portfolio .porRow .porColCss .porBoxB {
     background-image: url("../img/logos_02.jpg");
   }
-  body .box .portfolio .porRow .porColCss .porBoxC {
+  .body .box .portfolio .porRow .porColCss .porBoxC {
     background-image: url("../img/web_design_01.jpg");
   }
-  body .box .about {
+  .body .box .about {
     padding-top: 15%;
   }
-  body .box .about .aboutHead .profilePicture {
+  .body .box .about .aboutHead .profilePicture {
     width: 30%;
     border-radius: 5rem;
   }
-  body .box .about .aboutHead h1 {
+  .body .box .about .aboutHead h1 {
     font-family: var(--fontWork);
     font-weight: 420;
     letter-spacing: -0.2rem;
@@ -646,43 +655,43 @@ body footer .footerEnd .span {
     padding-bottom: 4%;
     padding-top: 10%;
   }
-  body .box .about .aboutHead h1 span {
+  .body .box .about .aboutHead h1 span {
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
     font-size: 4.5rem;
   }
-  body .box .about .aboutHead p {
+  .body .box .about .aboutHead p {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-  body .box .about .aboSec {
+  .body .box .about .aboSec {
     padding-top: 10%;
   }
-  body .box .about .aboSec h1 {
+  .body .box .about .aboSec h1 {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-  body .box .about .aboSec h1 span {
+  .body .box .about .aboSec h1 span {
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
     font-size: 4.5rem;
   }
-  body .box .about .aboSec .aboutGroup {
+  .body .box .about .aboSec .aboutGroup {
     border-top: var(--color30) solid 0.1rem;
     padding-top: 5%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem {
+  .body .box .about .aboSec .aboutGroup .aboutItem {
     padding-top: 2%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem h2 {
+  .body .box .about .aboSec .aboutGroup .aboutItem h2 {
     margin: auto;
     font-family: var(--fontWork);
     font-weight: 500;
@@ -694,7 +703,7 @@ body footer .footerEnd .span {
     line-height: 1.2rem;
     height: 100%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem p {
+  .body .box .about .aboSec .aboutGroup .aboutItem p {
     height: 100%;
     font-family: var(--fontWork);
     font-weight: 400;
@@ -704,7 +713,7 @@ body footer .footerEnd .span {
     font-size: 0.9rem;
     padding-top: 5%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem a {
+  .body .box .about .aboSec .aboutGroup .aboutItem a {
     height: 100%;
     font-family: var(--fontWork);
     font-weight: 500;
@@ -716,35 +725,35 @@ body footer .footerEnd .span {
     text-align: start;
     height: 100%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem .colA {
+  .body .box .about .aboSec .aboutGroup .aboutItem .colA {
     padding: 0%;
     margin: 0%;
     display: flex;
     justify-content: start;
     align-items: center;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem .colB {
+  .body .box .about .aboSec .aboutGroup .aboutItem .colB {
     padding: 0%;
     margin: 0%;
     text-align: start;
     padding-right: 5%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem .colC {
+  .body .box .about .aboSec .aboutGroup .aboutItem .colC {
     padding: 0%;
     margin: 0%;
     text-align: center;
   }
-  body .box .about .btnGroup {
+  .body .box .about .btnGroup {
     padding-bottom: 5%;
   }
-  body .box .about .btnGroup .btnBox {
+  .body .box .about .btnGroup .btnBox {
     padding: 0%;
     margin: 0%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  body .box .about .btnGroup .btnBox .btn {
+  .body .box .about .btnGroup .btnBox .btn {
     margin-top: 5%;
     padding: 1%;
     margin-left: 4%;
@@ -760,10 +769,14 @@ body footer .footerEnd .span {
     color: var(--color30);
     width: 40%;
   }
-  body footer {
+  .body .box .about .btnGroup .btnBox .git {
+    background-color: var(--color30);
+    color: var(--color60);
+  }
+  .body footer {
     padding-top: 8%;
   }
-  body footer .footerMain {
+  .body footer .footerMain {
     background-color: transparent;
     padding-top: 0%;
     border-top-right-radius: 1.5rem;
@@ -784,10 +797,10 @@ body footer .footerEnd .span {
         }
     }*/
   }
-  body footer .footerMain .footerEmail {
+  .body footer .footerMain .footerEmail {
     padding-top: 5%;
   }
-  body footer .footerMain .footerEmail h2 {
+  .body footer .footerMain .footerEmail h2 {
     padding: 0%;
     margin: 0%;
     font-family: var(--fontWork);
@@ -798,14 +811,14 @@ body footer .footerEnd .span {
     font-size: 3.5rem;
     line-height: 3.5rem;
   }
-  body footer .footerMain .footerEmail h2 span {
+  .body footer .footerMain .footerEmail h2 span {
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
     font-size: 4.5rem;
     font-size: 3.5rem;
   }
-  body footer .footerMain .footerEmail a {
+  .body footer .footerMain .footerEmail a {
     font-family: var(--fontWork);
     font-weight: 400;
     font-size: 1.8rem;
@@ -814,14 +827,14 @@ body footer .footerEnd .span {
     color: var(--color30);
     padding-top: 5%;
   }
-  body footer .footerMain .footerLink {
+  .body footer .footerMain .footerLink {
     padding: 0%;
     margin: 0%;
     padding-top: 10%;
     display: flex;
     flex-direction: column;
   }
-  body footer .footerMain .footerLink h5 {
+  .body footer .footerMain .footerLink h5 {
     font-family: var(--fontWork);
     font-weight: 400;
     letter-spacing: 0%;
@@ -829,7 +842,7 @@ body footer .footerEnd .span {
     text-align: justify;
     font-size: 1rem;
   }
-  body footer .footerMain .footerLink a {
+  .body footer .footerMain .footerLink a {
     color: var(--color30);
     font-family: var(--fontWork);
     font-weight: 500;
@@ -837,25 +850,25 @@ body footer .footerEnd .span {
     padding-top: 2%;
     font-size: 1rem;
   }
-  body footer .footerMain .footerLink .arrowBox {
+  .body footer .footerMain .footerLink .arrowBox {
     padding: 0%;
     margin: 0%;
     display: flex;
     justify-content: flex-start;
     align-items: end;
   }
-  body footer .footerMain .footerLink .arrowBox .arrow {
+  .body footer .footerMain .footerLink .arrowBox .arrow {
     width: 15px;
     height: 25px;
     transform: rotate(-45deg);
     margin-left: 2%;
   }
-  body footer .footerMain .footerEnd {
+  .body footer .footerMain .footerEnd {
     padding: 0%;
     margin: 0%;
     padding-top: 10%;
   }
-  body footer .footerMain .footerEnd h5 {
+  .body footer .footerMain .footerEnd h5 {
     font-family: var(--fontWork);
     font-weight: 400;
     letter-spacing: 0%;
@@ -866,7 +879,7 @@ body footer .footerEnd .span {
     text-align: left;
     font-size: 1rem;
   }
-  body footer .footerMain .footerEnd p {
+  .body footer .footerMain .footerEnd p {
     padding-top: 2%;
     font-family: var(--fontWork);
     font-weight: 400;
@@ -876,508 +889,17 @@ body footer .footerEnd .span {
     font-weight: 500;
     width: 100%;
   }
-  body footer .footerMain .pRig {
+  .body footer .footerMain .pRig {
     display: flex;
     justify-content: start;
     align-items: end;
   }
-  body footer .footerMain .pRig .span {
+  .body footer .footerMain .pRig .span {
     font-family: var(--fontWork);
     font-weight: 400;
     font-size: 1rem;
     letter-spacing: -0.005rem;
     line-height: 1.5rem;
-    color: var(--color30);
-    padding-top: 10%;
-    font-size: 0.8rem;
-    text-align: end;
-  }
-}
-@media (min-width: 992px) {
-  /* Estilos específicos para pantallas pequeñas */
-  body {
-    background-color: var(--color60);
-    padding: 3%;
-    padding-bottom: 0%;
-  }
-  body .box {
-    padding: 0%;
-    margin: 0%;
-  }
-  body .box .header .headerLogo {
-    align-items: center;
-  }
-  body .box .header .headerNav .nav {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  body .box .header .headerNav .nav .nav-item {
-    padding: 0%;
-    margin: 0%;
-    padding-right: 0%;
-    padding-left: 10%;
-    text-align: end;
-    width: auto;
-  }
-  body .box .header .headerNav .nav .contact {
-    display: none;
-  }
-  body .box .header .headerNav .nav .contact2 {
-    display: block;
-    padding: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: var(--color60Aux);
-    border: none;
-    border-radius: 2rem;
-    text-decoration: none;
-    font-family: var(--fontWork);
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: var(--color30);
-    background-color: transparent;
-    border: var(--color30) solid 1.5px;
-    margin-left: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
-  body .box .home {
-    display: none;
-  }
-  body .box .homeTwo {
-    display: block;
-    padding-top: 10%;
-  }
-  body .box .homeTwo .branding {
-    padding: 0%;
-    margin: 0%;
-    width: 55%;
-    text-align: right;
-  }
-  body .box .homeTwo .branding h1 {
-    padding: 0%;
-    margin: 0%;
-    font-family: var(--fontWork);
-    font-weight: 420;
-    letter-spacing: -0.2rem;
-    font-size: 5rem;
-    line-height: 5rem;
-  }
-  body .box .homeTwo .branding span {
-    font-family: var(--fontRob);
-    font-weight: 0;
-    font-size: 5rem;
-  }
-  body .box .homeTwo .webDesign {
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    text-align: left;
-    margin-left: auto;
-    align-items: end;
-  }
-  body .box .homeTwo .webDesign .btnBox {
-    padding: 0%;
-    margin: 0%;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-  }
-  body .box .homeTwo .webDesign .btnBox .btn {
-    padding: 0%;
-    margin: 0%;
-    padding: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: var(--color60Aux);
-    border: none;
-    border-radius: 2rem;
-    text-decoration: none;
-    font-family: var(--fontWork);
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: var(--color30);
-    background-color: transparent;
-    border: var(--color10) solid 1.5px;
-    color: var(--color10);
-    margin-bottom: 4.5%;
-  }
-  body .box .homeTwo .webDesign h1 {
-    padding: 0%;
-    margin: 0%;
-    font-family: var(--fontWork);
-    font-weight: 420;
-    letter-spacing: -0.2rem;
-    font-size: 5rem;
-    line-height: 5rem;
-  }
-  body .box .homeTwo .text {
-    font-family: var(--fontWork);
-    font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: -0.05rem;
-    line-height: 1rem;
-    padding-top: 5%;
-    padding-left: 7%;
-    padding-right: 5%;
-  }
-  body .box .portfolio {
-    margin-top: 5%;
-    padding: 0%;
-  }
-  body .box .portfolio .porRow .porColCss {
-    padding: 0%;
-    margin: 0%;
-    padding: 5%;
-    padding-top: 2%;
-    padding-bottom: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  body .box .portfolio .porRow .porColCss h5 {
-    font-family: var(--fontWork);
-    font-weight: 500;
-    letter-spacing: -0.004rem;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-  }
-  body .box .portfolio .porRow .porColCss p {
-    padding-top: 5%;
-    font-family: var(--fontWork);
-    font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: -0.05rem;
-    line-height: 1rem;
-    text-align: left;
-    padding-left: 4%;
-  }
-  body .box .portfolio .porRow .porColCss .btn {
-    width: 100%;
-    padding: 1%;
-    margin-left: 4%;
-    margin-top: 2%;
-    width: 30%;
-    background-color: var(--color60Aux);
-    border: none;
-    border-radius: 2rem;
-    text-decoration: none;
-    font-family: var(--fontWork);
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: var(--color30);
-    display: none;
-  }
-  body .box .portfolio .porRow .porColCss .porBox {
-    background-color: rgb(178, 178, 247);
-    height: 300px;
-    border-radius: 1rem;
-    opacity: 1;
-    background-repeat: none;
-    background-size: cover;
-    margin-top: 2%;
-  }
-  body .box .portfolio .porRow .porColCss .porBoxA {
-    background-image: url("../img/logos_01.jpg");
-  }
-  body .box .portfolio .porRow .porColCss .porBoxB {
-    background-image: url("../img/logos_02.jpg");
-  }
-  body .box .portfolio .porRow .porColCss .porBoxC {
-    background-image: url("../img/graphic_design_01.jpg");
-    height: 716px;
-  }
-  body .box .portfolio .porRow .porB {
-    background-color: transparent;
-  }
-  body .box .portfolio .porRow .porC {
-    display: flex;
-    justify-content: flex-start;
-  }
-  body .box .about {
-    padding: 0%;
-    margin: 0%;
-    padding-top: 5%;
-  }
-  body .box .about .btnGroup2 {
-    display: block;
-  }
-  body .box .about .btnGroup2 .btnBox2 {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  body .box .about .btnGroup2 .btnBox2 .btn {
-    padding: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: var(--color60Aux);
-    border: none;
-    border-radius: 2rem;
-    text-decoration: none;
-    font-family: var(--fontWork);
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: var(--color30);
-    margin-left: 5%;
-  }
-  body .box .about .btnGroup2 .btnBox2 .git {
-    background-color: var(--color30);
-    color: var(--color60);
-  }
-  body .box .about .aboutHead .horizontal {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding: 0%;
-    margin: 0%;
-  }
-  body .box .about .aboutHead .profilePicture {
-    width: 15%;
-    border-radius: 50rem;
-    margin-top: 3%;
-    margin-right: 4%;
-  }
-  body .box .about .aboutHead h1 {
-    font-family: var(--fontWork);
-    font-weight: 420;
-    letter-spacing: -0.2rem;
-    font-size: 5rem;
-    line-height: 5rem;
-    padding: 0%;
-    margin: 0%;
-    font-size: 3rem;
-  }
-  body .box .about .aboutHead h1 span {
-    font-family: var(--fontRob);
-    font-style: italic;
-    font-weight: 0;
-    font-size: 4.5rem;
-    font-size: 3rem;
-  }
-  body .box .about .aboutHead p {
-    font-family: var(--fontWork);
-    font-weight: 500;
-    letter-spacing: -0.004rem;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    font-size: 1rem;
-    padding: 5%;
-  }
-  body .box .about .aboSec {
-    padding-top: 5%;
-  }
-  body .box .about .aboSec h4 {
-    font-family: var(--fontWork);
-    font-weight: 500;
-    letter-spacing: -0.004rem;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-  }
-  body .box .about .aboSec h4 span {
-    font-family: var(--fontRob);
-    font-style: italic;
-    font-weight: 0;
-    font-size: 4.5rem;
-  }
-  body .box .about .aboSec .aboutGroup {
-    border-top: var(--color30) solid 0.1rem;
-    padding: 8%;
-    padding-top: 5%;
-    padding-bottom: 0%;
-  }
-  body .box .about .aboSec .aboutGroup .aboutItem {
-    padding-top: 2%;
-  }
-  body .box .about .aboSec .aboutGroup .aboutItem h2 {
-    margin: auto;
-    font-family: var(--fontWork);
-    font-weight: 500;
-    font-size: 0.8rem;
-    letter-spacing: -0.005rem;
-    line-height: 0.8rem;
-    color: var(--color10);
-    text-align: start;
-    line-height: 1.2rem;
-    height: 100%;
-  }
-  body .box .about .aboSec .aboutGroup .aboutItem p {
-    height: 100%;
-    font-family: var(--fontWork);
-    font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: -0.05rem;
-    line-height: 1rem;
-    padding-top: 15%;
-  }
-  body .box .about .aboSec .aboutGroup .aboutItem a {
-    font-family: var(--fontWork);
-    font-weight: 500;
-    font-size: 0.8rem;
-    letter-spacing: -0.005rem;
-    line-height: 0.8rem;
-    text-decoration: underline;
-    opacity: 0.5;
-    text-align: start;
-    height: 100%;
-  }
-  body .box .about .aboSec .aboutGroup .aboutItem .colA {
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-  body .box .about .aboSec .aboutGroup .aboutItem .colB {
-    padding: 0%;
-    margin: 0%;
-    text-align: start;
-    padding-right: 5%;
-  }
-  body .box .about .aboSec .aboutGroup .aboutItem .colC {
-    padding: 0%;
-    margin: 0%;
-    text-align: center;
-  }
-  body .box .about .btnGroup {
-    padding-bottom: 5%;
-  }
-  body .box .about .btnGroup .btnBox {
-    display: none;
-  }
-  body footer {
-    padding-top: 8%;
-    margin-top: 8%;
-  }
-  body footer .footerMain {
-    background-color: transparent;
-    padding: 0%;
-    margin: 0%;
-    border-top-right-radius: 1.5rem;
-    border-top-left-radius: 1.5rem;
-    /* .footerLogo {
-        display: flex;
-        justify-content: flex-start;
-        align-items: end;
-        //background-color: greenyellow;
-        h5 {
-            @include resetmp();
-            @include fonth5();
-            font-weight: 500;
-            padding-left: 5%;
-        }
-        .logo {
-            width: 5%;
-        }
-    }*/
-  }
-  body footer .footerMain .footerEmail {
-    padding: 0%;
-    margin: 0%;
-    padding-top: 5%;
-  }
-  body footer .footerMain .footerEmail h2 {
-    font-family: var(--fontWork);
-    font-weight: 420;
-    letter-spacing: -0.2rem;
-    font-size: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  body footer .footerMain .footerEmail h2 span {
-    font-family: var(--fontRob);
-    font-style: italic;
-    font-weight: 0;
-    font-size: 4.5rem;
-    font-size: 2rem;
-  }
-  body footer .footerMain .footerEmail a {
-    font-family: var(--fontWork);
-    font-weight: 400;
-    font-size: 1.8rem;
-    letter-spacing: -0.005rem;
-    text-decoration: underline;
-    color: var(--color30);
-    font-size: 1.5rem;
-  }
-  body footer .footerMain .footerLink {
-    padding: 0%;
-    margin: 0%;
-    padding-top: 5%;
-    display: flex;
-    flex-direction: column;
-  }
-  body footer .footerMain .footerLink h5 {
-    font-family: var(--fontWork);
-    font-weight: 400;
-    letter-spacing: 0%;
-    font-size: 1.2rem;
-    text-align: justify;
-    text-align: end;
-    font-size: 1rem;
-  }
-  body footer .footerMain .footerLink a {
-    color: var(--color30);
-    font-family: var(--fontWork);
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding-top: 2%;
-    text-align: end;
-    font-size: 1rem;
-  }
-  body footer .footerMain .footerLink .arrowBox {
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: end;
-  }
-  body footer .footerMain .footerLink .arrowBox .arrow {
-    width: 15px;
-    height: 25px;
-    transform: rotate(-45deg);
-    margin-left: 2%;
-  }
-  body footer .footerMain .footerEnd {
-    padding: 0%;
-    margin: 0%;
-    padding-top: 5%;
-  }
-  body footer .footerMain .footerEnd h5 {
-    font-family: var(--fontWork);
-    font-weight: 400;
-    letter-spacing: 0%;
-    font-size: 1.2rem;
-    text-align: justify;
-    font-weight: 500;
-    opacity: 0.5;
-    text-align: left;
-    font-size: 0.6rem;
-  }
-  body footer .footerMain .footerEnd p {
-    padding-top: 2%;
-    font-family: var(--fontWork);
-    font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: -0.05rem;
-    line-height: 1rem;
-    font-size: 0.8rem;
-    line-height: 1.1rem;
-  }
-  body footer .footerMain .pRig {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-  }
-  body footer .footerMain .pRig .span {
-    font-family: var(--fontWork);
-    font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: -0.05rem;
-    line-height: 1rem;
     color: var(--color30);
     padding-top: 10%;
     font-size: 0.8rem;
@@ -1386,81 +908,68 @@ body footer .footerEnd .span {
 }
 @media (min-width: 769px) and (max-width: 992px) {
   /* Estilos específicos para pantallas pequeñas */
-  body {
+  .body {
     background-color: var(--color60);
-    padding: 3%;
-    padding-bottom: 0%;
-  }
-  body .box {
     padding: 0%;
     margin: 0%;
   }
-  body .box .header .headerLogo {
+  .body .box {
+    padding: 0%;
+    margin: 0%;
+    padding: 3%;
+  }
+  .body .box .header .headerLogo {
     align-items: center;
   }
-  body .box .header .headerNav .nav {
+  .body .box .header .headerNav .nav {
     display: flex;
     justify-content: end;
     align-items: center;
   }
-  body .box .header .headerNav .nav .nav-item {
+  .body .box .header .headerNav .nav .nav-item {
     padding: 0%;
     margin: 0%;
     padding-right: 0%;
-    padding-left: 10%;
+    padding-left: 5%;
     text-align: end;
     width: auto;
   }
-  body .box .header .headerNav .nav .contact {
-    display: none;
-  }
-  body .box .header .headerNav .nav .contact2 {
+  .body .box .header .headerNav .nav .nav-item .contact {
+    padding: 0%;
+    margin: 0%;
     display: block;
-    padding: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: var(--color60Aux);
-    border: none;
-    border-radius: 2rem;
-    text-decoration: none;
-    font-family: var(--fontWork);
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: var(--color30);
-    background-color: transparent;
-    border: var(--color30) solid 1.5px;
-    margin-left: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
   }
-  body .box .home {
+  .body .box .header .headerNav .nav .contact {
+    display: block;
+  }
+  .body .box .home {
     display: none;
   }
-  body .box .homeTwo {
+  .body .box .homeTwo {
     display: block;
     padding-top: 10%;
   }
-  body .box .homeTwo .branding {
+  .body .box .homeTwo .branding {
     padding: 0%;
     margin: 0%;
     width: 55%;
     text-align: right;
   }
-  body .box .homeTwo .branding h1 {
+  .body .box .homeTwo .branding h1 {
     padding: 0%;
     margin: 0%;
     font-family: var(--fontWork);
     font-weight: 420;
     letter-spacing: -0.2rem;
-    font-size: 4.6rem;
+    font-size: 5rem;
     line-height: 5rem;
   }
-  body .box .homeTwo .branding span {
+  .body .box .homeTwo .branding span {
     font-family: var(--fontRob);
     font-weight: 0;
-    font-size: 4.6rem;
+    font-size: 5rem;
   }
-  body .box .homeTwo .webDesign {
+  .body .box .homeTwo .webDesign {
     padding: 0%;
     margin: 0%;
     display: flex;
@@ -1468,7 +977,7 @@ body footer .footerEnd .span {
     margin-left: auto;
     align-items: end;
   }
-  body .box .homeTwo .webDesign .btnBox {
+  .body .box .homeTwo .webDesign .btnBox {
     padding: 0%;
     margin: 0%;
     width: 40%;
@@ -1476,7 +985,7 @@ body footer .footerEnd .span {
     justify-content: center;
     align-items: end;
   }
-  body .box .homeTwo .webDesign .btnBox .btn {
+  .body .box .homeTwo .webDesign .btnBox .btn {
     padding: 0%;
     margin: 0%;
     padding: 1%;
@@ -1495,30 +1004,29 @@ body footer .footerEnd .span {
     color: var(--color10);
     margin-bottom: 4.5%;
   }
-  body .box .homeTwo .webDesign h1 {
+  .body .box .homeTwo .webDesign h1 {
     padding: 0%;
     margin: 0%;
     font-family: var(--fontWork);
     font-weight: 420;
     letter-spacing: -0.2rem;
-    font-size: 4.6rem;
+    font-size: 5rem;
     line-height: 5rem;
   }
-  body .box .homeTwo .text {
+  .body .box .homeTwo .text {
     font-family: var(--fontWork);
     font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: -0.05rem;
+    font-size: 0.8rem;
     line-height: 1rem;
     padding-top: 5%;
     padding-left: 7%;
     padding-right: 5%;
   }
-  body .box .portfolio {
+  .body .box .portfolio {
     margin-top: 5%;
     padding: 0%;
   }
-  body .box .portfolio .porRow .porColCss {
+  .body .box .portfolio .porRow .porColCss {
     padding: 0%;
     margin: 0%;
     padding: 5%;
@@ -1528,24 +1036,23 @@ body footer .footerEnd .span {
     flex-direction: column;
     justify-content: space-between;
   }
-  body .box .portfolio .porRow .porColCss h5 {
+  .body .box .portfolio .porRow .porColCss h5 {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
     font-size: 0.9rem;
     line-height: 1.5rem;
   }
-  body .box .portfolio .porRow .porColCss p {
+  .body .box .portfolio .porRow .porColCss p {
     padding-top: 5%;
     font-family: var(--fontWork);
     font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: -0.05rem;
+    font-size: 0.8rem;
     line-height: 1rem;
     text-align: left;
     padding-left: 4%;
   }
-  body .box .portfolio .porRow .porColCss .btn {
+  .body .box .portfolio .porRow .porColCss .btn {
     width: 100%;
     padding: 1%;
     margin-left: 4%;
@@ -1561,7 +1068,7 @@ body footer .footerEnd .span {
     color: var(--color30);
     display: none;
   }
-  body .box .portfolio .porRow .porColCss .porBox {
+  .body .box .portfolio .porRow .porColCss .porBox {
     background-color: rgb(178, 178, 247);
     height: 300px;
     border-radius: 1rem;
@@ -1570,37 +1077,37 @@ body footer .footerEnd .span {
     background-size: cover;
     margin-top: 2%;
   }
-  body .box .portfolio .porRow .porColCss .porBoxA {
+  .body .box .portfolio .porRow .porColCss .porBoxA {
     background-image: url("../img/logos_01.jpg");
   }
-  body .box .portfolio .porRow .porColCss .porBoxB {
+  .body .box .portfolio .porRow .porColCss .porBoxB {
     background-image: url("../img/logos_02.jpg");
   }
-  body .box .portfolio .porRow .porColCss .porBoxC {
+  .body .box .portfolio .porRow .porColCss .porBoxC {
     background-image: url("../img/graphic_design_01.jpg");
     height: 716px;
   }
-  body .box .portfolio .porRow .porB {
+  .body .box .portfolio .porRow .porB {
     background-color: transparent;
   }
-  body .box .portfolio .porRow .porC {
+  .body .box .portfolio .porRow .porC {
     display: flex;
     justify-content: flex-start;
   }
-  body .box .about {
+  .body .box .about {
     padding: 0%;
     margin: 0%;
     padding-top: 5%;
   }
-  body .box .about .btnGroup2 {
+  .body .box .about .btnGroup2 {
     display: block;
   }
-  body .box .about .btnGroup2 .btnBox2 {
+  .body .box .about .btnGroup2 .btnBox2 {
     display: flex;
     justify-content: end;
     align-items: center;
   }
-  body .box .about .btnGroup2 .btnBox2 .btn {
+  .body .box .about .btnGroup2 .btnBox2 .btn {
     padding: 1%;
     padding-left: 5%;
     padding-right: 5%;
@@ -1614,41 +1121,41 @@ body footer .footerEnd .span {
     color: var(--color30);
     margin-left: 5%;
   }
-  body .box .about .btnGroup2 .btnBox2 .git {
+  .body .box .about .btnGroup2 .btnBox2 .git {
     background-color: var(--color30);
     color: var(--color60);
   }
-  body .box .about .aboutHead .horizontal {
+  .body .box .about .aboutHead .horizontal {
     display: flex;
     justify-content: center;
     align-items: start;
     padding: 0%;
     margin: 0%;
   }
-  body .box .about .aboutHead .profilePicture {
+  .body .box .about .aboutHead .profilePicture {
     width: 15%;
     border-radius: 50rem;
     margin-top: 3%;
     margin-right: 4%;
   }
-  body .box .about .aboutHead h1 {
+  .body .box .about .aboutHead h1 {
     font-family: var(--fontWork);
     font-weight: 420;
     letter-spacing: -0.2rem;
-    font-size: 4.6rem;
+    font-size: 5rem;
     line-height: 5rem;
     padding: 0%;
     margin: 0%;
     font-size: 3rem;
   }
-  body .box .about .aboutHead h1 span {
+  .body .box .about .aboutHead h1 span {
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
     font-size: 4.5rem;
     font-size: 3rem;
   }
-  body .box .about .aboutHead p {
+  .body .box .about .aboutHead p {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
@@ -1657,32 +1164,32 @@ body footer .footerEnd .span {
     font-size: 1rem;
     padding: 5%;
   }
-  body .box .about .aboSec {
+  .body .box .about .aboSec {
     padding-top: 5%;
   }
-  body .box .about .aboSec h4 {
+  .body .box .about .aboSec h4 {
     font-family: var(--fontWork);
     font-weight: 500;
     letter-spacing: -0.004rem;
     font-size: 0.9rem;
     line-height: 1.5rem;
   }
-  body .box .about .aboSec h4 span {
+  .body .box .about .aboSec h4 span {
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
     font-size: 4.5rem;
   }
-  body .box .about .aboSec .aboutGroup {
+  .body .box .about .aboSec .aboutGroup {
     border-top: var(--color30) solid 0.1rem;
     padding: 8%;
     padding-top: 5%;
     padding-bottom: 0%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem {
+  .body .box .about .aboSec .aboutGroup .aboutItem {
     padding-top: 2%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem h2 {
+  .body .box .about .aboSec .aboutGroup .aboutItem h2 {
     margin: auto;
     font-family: var(--fontWork);
     font-weight: 500;
@@ -1694,16 +1201,15 @@ body footer .footerEnd .span {
     line-height: 1.2rem;
     height: 100%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem p {
+  .body .box .about .aboSec .aboutGroup .aboutItem p {
     height: 100%;
     font-family: var(--fontWork);
     font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: -0.05rem;
+    font-size: 0.8rem;
     line-height: 1rem;
     padding-top: 15%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem a {
+  .body .box .about .aboSec .aboutGroup .aboutItem a {
     font-family: var(--fontWork);
     font-weight: 500;
     font-size: 0.8rem;
@@ -1714,40 +1220,41 @@ body footer .footerEnd .span {
     text-align: start;
     height: 100%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem .colA {
+  .body .box .about .aboSec .aboutGroup .aboutItem .colA {
     padding: 0%;
     margin: 0%;
     display: flex;
     justify-content: start;
     align-items: center;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem .colB {
+  .body .box .about .aboSec .aboutGroup .aboutItem .colB {
     padding: 0%;
     margin: 0%;
     text-align: start;
     padding-right: 5%;
   }
-  body .box .about .aboSec .aboutGroup .aboutItem .colC {
+  .body .box .about .aboSec .aboutGroup .aboutItem .colC {
     padding: 0%;
     margin: 0%;
     text-align: center;
   }
-  body .box .about .btnGroup {
+  .body .box .about .btnGroup {
     padding-bottom: 5%;
   }
-  body .box .about .btnGroup .btnBox {
+  .body .box .about .btnGroup .btnBox {
     display: none;
   }
-  body footer {
+  .body footer {
     padding-top: 8%;
     margin-top: 8%;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    background-color: rgba(236, 228, 206, 0.4);
   }
-  body footer .footerMain {
+  .body footer .footerMain {
     background-color: transparent;
     padding: 0%;
     margin: 0%;
-    border-top-right-radius: 1.5rem;
-    border-top-left-radius: 1.5rem;
     /* .footerLogo {
         display: flex;
         justify-content: flex-start;
@@ -1764,28 +1271,28 @@ body footer .footerEnd .span {
         }
     }*/
   }
-  body footer .footerMain .footerEmail {
+  .body footer .footerMain .footerEmail {
     padding: 0%;
     margin: 0%;
     padding-top: 5%;
   }
-  body footer .footerMain .footerEmail h2 {
+  .body footer .footerMain .footerEmail h2 {
     font-family: var(--fontWork);
     font-weight: 420;
     letter-spacing: -0.2rem;
-    font-size: 4.6rem;
+    font-size: 5rem;
     line-height: 5rem;
     font-size: 2rem;
     line-height: 2.5rem;
   }
-  body footer .footerMain .footerEmail h2 span {
+  .body footer .footerMain .footerEmail h2 span {
     font-family: var(--fontRob);
     font-style: italic;
     font-weight: 0;
     font-size: 4.5rem;
     font-size: 2rem;
   }
-  body footer .footerMain .footerEmail a {
+  .body footer .footerMain .footerEmail a {
     font-family: var(--fontWork);
     font-weight: 400;
     font-size: 1.8rem;
@@ -1794,14 +1301,14 @@ body footer .footerEnd .span {
     color: var(--color30);
     font-size: 1.5rem;
   }
-  body footer .footerMain .footerLink {
+  .body footer .footerMain .footerLink {
     padding: 0%;
     margin: 0%;
     padding-top: 5%;
     display: flex;
     flex-direction: column;
   }
-  body footer .footerMain .footerLink h5 {
+  .body footer .footerMain .footerLink h5 {
     font-family: var(--fontWork);
     font-weight: 400;
     letter-spacing: 0%;
@@ -1810,7 +1317,7 @@ body footer .footerEnd .span {
     text-align: end;
     font-size: 1rem;
   }
-  body footer .footerMain .footerLink a {
+  .body footer .footerMain .footerLink a {
     color: var(--color30);
     font-family: var(--fontWork);
     font-weight: 500;
@@ -1819,25 +1326,25 @@ body footer .footerEnd .span {
     text-align: end;
     font-size: 1rem;
   }
-  body footer .footerMain .footerLink .arrowBox {
+  .body footer .footerMain .footerLink .arrowBox {
     padding: 0%;
     margin: 0%;
     display: flex;
     justify-content: flex-start;
     align-items: end;
   }
-  body footer .footerMain .footerLink .arrowBox .arrow {
+  .body footer .footerMain .footerLink .arrowBox .arrow {
     width: 15px;
     height: 25px;
     transform: rotate(-45deg);
     margin-left: 2%;
   }
-  body footer .footerMain .footerEnd {
+  .body footer .footerMain .footerEnd {
     padding: 0%;
     margin: 0%;
     padding-top: 5%;
   }
-  body footer .footerMain .footerEnd h5 {
+  .body footer .footerMain .footerEnd h5 {
     font-family: var(--fontWork);
     font-weight: 400;
     letter-spacing: 0%;
@@ -1848,27 +1355,507 @@ body footer .footerEnd .span {
     text-align: left;
     font-size: 0.6rem;
   }
-  body footer .footerMain .footerEnd p {
+  .body footer .footerMain .footerEnd p {
     padding-top: 2%;
     font-family: var(--fontWork);
     font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: -0.05rem;
+    font-size: 0.8rem;
     line-height: 1rem;
     font-size: 0.8rem;
     line-height: 1.1rem;
   }
-  body footer .footerMain .pRig {
+  .body footer .footerMain .pRig {
     display: flex;
     justify-content: end;
     align-items: end;
   }
-  body footer .footerMain .pRig .span {
+  .body footer .footerMain .pRig .span {
     font-family: var(--fontWork);
     font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: -0.05rem;
+    font-size: 0.8rem;
     line-height: 1rem;
+    color: var(--color30);
+    padding-top: 10%;
+    font-size: 0.8rem;
+    text-align: end;
+  }
+}
+@media (min-width: 993px) {
+  /* Estilos específicos para pantallas pequeñas */
+  .body {
+    background-color: var(--color60);
+    padding: 0%;
+    margin: 0%;
+  }
+  .body .box {
+    padding: 0%;
+    margin: 0%;
+    padding: 3%;
+  }
+  .body .box .header .headerLogo {
+    align-items: center;
+  }
+  .body .box .header .headerNav .nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .body .box .header .headerNav .nav .nav-item {
+    padding: 0%;
+    margin: 0%;
+    padding-right: 0%;
+    padding-left: 5%;
+    text-align: end;
+    width: auto;
+  }
+  .body .box .header .headerNav .nav .nav-item .contact {
+    padding: 0%;
+    margin: 0%;
+    display: block;
+  }
+  .body .box .header .headerNav .nav .contact {
+    display: block;
+  }
+  .body .box .home {
+    display: none;
+  }
+  .body .box .homeTwo {
+    display: block;
+    padding-top: 10%;
+  }
+  .body .box .homeTwo .branding {
+    padding: 0%;
+    margin: 0%;
+    width: 55%;
+    text-align: right;
+  }
+  .body .box .homeTwo .branding h1 {
+    padding: 0%;
+    margin: 0%;
+    font-family: var(--fontWork);
+    font-weight: 420;
+    letter-spacing: -0.2rem;
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+  .body .box .homeTwo .branding span {
+    font-family: var(--fontRob);
+    font-weight: 0;
+    font-size: 5rem;
+  }
+  .body .box .homeTwo .webDesign {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    text-align: left;
+    margin-left: auto;
+    align-items: end;
+  }
+  .body .box .homeTwo .webDesign .btnBox {
+    padding: 0%;
+    margin: 0%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .body .box .homeTwo .webDesign .btnBox .btn {
+    padding: 0%;
+    margin: 0%;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: var(--color60Aux);
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-family: var(--fontWork);
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--color30);
+    background-color: transparent;
+    border: var(--color10) solid 1.5px;
+    color: var(--color10);
+    margin-bottom: 7%;
+  }
+  .body .box .homeTwo .webDesign h1 {
+    padding: 0%;
+    margin: 0%;
+    font-family: var(--fontWork);
+    font-weight: 420;
+    letter-spacing: -0.2rem;
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+  .body .box .homeTwo .text {
+    font-family: var(--fontWork);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2rem;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 5%;
+  }
+  .body .box .portfolio {
+    margin-top: 5%;
+    padding: 0%;
+  }
+  .body .box .portfolio .porRow .porColCss {
+    padding: 0%;
+    margin: 0%;
+    padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .body .box .portfolio .porRow .porColCss h5 {
+    font-family: var(--fontWork);
+    font-weight: 500;
+    letter-spacing: -0.004rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .body .box .portfolio .porRow .porColCss p {
+    padding-top: 5%;
+    font-family: var(--fontWork);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2rem;
+    text-align: left;
+    padding-left: 4%;
+  }
+  .body .box .portfolio .porRow .porColCss .btn {
+    width: 100%;
+    padding: 1%;
+    margin-left: 4%;
+    margin-top: 2%;
+    width: 30%;
+    background-color: var(--color60Aux);
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-family: var(--fontWork);
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--color30);
+    display: none;
+  }
+  .body .box .portfolio .porRow .porColCss .porBox {
+    background-color: rgb(178, 178, 247);
+    height: 300px;
+    border-radius: 1rem;
+    opacity: 1;
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 2%;
+  }
+  .body .box .portfolio .porRow .porColCss .porBoxA {
+    background-image: url("../img/logos_01.jpg");
+  }
+  .body .box .portfolio .porRow .porColCss .porBoxB {
+    background-image: url("../img/logos_02.jpg");
+  }
+  .body .box .portfolio .porRow .porColCss .porBoxC {
+    background-image: url("../img/graphic_design_01.jpg");
+    height: 730px;
+  }
+  .body .box .portfolio .porRow .porB {
+    background-color: transparent;
+  }
+  .body .box .portfolio .porRow .porC {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .body .box .about {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 10%;
+  }
+  .body .box .about .btnGroup2 {
+    display: block;
+  }
+  .body .box .about .btnGroup2 .btnBox2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .body .box .about .btnGroup2 .btnBox2 .btn {
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: var(--color60Aux);
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-family: var(--fontWork);
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--color30);
+    font-size: 1rem;
+    margin-left: 5%;
+  }
+  .body .box .about .btnGroup2 .btnBox2 .git {
+    background-color: var(--color30);
+    color: var(--color60);
+  }
+  .body .box .about .aboutHead .horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0%;
+    margin: 0%;
+  }
+  .body .box .about .aboutHead .profilePicture {
+    width: 15%;
+    border-radius: 50rem;
+    margin-top: 3%;
+    margin-right: 4%;
+  }
+  .body .box .about .aboutHead h1 {
+    font-family: var(--fontWork);
+    font-weight: 420;
+    letter-spacing: -0.2rem;
+    font-size: 6rem;
+    line-height: 6.5rem;
+    padding: 0%;
+    margin: 0%;
+    font-size: 4.5rem;
+  }
+  .body .box .about .aboutHead h1 span {
+    font-family: var(--fontRob);
+    font-style: italic;
+    font-weight: 0;
+    font-size: 6rem;
+    font-size: 4.5rem;
+  }
+  .body .box .about .aboutHead p {
+    font-family: var(--fontWork);
+    font-weight: 500;
+    letter-spacing: -0.004rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    padding: 5%;
+  }
+  .body .box .about .aboSec {
+    padding-top: 10%;
+    padding: 5%;
+  }
+  .body .box .about .aboSec h4 {
+    font-family: var(--fontWork);
+    font-weight: 500;
+    letter-spacing: -0.004rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .body .box .about .aboSec h4 span {
+    font-family: var(--fontRob);
+    font-style: italic;
+    font-weight: 0;
+    font-size: 6rem;
+  }
+  .body .box .about .aboSec .aboutGroup {
+    border-top: var(--color30) solid 0.1rem;
+    padding: 4%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+  .body .box .about .aboSec .aboutGroup .aboutItem {
+    padding-top: 2%;
+  }
+  .body .box .about .aboSec .aboutGroup .aboutItem h2 {
+    margin: auto;
+    font-family: var(--fontWork);
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: -0.005rem;
+    line-height: 0.8rem;
+    color: var(--color10);
+    text-align: start;
+    line-height: 1.2rem;
+    height: 100%;
+  }
+  .body .box .about .aboSec .aboutGroup .aboutItem p {
+    height: 100%;
+    font-family: var(--fontWork);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2rem;
+    padding-top: 7%;
+  }
+  .body .box .about .aboSec .aboutGroup .aboutItem a {
+    font-family: var(--fontWork);
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: -0.005rem;
+    line-height: 0.8rem;
+    text-decoration: underline;
+    opacity: 0.5;
+    text-align: start;
+    height: 100%;
+    padding-top: 7%;
+  }
+  .body .box .about .aboSec .aboutGroup .aboutItem .colA {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .body .box .about .aboSec .aboutGroup .aboutItem .colB {
+    padding: 0%;
+    margin: 0%;
+    text-align: start;
+    padding-right: 5%;
+  }
+  .body .box .about .aboSec .aboutGroup .aboutItem .colC {
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+  }
+  .body .box .about .btnGroup {
+    padding-bottom: 5%;
+  }
+  .body .box .about .btnGroup .btnBox {
+    display: none;
+  }
+  .body footer {
+    padding-top: 8%;
+    margin-top: 8%;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    background-color: rgba(236, 228, 206, 0.4);
+  }
+  .body footer .footerMain {
+    background-color: transparent;
+    padding: 0%;
+    margin: 0%;
+    /* .footerLogo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: end;
+        //background-color: greenyellow;
+        h5 {
+            @include resetmp();
+            @include fonth5();
+            font-weight: 500;
+            padding-left: 5%;
+        }
+        .logo {
+            width: 5%;
+        }
+    }*/
+  }
+  .body footer .footerMain .footerEmail {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 5%;
+  }
+  .body footer .footerMain .footerEmail h2 {
+    font-family: var(--fontWork);
+    font-weight: 420;
+    letter-spacing: -0.2rem;
+    font-size: 6rem;
+    line-height: 6.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .body footer .footerMain .footerEmail h2 span {
+    font-family: var(--fontRob);
+    font-style: italic;
+    font-weight: 0;
+    font-size: 6rem;
+    font-size: 2rem;
+  }
+  .body footer .footerMain .footerEmail a {
+    font-family: var(--fontWork);
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: -0.005rem;
+    text-decoration: underline;
+    color: var(--color30);
+    font-size: 1.5rem;
+  }
+  .body footer .footerMain .footerLink {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .body footer .footerMain .footerLink h5 {
+    font-family: var(--fontWork);
+    font-weight: 400;
+    letter-spacing: 0%;
+    font-size: 1.2rem;
+    text-align: justify;
+    text-align: end;
+    font-size: 1rem;
+  }
+  .body footer .footerMain .footerLink a {
+    color: var(--color30);
+    font-family: var(--fontWork);
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-top: 2%;
+    text-align: end;
+    font-size: 1rem;
+  }
+  .body footer .footerMain .footerLink .arrowBox {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+  }
+  .body footer .footerMain .footerLink .arrowBox .arrow {
+    width: 15px;
+    height: 25px;
+    transform: rotate(-45deg);
+    margin-left: 2%;
+  }
+  .body footer .footerMain .footerEnd {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 5%;
+  }
+  .body footer .footerMain .footerEnd h5 {
+    font-family: var(--fontWork);
+    font-weight: 400;
+    letter-spacing: 0%;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: 500;
+    opacity: 0.5;
+    text-align: left;
+    font-size: 0.6rem;
+  }
+  .body footer .footerMain .footerEnd p {
+    padding-top: 2%;
+    font-family: var(--fontWork);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+  .body footer .footerMain .pRig {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .body footer .footerMain .pRig .span {
+    font-family: var(--fontWork);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2rem;
     color: var(--color30);
     padding-top: 10%;
     font-size: 0.8rem;

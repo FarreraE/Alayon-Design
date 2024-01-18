@@ -101,7 +101,8 @@
         //background-color: var(--color10);
     }
 
-    body {
+    .body {
+        @include resetmp();
         background-color: var(--color60);
         .box {
             @include resetmp();
@@ -331,6 +332,11 @@
                             @include btnAux();
                             width: 40%;
                         }
+                        .git{
+                            background-color: var(--color30);
+                            color: var(--color60);
+                        }
+                        
                     }
                 }
             }

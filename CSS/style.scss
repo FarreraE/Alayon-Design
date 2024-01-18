@@ -114,10 +114,13 @@
     @include fontButton01();
 }
 
-body {
+.body {
     background-color: var(--color60);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    @include resetmp();
     .box {
         max-width: 1200px;
         @include resetmp();
@@ -169,13 +172,14 @@ body {
                             font-weight: 500;
                             text-align: end;
                         }
+                        .contact {
+                            display: none;
+                        }
                     }
                     .contact {
-                        display: block;
-                    }
-                    .contact2 {
                         display: none;
                     }
+                   
                 }
             }
         }
@@ -364,10 +368,12 @@ body {
         }
     }
     footer {
+        @include resetmp();
         background-color: #ece4ce66;
         padding-top: 15%;
         padding-left: 5%;
         padding-right: 5%;
+        margin-top: 15%;
         border-top-right-radius: 1.5rem;
         border-top-left-radius: 1.5rem;
         .footerLogo {
