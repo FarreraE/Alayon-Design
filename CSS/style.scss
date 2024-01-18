@@ -122,7 +122,7 @@
     align-items: center;
     @include resetmp();
     .box {
-        max-width: 1200px;
+        max-width: 1300px;
         @include resetmp();
         padding: 5%;
         padding-bottom: 0%;
@@ -160,8 +160,8 @@
                     list-style: none;
                     .nav-item {
                         @include resetmp();
-                        padding-left: 0%;
-                        padding-left: 15%;
+                        //padding-left: 0%;
+                        //padding-left: 15%;
 
                         a {
                             @include resetmp();
@@ -171,15 +171,28 @@
                             text-decoration: none;
                             font-weight: 500;
                             text-align: end;
+                   
+                        }
+                        a:hover {
+                            text-decoration: underline;
+                            //background-color: var(--color60Aux);
                         }
                         .contact {
                             display: none;
+                     
                         }
+                       /* .contact:hover {
+                            padding: 0.8rem;
+                            padding-left: 2rem;
+                            padding-right: 2rem;
+                            border-radius: 5rem;
+                            text-decoration: underline;
+                            background-color: var(--color60Aux);
+                        }*/
                     }
-                    .contact {
+                    .contactli {
                         display: none;
                     }
-                   
                 }
             }
         }
@@ -217,6 +230,12 @@
         // PORTFOLIO
         .portfolio {
             padding-top: 15%;
+            .pfs{
+                display: flex;
+            }
+            .pfm{
+                display: none;
+            }
             .porRow {
                 //background-color: #282b30;
                 h5 {
@@ -229,7 +248,7 @@
                     padding-bottom: 5%;
                     display: flex;
                     flex-direction: column;
-                    justify-content:end;
+                    justify-content: end;
                     // align-items: center;
                     p {
                         padding-top: 5%;
@@ -256,11 +275,17 @@
                         background-position: center;
                         background-size: cover;
                     }
+                    .porBoxA:hover{
+                        background-image: url("../img/graphic_design_02.jpg");
+                    }
                     .porBoxB {
-                        background-image: url("../img/logos_02.jpg");
+                        background-image: url("../img/logos_01.jpg");
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: cover;
+                    }
+                    .porBoxB:hover{
+                        background-image: url("../img/logos_02.jpg");
                     }
                     .porBoxC {
                         background-image: url("../img/web_design_01.jpg");
@@ -268,13 +293,16 @@
                         background-position: center;
                         background-size: cover;
                     }
+                    .porBoxC:hover{
+                        background-image: url("../img/web_design_02.jpg");
+                    }
                 }
             }
         }
         // ABOUT
         .about {
             padding-top: 15%;
-            .btnGroup2{
+            .btnGroup2 {
                 display: none;
             }
             .aboutHead {
@@ -359,7 +387,10 @@
                         margin-top: 5%;
                         @include btnAux();
                     }
-                    .git{
+                    .btn:hover {
+                        text-decoration: underline;
+                    }
+                    .git {
                         background-color: var(--color30);
                         color: var(--color60);
                     }

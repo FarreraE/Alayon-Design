@@ -1,4 +1,4 @@
-@media (min-width: 993px){
+@media (min-width: 993px) {
     /* Estilos específicos para pantallas pequeñas */
     @mixin fonth1 {
         font-family: var(--fontWork);
@@ -54,7 +54,6 @@
         font-size: 1.2rem;
         color: var(--color30);
         //background-color: red;
-  
     }
 
     @mixin fontButton02 {
@@ -69,7 +68,7 @@
         font-size: 1.1rem;
         letter-spacing: -0.005rem;
         line-height: 0.8rem;
-       // background-color: red;
+        // background-color: red;
     }
 
     @mixin fontTextLink {
@@ -89,8 +88,6 @@
         border-radius: 2rem;
         text-decoration: none;
         @include fontButton01();
-        
- 
     }
 
     @mixin btnAux {
@@ -111,7 +108,7 @@
     .body {
         background-color: var(--color60);
         @include resetmp();
-        
+
         .box {
             @include resetmp();
             //padding: 1%;
@@ -140,7 +137,6 @@
                             }
                         }
                         .contact {
-                            
                             display: block;
                         }
                     }
@@ -150,11 +146,11 @@
             .home {
                 display: none;
             }
-              // HOME 2
+            // HOME 2
             .homeTwo {
                 display: block;
                 padding-top: 10%;
-                
+
                 .branding {
                     @include resetmp();
                     width: 55%;
@@ -163,7 +159,6 @@
                     h1 {
                         @include resetmp();
                         @include fonth1();
-                        
                     }
                     span {
                         @include fonth2();
@@ -209,6 +204,12 @@
             .portfolio {
                 margin-top: 5%;
                 padding: 0%;
+                .pfs {
+                    display: none;
+                }
+                .pfm {
+                    display: flex;
+                }
                 .porRow {
                     .porColCss {
                         @include resetmp();
@@ -221,7 +222,6 @@
                         //background-color: red;
                         h5 {
                             @include fonth4();
-                   
                         }
                         p {
                             padding-top: 5%;
@@ -246,14 +246,32 @@
                             margin-top: 2%;
                         }
                         .porBoxA {
-                            background-image: url("../img/logos_01.jpg");
+                            background-image: url("../img/graphic_design_01.jpg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            height: 716px;
+                        }
+                        .porBoxA:hover {
+                            background-image: url("../img/graphic_design_02.jpg");
                         }
                         .porBoxB {
+                            background-image: url("../img/logos_01.jpg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                        }
+                        .porBoxB:hover {
                             background-image: url("../img/logos_02.jpg");
                         }
                         .porBoxC {
-                            background-image: url("../img/graphic_design_01.jpg");
-                            height: 730px;
+                            background-image: url("../img/web_design_01.jpg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                        }
+                        .porBoxC:hover {
+                            background-image: url("../img/web_design_02.jpg");
                         }
                     }
                     .porB {
@@ -282,6 +300,9 @@
                             @include btn();
                             font-size: 1rem;
                             margin-left: 5%;
+                        }
+                        .btn:hover {
+                            text-decoration: underline;
                         }
                         .git {
                             background-color: var(--color30);
@@ -316,15 +337,15 @@
                     }
                     p {
                         @include fonth4();
-                       font-size: 1.2rem;
-                       
+                        font-size: 1.2rem;
+
                         padding: 5%;
                     }
                 }
                 .aboSec {
                     padding-top: 10%;
                     padding: 5%;
-                    
+
                     h4 {
                         @include fonth4();
                         span {
@@ -351,7 +372,7 @@
                             p {
                                 height: 100%;
                                 @include fontText();
-                                
+
                                 padding-top: 7%;
                                 //background-color: red;
                             }
@@ -361,7 +382,7 @@
                                 text-decoration: underline;
                                 opacity: 0.5;
                                 text-align: start;
-                          
+
                                 height: 100%;
                                 padding-top: 7%;
                             }
@@ -394,7 +415,6 @@
             }
         }
         footer {
-            
             padding-top: 8%;
             margin-top: 8%;
             border-top-right-radius: 1.5rem;

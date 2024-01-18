@@ -107,7 +107,7 @@
     .body {
         background-color: var(--color60);
         @include resetmp();
-        
+
         .box {
             @include resetmp();
             //padding: 1%;
@@ -136,7 +136,6 @@
                             }
                         }
                         .contact {
-                            
                             display: block;
                         }
                     }
@@ -202,6 +201,12 @@
             .portfolio {
                 margin-top: 5%;
                 padding: 0%;
+                .pfs{
+                    display: none;
+                }
+                .pfm{
+                    display: flex;
+                }
                 .porRow {
                     .porColCss {
                         @include resetmp();
@@ -238,14 +243,34 @@
                             margin-top: 2%;
                         }
                         .porBoxA {
-                            background-image: url("../img/logos_01.jpg");
+                            background-image: url("../img/graphic_design_01.jpg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;                            
+                            height: 716px;
+                        }
+                        .porBoxA:hover {
+                            background-image: url("../img/graphic_design_02.jpg");
                         }
                         .porBoxB {
+                            background-image: url("../img/logos_01.jpg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            
+                        }
+                        .porBoxB:hover {
                             background-image: url("../img/logos_02.jpg");
                         }
                         .porBoxC {
-                            background-image: url("../img/graphic_design_01.jpg");
-                            height: 716px;
+                            background-image: url("../img/web_design_01.jpg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            
+                        }
+                        .porBoxC:hover {
+                            background-image: url("../img/web_design_02.jpg");
                         }
                     }
                     .porB {
@@ -272,6 +297,9 @@
                         .btn {
                             @include btn();
                             margin-left: 5%;
+                        }
+                        .btn:hover{
+                            text-decoration: underline;
                         }
                         .git {
                             background-color: var(--color30);
@@ -381,7 +409,6 @@
             }
         }
         footer {
-            
             padding-top: 8%;
             margin-top: 8%;
             border-top-right-radius: 1.5rem;

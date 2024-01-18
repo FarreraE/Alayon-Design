@@ -23,7 +23,7 @@
   margin: 0%;
 }
 .body .box {
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0%;
   margin: 0%;
   padding: 5%;
@@ -71,8 +71,14 @@
 .body .box .header .headerNav .nav .nav-item {
   padding: 0%;
   margin: 0%;
-  padding-left: 0%;
-  padding-left: 15%;
+  /* .contact:hover {
+       padding: 0.8rem;
+       padding-left: 2rem;
+       padding-right: 2rem;
+       border-radius: 5rem;
+       text-decoration: underline;
+       background-color: var(--color60Aux);
+   }*/
 }
 .body .box .header .headerNav .nav .nav-item a {
   padding: 0%;
@@ -88,10 +94,13 @@
   font-weight: 500;
   text-align: end;
 }
+.body .box .header .headerNav .nav .nav-item a:hover {
+  text-decoration: underline;
+}
 .body .box .header .headerNav .nav .nav-item .contact {
   display: none;
 }
-.body .box .header .headerNav .nav .contact {
+.body .box .header .headerNav .nav .contactli {
   display: none;
 }
 .body .box .homeTwo {
@@ -149,6 +158,12 @@
 .body .box .portfolio {
   padding-top: 15%;
 }
+.body .box .portfolio .pfs {
+  display: flex;
+}
+.body .box .portfolio .pfm {
+  display: none;
+}
 .body .box .portfolio .porRow h5 {
   font-family: var(--fontWork);
   font-weight: 500;
@@ -204,17 +219,26 @@
   background-position: center;
   background-size: cover;
 }
+.body .box .portfolio .porRow .porColCss .porBoxA:hover {
+  background-image: url("../img/graphic_design_02.jpg");
+}
 .body .box .portfolio .porRow .porColCss .porBoxB {
-  background-image: url("../img/logos_02.jpg");
+  background-image: url("../img/logos_01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.body .box .portfolio .porRow .porColCss .porBoxB:hover {
+  background-image: url("../img/logos_02.jpg");
 }
 .body .box .portfolio .porRow .porColCss .porBoxC {
   background-image: url("../img/web_design_01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.body .box .portfolio .porRow .porColCss .porBoxC:hover {
+  background-image: url("../img/web_design_02.jpg");
 }
 .body .box .about {
   padding-top: 15%;
@@ -335,6 +359,9 @@
   font-weight: 500;
   font-size: 1rem;
   color: var(--color30);
+}
+.body .box .about .btnGroup .btnBox .btn:hover {
+  text-decoration: underline;
 }
 .body .box .about .btnGroup .btnBox .git {
   background-color: var(--color30);
@@ -1026,6 +1053,12 @@
     margin-top: 5%;
     padding: 0%;
   }
+  .body .box .portfolio .pfs {
+    display: none;
+  }
+  .body .box .portfolio .pfm {
+    display: flex;
+  }
   .body .box .portfolio .porRow .porColCss {
     padding: 0%;
     margin: 0%;
@@ -1078,14 +1111,32 @@
     margin-top: 2%;
   }
   .body .box .portfolio .porRow .porColCss .porBoxA {
-    background-image: url("../img/logos_01.jpg");
+    background-image: url("../img/graphic_design_01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 716px;
+  }
+  .body .box .portfolio .porRow .porColCss .porBoxA:hover {
+    background-image: url("../img/graphic_design_02.jpg");
   }
   .body .box .portfolio .porRow .porColCss .porBoxB {
+    background-image: url("../img/logos_01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .body .box .portfolio .porRow .porColCss .porBoxB:hover {
     background-image: url("../img/logos_02.jpg");
   }
   .body .box .portfolio .porRow .porColCss .porBoxC {
-    background-image: url("../img/graphic_design_01.jpg");
-    height: 716px;
+    background-image: url("../img/web_design_01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .body .box .portfolio .porRow .porColCss .porBoxC:hover {
+    background-image: url("../img/web_design_02.jpg");
   }
   .body .box .portfolio .porRow .porB {
     background-color: transparent;
@@ -1120,6 +1171,9 @@
     font-size: 0.8rem;
     color: var(--color30);
     margin-left: 5%;
+  }
+  .body .box .about .btnGroup2 .btnBox2 .btn:hover {
+    text-decoration: underline;
   }
   .body .box .about .btnGroup2 .btnBox2 .git {
     background-color: var(--color30);
@@ -1501,6 +1555,12 @@
     margin-top: 5%;
     padding: 0%;
   }
+  .body .box .portfolio .pfs {
+    display: none;
+  }
+  .body .box .portfolio .pfm {
+    display: flex;
+  }
   .body .box .portfolio .porRow .porColCss {
     padding: 0%;
     margin: 0%;
@@ -1554,14 +1614,32 @@
     margin-top: 2%;
   }
   .body .box .portfolio .porRow .porColCss .porBoxA {
-    background-image: url("../img/logos_01.jpg");
+    background-image: url("../img/graphic_design_01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 716px;
+  }
+  .body .box .portfolio .porRow .porColCss .porBoxA:hover {
+    background-image: url("../img/graphic_design_02.jpg");
   }
   .body .box .portfolio .porRow .porColCss .porBoxB {
+    background-image: url("../img/logos_01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .body .box .portfolio .porRow .porColCss .porBoxB:hover {
     background-image: url("../img/logos_02.jpg");
   }
   .body .box .portfolio .porRow .porColCss .porBoxC {
-    background-image: url("../img/graphic_design_01.jpg");
-    height: 730px;
+    background-image: url("../img/web_design_01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .body .box .portfolio .porRow .porColCss .porBoxC:hover {
+    background-image: url("../img/web_design_02.jpg");
   }
   .body .box .portfolio .porRow .porB {
     background-color: transparent;
@@ -1597,6 +1675,9 @@
     color: var(--color30);
     font-size: 1rem;
     margin-left: 5%;
+  }
+  .body .box .about .btnGroup2 .btnBox2 .btn:hover {
+    text-decoration: underline;
   }
   .body .box .about .btnGroup2 .btnBox2 .git {
     background-color: var(--color30);
