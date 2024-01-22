@@ -935,7 +935,7 @@
     text-align: end;
   }
   .bodyB {
-    background-color: var(--color30);
+    background-color: #121212;
     color: var(--color60);
   }
   .bodyB .box .header .headerNav .nav .nav-item a {
@@ -975,7 +975,7 @@
   }
 }
 .bodyB {
-  background-color: var(--color30);
+  background-color: #121212;
   color: var(--color60);
 }
 .bodyB .box .header .headerNav .nav .nav-item a {
@@ -2183,7 +2183,7 @@
     text-align: end;
   }
   .bodyB {
-    background-color: var(--color30);
+    background-color: #121212;
     color: var(--color60);
   }
   .bodyB .box .header .headerNav .nav .nav-item a {
