@@ -130,13 +130,14 @@
         .header {
             @include resetmp();
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             // background-color: purple;
             .headerLogo {
                 display: flex;
                 justify-content: flex-start;
-                align-items: end;
+                align-items: center;
                 //background-color: greenyellow;
+                width: 100%;
                 h5 {
                     @include resetmp();
                     @include fonth5();
@@ -151,27 +152,27 @@
             .headerNav {
                 @include resetmp();
                 width: 100%;
-
+                // background-color: #b73c3c;
                 .nav {
                     @include resetmp();
                     display: flex;
                     justify-content: end;
-                    align-items: end;
+                    align-items: center;
                     list-style: none;
                     .nav-item {
                         @include resetmp();
-                        //padding-left: 0%;
+                        padding-right: 0%;
+                        margin-right: 0%;
                         //padding-left: 15%;
 
                         a {
-                            @include resetmp();
+                            padding-right: 0%;
+                            margin-right: 0%;
                             @include fonth5();
-                            padding-bottom: -50%;
                             color: var(--color30);
                             text-decoration: none;
                             font-weight: 500;
                             text-align: end;
-                   
                         }
                         a:hover {
                             text-decoration: underline;
@@ -179,9 +180,8 @@
                         }
                         .contact {
                             display: none;
-                     
                         }
-                       /* .contact:hover {
+                        /* .contact:hover {
                             padding: 0.8rem;
                             padding-left: 2rem;
                             padding-right: 2rem;
@@ -218,7 +218,7 @@
                 padding-top: 2%;
                 .btn {
                     @include btn();
-                    background-color: var(--color60);
+                    background-color: transparent;
                     color: var(--color10);
                     border: var(--color10) solid 1.5px;
                 }
@@ -230,10 +230,10 @@
         // PORTFOLIO
         .portfolio {
             padding-top: 15%;
-            .pfs{
+            .pfs {
                 display: flex;
             }
-            .pfm{
+            .pfm {
                 display: none;
             }
             .porRow {
@@ -275,7 +275,7 @@
                         background-position: center;
                         background-size: cover;
                     }
-                    .porBoxA:hover{
+                    .porBoxA:hover {
                         background-image: url("../img/graphic_design_02.jpg");
                     }
                     .porBoxB {
@@ -284,7 +284,7 @@
                         background-position: center;
                         background-size: cover;
                     }
-                    .porBoxB:hover{
+                    .porBoxB:hover {
                         background-image: url("../img/logos_02.jpg");
                     }
                     .porBoxC {
@@ -293,7 +293,7 @@
                         background-position: center;
                         background-size: cover;
                     }
-                    .porBoxC:hover{
+                    .porBoxC:hover {
                         background-image: url("../img/web_design_02.jpg");
                     }
                 }
@@ -400,7 +400,7 @@
     }
     footer {
         @include resetmp();
-        background-color: #ece4ce66;
+        background-color: #f3efe1;
         padding-top: 15%;
         padding-left: 5%;
         padding-right: 5%;
@@ -492,7 +492,126 @@
         }
     }
 }
+.bodyB {
+    background-color: var(--color30);
+    color: var(--color60);
+    .box {
+        .header {
+            .headerNav {
+                .nav {
+                    .nav-item {
+                        a {
+                            color: var(--color90);
+                        }
+                    }
+                }
+            }
+        }
+        .home {
+            @include resetmp();
+            padding-top: 15%;
+            h1 {
+                @include fonth1();
+                span {
+                    @include fonth2();
+                }
+            }
+            p {
+                @include fontText();
+                padding-top: 10%;
+                padding-right: 20%;
+            }
+            .btnBox {
+                display: none;
+            }
+        }
+    }
+    footer {
+        color: var(--color30);
+    }
+}
 
 @import "_576.scss";
 @import "_768.scss";
 @import "_992.scss";
+.bodyB {
+    background-color: var(--color30);
+    color: var(--color60);
+    .box {
+        .header {
+            .headerNav {
+                .nav {
+                    .nav-item {
+                        a {
+                            color: var(--color90);
+                        }
+                    }
+                }
+            }
+        }
+        .home {
+            display: block;
+            @include resetmp();
+            padding-top: 15%;
+            h1 {
+                @include fonth1();
+                span {
+                    @include fonth2();
+                }
+            }
+            p {
+                @include fontText();
+                padding-top: 10%;
+                padding-right: 20%;
+            }
+            .btnBox {
+                display: none;
+            }
+        }
+        .moreprojects {
+            //background-color: red;
+            h3 {
+                @include fonth1();
+                font-size: 2.5rem;
+                span {
+                    @include fonth3();
+                    font-size: 2.5rem;
+                }
+            }
+            h4 {
+                @include fonth5();
+                font-size: 1rem;
+            }
+            .imgPage {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                height: 150px;
+                border-radius: 1rem;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .braLog {
+                background-image: url("../img/logos_01.jpg");
+            }
+            .braLog:hover {
+                background-image: url("../img/logos_02.jpg");
+            }
+            .webDes {
+                background-image: url("../img/web_design_01.jpg");
+            }
+            .webDes:hover {
+                background-image: url("../img/web_design_02.jpg");
+            }
+            .graDes {
+                background-image: url("../img/graphic_design_01.jpg");
+            }
+            .graDes:hover {
+                background-image: url("../img/graphic_design_02.jpg");
+            }
+        }
+    }
+    footer {
+        color: var(--color30);
+    }
+}

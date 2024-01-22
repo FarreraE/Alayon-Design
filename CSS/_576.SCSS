@@ -448,4 +448,43 @@
             }
         }
     }
+    .bodyB {
+    background-color: var(--color30);
+    color: var(--color60);
+    .box {
+        .header {
+            .headerNav {
+                .nav {
+                    .nav-item {
+                        a {
+                            color: var(--color90);
+                        }
+                    }
+                }
+            }
+        }
+        .home {
+            @include resetmp();
+            padding-top: 15%;
+            h1 {
+                @include fonth1();
+                span {
+                    @include fonth2();
+                }
+            }
+            p {
+                @include fontText();
+                padding-top: 10%;
+                padding-right: 20%;
+                
+            }
+            .btnBox {
+                display: none;
+            }
+        }
+    }
+    footer{
+        color: var(--color30)
+    }
+}
 }
