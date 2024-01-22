@@ -492,48 +492,8 @@
         }
     }
 }
-.bodyB {
-    background-color: var(--color30);
-    color: var(--color60);
-    .box {
-        .header {
-            .headerNav {
-                .nav {
-                    .nav-item {
-                        a {
-                            color: var(--color90);
-                        }
-                    }
-                }
-            }
-        }
-        .home {
-            @include resetmp();
-            padding-top: 15%;
-            h1 {
-                @include fonth1();
-                span {
-                    @include fonth2();
-                }
-            }
-            p {
-                @include fontText();
-                padding-top: 10%;
-                padding-right: 20%;
-            }
-            .btnBox {
-                display: none;
-            }
-        }
-    }
-    footer {
-        color: var(--color30);
-    }
-}
 
 @import "_576.scss";
-@import "_768.scss";
-@import "_992.scss";
 .bodyB {
     background-color: var(--color30);
     color: var(--color60);
@@ -550,8 +510,6 @@
             }
         }
         .home {
-            display: block;
-            @include resetmp();
             padding-top: 15%;
             h1 {
                 @include fonth1();
@@ -559,17 +517,32 @@
                     @include fonth2();
                 }
             }
+            .h1SM {
+                display: block;
+            }
+            .h1MD {
+                display: none;
+            }
             p {
                 @include fontText();
+                @include resetmp();
+                font-size: 1rem;
+                letter-spacing: 0.005rem;
+                line-height: 1.2rem;
+                //padding: 0%;
                 padding-top: 10%;
-                padding-right: 20%;
+                padding-right: 15%;
+                //background-color: red;
             }
             .btnBox {
                 display: none;
             }
         }
+        .svgSection {
+            padding-top: 10%;
+        }
         .moreprojects {
-            //background-color: red;
+            padding-top: 10%;
             h3 {
                 @include fonth1();
                 font-size: 2.5rem;
@@ -615,3 +588,6 @@
         color: var(--color30);
     }
 }
+@import "_768.scss";
+
+@import "_992.scss";

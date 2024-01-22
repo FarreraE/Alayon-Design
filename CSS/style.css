@@ -495,46 +495,6 @@
   font-size: 0.8rem;
 }
 
-.bodyB {
-  background-color: var(--color30);
-  color: var(--color60);
-}
-.bodyB .box .header .headerNav .nav .nav-item a {
-  color: var(--color90);
-}
-.bodyB .box .home {
-  padding: 0%;
-  margin: 0%;
-  padding-top: 15%;
-}
-.bodyB .box .home h1 {
-  font-family: var(--fontWork);
-  font-weight: 420;
-  letter-spacing: -0.2rem;
-  font-size: 3.5rem;
-  line-height: 4rem;
-}
-.bodyB .box .home h1 span {
-  font-family: var(--fontRob);
-  font-weight: 0;
-  font-size: 3.5rem;
-}
-.bodyB .box .home p {
-  font-family: var(--fontWork);
-  font-weight: 400;
-  font-size: 0.95rem;
-  letter-spacing: -0.005rem;
-  line-height: 1.2rem;
-  padding-top: 10%;
-  padding-right: 20%;
-}
-.bodyB .box .home .btnBox {
-  display: none;
-}
-.bodyB footer {
-  color: var(--color30);
-}
-
 @media (min-width: 576px) and (max-width: 768px) {
   /* Estilos específicos para pantallas pequeñas */
   .body {
@@ -1014,6 +974,111 @@
     color: var(--color30);
   }
 }
+.bodyB {
+  background-color: var(--color30);
+  color: var(--color60);
+}
+.bodyB .box .header .headerNav .nav .nav-item a {
+  color: var(--color90);
+}
+.bodyB .box .home {
+  padding-top: 15%;
+}
+.bodyB .box .home h1 {
+  font-family: var(--fontWork);
+  font-weight: 420;
+  letter-spacing: -0.2rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+.bodyB .box .home h1 span {
+  font-family: var(--fontRob);
+  font-weight: 0;
+  font-size: 3.5rem;
+}
+.bodyB .box .home .h1SM {
+  display: block;
+}
+.bodyB .box .home .h1MD {
+  display: none;
+}
+.bodyB .box .home p {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: -0.005rem;
+  line-height: 1.2rem;
+  padding: 0%;
+  margin: 0%;
+  font-size: 1rem;
+  letter-spacing: 0.005rem;
+  line-height: 1.2rem;
+  padding-top: 10%;
+  padding-right: 15%;
+}
+.bodyB .box .home .btnBox {
+  display: none;
+}
+.bodyB .box .svgSection {
+  padding-top: 10%;
+}
+.bodyB .box .moreprojects {
+  padding-top: 10%;
+}
+.bodyB .box .moreprojects h3 {
+  font-family: var(--fontWork);
+  font-weight: 420;
+  letter-spacing: -0.2rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-size: 2.5rem;
+}
+.bodyB .box .moreprojects h3 span {
+  font-family: var(--fontRob);
+  font-style: italic;
+  font-weight: 0;
+  font-size: 3.5rem;
+  font-size: 2.5rem;
+}
+.bodyB .box .moreprojects h4 {
+  font-family: var(--fontWork);
+  font-weight: 400;
+  letter-spacing: 0%;
+  font-size: 0.8rem;
+  text-align: justify;
+  font-size: 1rem;
+}
+.bodyB .box .moreprojects .imgPage {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 150px;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bodyB .box .moreprojects .braLog {
+  background-image: url("../img/logos_01.jpg");
+}
+.bodyB .box .moreprojects .braLog:hover {
+  background-image: url("../img/logos_02.jpg");
+}
+.bodyB .box .moreprojects .webDes {
+  background-image: url("../img/web_design_01.jpg");
+}
+.bodyB .box .moreprojects .webDes:hover {
+  background-image: url("../img/web_design_02.jpg");
+}
+.bodyB .box .moreprojects .graDes {
+  background-image: url("../img/graphic_design_01.jpg");
+}
+.bodyB .box .moreprojects .graDes:hover {
+  background-image: url("../img/graphic_design_02.jpg");
+}
+.bodyB footer {
+  color: var(--color30);
+}
+
 @media (min-width: 769px) and (max-width: 992px) {
   /* Estilos específicos para pantallas pequeñas */
   .body {
@@ -1384,7 +1449,6 @@
     margin-top: 8%;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
-    background-color: rgba(236, 228, 206, 0.4);
   }
   .body footer .footerMain {
     background-color: transparent;
@@ -1513,6 +1577,102 @@
     padding-top: 10%;
     font-size: 0.8rem;
     text-align: end;
+  }
+  .bodyB {
+    background-color: var(--color30);
+    color: var(--color60);
+  }
+  .bodyB .box .header .headerNav .nav .nav-item a {
+    color: var(--color90);
+  }
+  .bodyB .box .home {
+    display: block;
+    padding: 0%;
+    margin: 0%;
+    padding-top: 10%;
+  }
+  .bodyB .box .home h1 {
+    font-family: var(--fontWork);
+    font-weight: 420;
+    letter-spacing: -0.2rem;
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .bodyB .box .home h1 span {
+    font-family: var(--fontRob);
+    font-weight: 0;
+    font-size: 5rem;
+  }
+  .bodyB .box .home .h1SM {
+    display: none;
+  }
+  .bodyB .box .home .h1MD {
+    display: block;
+  }
+  .bodyB .box .home p {
+    padding-top: 5%;
+  }
+  .bodyB .box .home .btnBox {
+    display: none;
+  }
+  .bodyB .box .svgSection {
+    padding-top: 8%;
+  }
+  .bodyB .box .moreprojects {
+    padding-top: 10%;
+  }
+  .bodyB .box .moreprojects h3 {
+    font-family: var(--fontWork);
+    font-weight: 420;
+    letter-spacing: -0.2rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+  }
+  .bodyB .box .moreprojects h3 span {
+    font-family: var(--fontRob);
+    font-style: italic;
+    font-weight: 0;
+    font-size: 4.5rem;
+    font-size: 2.5rem;
+  }
+  .bodyB .box .moreprojects h4 {
+    font-family: var(--fontWork);
+    font-weight: 400;
+    letter-spacing: 0%;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .bodyB .box .moreprojects .imgPage {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 150px;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bodyB .box .moreprojects .braLog {
+    background-image: url("../img/logos_01.jpg");
+  }
+  .bodyB .box .moreprojects .braLog:hover {
+    background-image: url("../img/logos_02.jpg");
+  }
+  .bodyB .box .moreprojects .webDes {
+    background-image: url("../img/web_design_01.jpg");
+  }
+  .bodyB .box .moreprojects .webDes:hover {
+    background-image: url("../img/web_design_02.jpg");
+  }
+  .bodyB .box .moreprojects .graDes {
+    background-image: url("../img/graphic_design_01.jpg");
+  }
+  .bodyB .box .moreprojects .graDes:hover {
+    background-image: url("../img/graphic_design_02.jpg");
+  }
+  .bodyB footer {
+    color: var(--color30);
   }
 }
 @media (min-width: 993px) {
@@ -2022,94 +2182,100 @@
     font-size: 0.8rem;
     text-align: end;
   }
-}
-.bodyB {
-  background-color: var(--color30);
-  color: var(--color60);
-}
-.bodyB .box .header .headerNav .nav .nav-item a {
-  color: var(--color90);
-}
-.bodyB .box .home {
-  display: block;
-  padding: 0%;
-  margin: 0%;
-  padding-top: 15%;
-}
-.bodyB .box .home h1 {
-  font-family: var(--fontWork);
-  font-weight: 420;
-  letter-spacing: -0.2rem;
-  font-size: 3.5rem;
-  line-height: 4rem;
-}
-.bodyB .box .home h1 span {
-  font-family: var(--fontRob);
-  font-weight: 0;
-  font-size: 3.5rem;
-}
-.bodyB .box .home p {
-  font-family: var(--fontWork);
-  font-weight: 400;
-  font-size: 0.95rem;
-  letter-spacing: -0.005rem;
-  line-height: 1.2rem;
-  padding-top: 10%;
-  padding-right: 20%;
-}
-.bodyB .box .home .btnBox {
-  display: none;
-}
-.bodyB .box .moreprojects h3 {
-  font-family: var(--fontWork);
-  font-weight: 420;
-  letter-spacing: -0.2rem;
-  font-size: 3.5rem;
-  line-height: 4rem;
-  font-size: 2.5rem;
-}
-.bodyB .box .moreprojects h3 span {
-  font-family: var(--fontRob);
-  font-style: italic;
-  font-weight: 0;
-  font-size: 3.5rem;
-  font-size: 2.5rem;
-}
-.bodyB .box .moreprojects h4 {
-  font-family: var(--fontWork);
-  font-weight: 400;
-  letter-spacing: 0%;
-  font-size: 0.8rem;
-  text-align: justify;
-  font-size: 1rem;
-}
-.bodyB .box .moreprojects .imgPage {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  height: 150px;
-  border-radius: 1rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bodyB .box .moreprojects .braLog {
-  background-image: url("../img/logos_01.jpg");
-}
-.bodyB .box .moreprojects .braLog:hover {
-  background-image: url("../img/logos_02.jpg");
-}
-.bodyB .box .moreprojects .webDes {
-  background-image: url("../img/web_design_01.jpg");
-}
-.bodyB .box .moreprojects .webDes:hover {
-  background-image: url("../img/web_design_02.jpg");
-}
-.bodyB .box .moreprojects .graDes {
-  background-image: url("../img/graphic_design_01.jpg");
-}
-.bodyB .box .moreprojects .graDes:hover {
-  background-image: url("../img/graphic_design_02.jpg");
-}
-.bodyB footer {
-  color: var(--color30);
+  .bodyB {
+    background-color: var(--color30);
+    color: var(--color60);
+  }
+  .bodyB .box .header .headerNav .nav .nav-item a {
+    color: var(--color90);
+  }
+  .bodyB .box .home {
+    display: block;
+    padding: 0%;
+    margin: 0%;
+    padding-top: 10%;
+  }
+  .bodyB .box .home h1 {
+    font-family: var(--fontWork);
+    font-weight: 420;
+    letter-spacing: -0.2rem;
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+  .bodyB .box .home h1 span {
+    font-family: var(--fontRob);
+    font-weight: 0;
+    font-size: 5rem;
+  }
+  .bodyB .box .home .h1SM {
+    display: none;
+  }
+  .bodyB .box .home .h1MD {
+    display: block;
+  }
+  .bodyB .box .home p {
+    padding-top: 5%;
+  }
+  .bodyB .box .home .btnBox {
+    display: none;
+  }
+  .bodyB .box .svgSection {
+    padding-top: 8%;
+  }
+  .bodyB .box .moreprojects {
+    padding-top: 10%;
+  }
+  .bodyB .box .moreprojects h3 {
+    font-family: var(--fontWork);
+    font-weight: 420;
+    letter-spacing: -0.2rem;
+    font-size: 6rem;
+    line-height: 6.5rem;
+    font-size: 2.5rem;
+  }
+  .bodyB .box .moreprojects h3 span {
+    font-family: var(--fontRob);
+    font-style: italic;
+    font-weight: 0;
+    font-size: 6rem;
+    font-size: 2.5rem;
+  }
+  .bodyB .box .moreprojects h4 {
+    font-family: var(--fontWork);
+    font-weight: 400;
+    letter-spacing: 0%;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .bodyB .box .moreprojects .imgPage {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 150px;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bodyB .box .moreprojects .braLog {
+    background-image: url("../img/logos_01.jpg");
+  }
+  .bodyB .box .moreprojects .braLog:hover {
+    background-image: url("../img/logos_02.jpg");
+  }
+  .bodyB .box .moreprojects .webDes {
+    background-image: url("../img/web_design_01.jpg");
+  }
+  .bodyB .box .moreprojects .webDes:hover {
+    background-image: url("../img/web_design_02.jpg");
+  }
+  .bodyB .box .moreprojects .graDes {
+    background-image: url("../img/graphic_design_01.jpg");
+  }
+  .bodyB .box .moreprojects .graDes:hover {
+    background-image: url("../img/graphic_design_02.jpg");
+  }
+  .bodyB footer {
+    color: var(--color30);
+  }
 }/*# sourceMappingURL=style.css.map */

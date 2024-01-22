@@ -528,4 +528,95 @@
             }
         }
     }
+
+
+
+    .bodyB {
+        background-color: var(--color30);
+        color: var(--color60);
+        .box {
+            .header {
+                .headerNav {
+                    .nav {
+                        .nav-item {
+                            a {
+                                color: var(--color90);
+                            }
+                        }
+                    }
+                }
+            }
+            .home {
+                display: block;
+                @include resetmp();
+                padding-top: 10%;
+                h1 {
+                    @include fonth1();
+                    span {
+                        @include fonth2();
+                    }
+                }
+                .h1SM {
+                    display: none;
+                }
+                .h1MD {
+                    display: block;
+                }
+                p {
+                    padding-top: 5%;
+                }
+                .btnBox {
+                    display: none;
+                }
+            }
+            .svgSection {
+                padding-top: 8%;
+            }
+            .moreprojects {
+                padding-top: 10%;
+                h3 {
+                    @include fonth1();
+                    font-size: 2.5rem;
+                    span {
+                        @include fonth3();
+                        font-size: 2.5rem;
+                    }
+                }
+                h4 {
+                    @include fonth5();
+                    font-size: 1rem;
+                }
+                .imgPage {
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                    height: 150px;
+                    border-radius: 1rem;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .braLog {
+                    background-image: url("../img/logos_01.jpg");
+                }
+                .braLog:hover {
+                    background-image: url("../img/logos_02.jpg");
+                }
+                .webDes {
+                    background-image: url("../img/web_design_01.jpg");
+                }
+                .webDes:hover {
+                    background-image: url("../img/web_design_02.jpg");
+                }
+                .graDes {
+                    background-image: url("../img/graphic_design_01.jpg");
+                }
+                .graDes:hover {
+                    background-image: url("../img/graphic_design_02.jpg");
+                }
+            }
+        }
+        footer {
+            color: var(--color30);
+        }
+    }
 }
