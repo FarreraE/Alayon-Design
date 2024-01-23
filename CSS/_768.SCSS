@@ -295,6 +295,10 @@
                         .btn {
                             @include btn();
                             margin-left: 5%;
+                            a{
+                                color: inherit;
+                                text-decoration: none;
+                            }
                         }
                         .btn:hover {
                             text-decoration: underline;
@@ -521,7 +525,7 @@
     }
 
     .bodyB {
-        background-color: var(--color30);
+        background-color: #121212;
         color: var(--color60);
         .box {
             .header {

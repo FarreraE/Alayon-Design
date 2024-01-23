@@ -386,6 +386,10 @@
                     .btn {
                         margin-top: 5%;
                         @include btnAux();
+                        a{
+                            color: inherit;
+                            text-decoration: none;
+                        }
                     }
                     .btn:hover {
                         text-decoration: underline;
@@ -551,9 +555,11 @@
                     font-size: 2.5rem;
                 }
             }
-            h4 {
-                @include fonth5();
+            a {
                 font-size: 1rem;
+                text-decoration: none;
+                color: var(--color60);
+                @include fonth5();
             }
             .imgPage {
                 margin-top: 5%;

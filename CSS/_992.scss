@@ -300,6 +300,10 @@
                             @include btn();
                             font-size: 1rem;
                             margin-left: 5%;
+                            a {
+                                color: inherit;
+                                text-decoration: none;
+                            }
                         }
                         .btn:hover {
                             text-decoration: underline;
@@ -419,7 +423,7 @@
             margin-top: 8%;
             border-top-right-radius: 1.5rem;
             border-top-left-radius: 1.5rem;
-           
+
             .footerMain {
                 background-color: transparent;
                 @include resetmp();
@@ -528,8 +532,6 @@
             }
         }
     }
-
-
 
     .bodyB {
         background-color: #121212;
