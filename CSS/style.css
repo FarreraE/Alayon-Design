@@ -53,7 +53,7 @@
   padding-left: 5%;
 }
 .body .box .header .headerLogo .logo {
-  width: 8%;
+  width: 5%;
   padding-bottom: 2%;
 }
 .body .box .header .headerNav {
@@ -1611,10 +1611,12 @@
     letter-spacing: -0.2rem;
     font-size: 5rem;
     line-height: 5rem;
+    font-size: 5rem;
   }
   .bodyB .box .home h1 span {
     font-family: var(--fontRob);
     font-weight: 0;
+    font-size: 5rem;
     font-size: 5rem;
   }
   .bodyB .box .home .h1SM {

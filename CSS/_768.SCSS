@@ -545,8 +545,11 @@
                 padding-top: 10%;
                 h1 {
                     @include fonth1();
+                    font-size: 5rem;
                     span {
                         @include fonth2();
+                        font-size: 5rem;
+                        //background-color: red;
                     }
                 }
                 .h1SM {
